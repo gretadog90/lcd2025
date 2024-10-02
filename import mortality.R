@@ -78,28 +78,18 @@ phr= (1-0.96)/.1
 phr_lb=(1-0.94)/.1 
 phr_ub=(1-0.97)/.1
 
-# hia 2015->2020
+# hia 2015, 2020, 2023. all with .1 increase in NDVI
 #using 2015 pop and 2015 baseline mort
-hia$e_2015_2020=hia$val.2015*hia$Population_2015_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
+hia$e_2020_2015=hia$val.2015*hia$Population_2015_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
 
-#using 2015 pop and 2020 baseline mort
-hia$e_2015_2020_agestructure=hia$val.2020*hia$Population_2015_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
-
-#using 2020 pop and 2015 baseline mort
-hia$e_2015_2020_pop=hia$val.2015*hia$Population_2020_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
+#using 2020 pop and 2020 baseline mort
+hia$e_2020_2020=hia$val.2020*hia$Population_2020_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
 
 #run hia 2015->2023
-#using 2015 pop and 2015 baseline mort
-hia$e_2015_2023=hia$val.2015*hia$Population_2015_100m*(hia$PopWeight_Peak_NDVI_2023_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
+#using 2020 pop and 2020 baseline mort
+hia$e_2023_2020=hia$val.2020*hia$Population_2020_100m*(hia$PopWeight_Peak_NDVI_2023_100m-hia$PopWeight_Peak_NDVI_2020_100m)*phr
 
-#using 2015 pop and 2020 baseline mort
-#hia$e_2015_2023_agestructure=hia$val.2020*hia$Population_2015_100m*(hia$PopWeight_Peak_NDVI_2023_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
-
-#using 2020 pop and 2015 baseline mort
-#hia$e_2015_2023_pop=hia$val.2015*hia$Population_2020_100m*(hia$PopWeight_Peak_NDVI_2023_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
-
-
-
+write.csv(hia, "hia.csv")
 #14 countries for which sub-national mortality rates are available
 merged_data_2025$city[merged_data_2025$country %in% 
                         c("South Africa", "Kenya", "Ethiopia", "Indonesia", "Pakistan",
