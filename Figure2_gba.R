@@ -9,5 +9,16 @@ rm(list = ls())
 library(tidyr)
 library(tidyverse)
 library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(maps)
+library(tidytab)
+library(ggpubr)
+library(egg)
 
 ####import####
+#set working directory
+setwd('~/Documents/data/Lancet 2025/')
+
+#merged exposure data
+lcd2025<-read.csv("output/lcd2025.csv")
