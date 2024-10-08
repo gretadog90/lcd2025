@@ -18,7 +18,7 @@ output='output/'
 
 ####import####
 gbd_mort<-read.csv(paste0(import_dir, "IHME-GBD_2021_DATA-b41c2546-1.csv"))
-merged_data_2025<-read.csv(paste0(output, "merged_data_2025.csv"))
+lcd2025<-read.csv(paste0(output, "lcd2025.csv"))
 
 ####data mgmt####
 # a lot of manual replacing needed to match location_name to country/region in data
@@ -26,7 +26,7 @@ merged_data_2025<-read.csv(paste0(output, "merged_data_2025.csv"))
 gbd_mort$location_name<-stri_trans_general(gbd_mort$location_name, "Latin-ASCII")
 
 #find which names don't match and edit gbd names to match lcd universe
-merged_data_2025$country[!merged_data_2025$country %in% gbd_mort$location_name]
+lcd2025$country[!lcd2025$country %in% gbd_mort$location_name]
 gbd_mort$location_name[gbd_mort$location_name=="Russian Federation"]<-"Russia"
 gbd_mort$location_name[gbd_mort$location_name=="Iran (Islamic Republic of)"]<-"Iran"
 gbd_mort$location_name[gbd_mort$location_name=="United Republic of Tanzania"]<-"Tanzania"
@@ -71,34 +71,15 @@ mort<- mort %>%
        ~ . / constant))
              
 #merge exposure and pop data
-hia<-merge(merged_data_2025, mort, by.x="country",by.y="location_name")
+merged_data_2025<-merge(lcd2025, mort, by.x="country",by.y="location_name")
+write.csv(merged_data_2025, paste0(output,"merged_data_2025.csv"))
 
-#set the protective HR, lb and ub per .1 increase in NDVI
-phr= (1-0.96)/.1
-phr_lb=(1-0.94)/.1 
-phr_ub=(1-0.97)/.1
-
-# hia 2015, 2020, 2023. all with .1 increase in NDVI
-#using 2015 pop and 2015 baseline mort
-hia$e_2020_2015=hia$val.2015*hia$Population_2015_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
-
-#using 2020 pop and 2020 baseline mort
-hia$e_2020_2020=hia$val.2020*hia$Population_2020_100m*(hia$PopWeight_Peak_NDVI_2020_100m-hia$PopWeight_Peak_NDVI_2015_100m)*phr
-
-#run hia 2015->2023
-#using 2020 pop and 2020 baseline mort
-hia$e_2023_2020=hia$val.2020*hia$Population_2020_100m*(hia$PopWeight_Peak_NDVI_2023_100m-hia$PopWeight_Peak_NDVI_2020_100m)*phr
-
-write.csv(hia, "hia.csv")
+#didnt match cities with sub-national mortality rates to their sub-national units
 #14 countries for which sub-national mortality rates are available
-merged_data_2025$city[merged_data_2025$country %in% 
-                        c("South Africa", "Kenya", "Ethiopia", "Indonesia", "Pakistan",
-                          "India", "Iran", "Brazil", "Mexico", "United Kingdom",
-                          "Sweden", "Norway", "United States", "Japan")]
+#lcd2025$city[lcd2025$country %in% 
+#                        c("South Africa", "Kenya", "Ethiopia", "Indonesia", "Pakistan",
+#                          "India", "Iran", "Brazil", "Mexico", "United Kingdom",
+#                          "Sweden", "Norway", "United States", "Japan")]
 #405 cities that need a re-assignment to a sub-national region
-
-#delete excess vars and save
-merged_data_2025[,c("X", "X.1")]<- NULL #get rid of ids that are auto generated
-
 
 

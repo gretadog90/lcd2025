@@ -1,0 +1,1042 @@
+Field1,City,UC_NM_LST,Country,Latitude,Longitude,clim_region
+173,Cabinda,Cabinda,Angola,-5.580208982,12.20206708,1
+64,Asuncion,Asuncion,Argentina,-25.31734204,-57.53865811,1
+660,Nassau,Nassau,Bahamas,25.04766989,-77.3395073,1
+143,Bogura,Bogura,Bangladesh,24.94281628,89.37862593,1
+149,Brahmanbaria,Brahmanbaria,Bangladesh,24.05720249,90.9840826,1
+200,Chattogram,Chattogram,Bangladesh,22.43879885,91.82426299,1
+227,Comilla,Comilla,Bangladesh,23.14673164,90.80556542,1
+244,Daganbhuiyan,Daganbhuiyan,Bangladesh,22.87366747,91.27931143,1
+269,Dhaka,Dhaka,Bangladesh,23.80705214,90.40166345,1
+387,Homna,Homna,Bangladesh,23.69414847,90.83183985,1
+436,Jessore,Jessore,Bangladesh,23.16668014,89.20843182,1
+484,Khulna,Khulna,Bangladesh,22.84014664,89.55533432,1
+490,Kishoreganj,Kishoreganj,Bangladesh,24.41026989,90.81460509,1
+521,Lakshmipur,Lakshmipur,Bangladesh,22.99136741,90.86482046,1
+640,Mymensingh,Mymensingh,Bangladesh,24.74903788,90.3898509,1
+674,Noakhali,Noakhali,Bangladesh,22.97593978,91.12628607,1
+772,Rajshahi,Rajshahi,Bangladesh,24.41426426,88.61983457,1
+882,Sylhet,Sylhet,Bangladesh,24.87859338,91.90338015,1
+897,Tangail,Tangail,Bangladesh,24.32667879,89.9459055,1
+154,Bridgetown,Bridgetown,Barbados,13.10727669,-59.59427819,1
+115,Belize City,Belize City,Belize,17.50188585,-88.2043785,1
+234,Cotonou,Cotonou,Benin,6.394259243,2.384858806,1
+185,Caracas,Caracas,Bolivarian Republic of Venezuela,10.46744645,-66.8907862,1
+218,Ciudad Guayana,Ciudad Guayana,Bolivarian Republic of Venezuela,8.283046143,-62.73924618,1
+587,Maracay,Maracay,Bolivarian Republic of Venezuela,10.22999008,-67.54417748,1
+596,Maturin,Maturin,Bolivarian Republic of Venezuela,9.73923343,-63.20688684,1
+954,Valencia [Spain],Valencia [Spain],Bolivarian Republic of Venezuela,10.18802271,-67.97228433,1
+818,Santa Cruz de la Sierra,Santa Cruz de la Sierra,Bolivia,-17.80059184,-63.15343101,1
+56,Aracaju,Aracaju,Brazil,-10.92155684,-37.07035962,1
+113,Belém,Beltm,Brazil,-1.373023077,-48.43130288,1
+116,Belo Horizonte,Belo Horizonte,Brazil,-19.90043198,-44.00841088,1
+180,Campo Grande,Campo Grande,Brazil,-20.48145787,-54.61844406,1
+189,Ceilândia,Ceilhndia,Brazil,-15.83609124,-48.07297289,1
+237,Cuiabá,Cuiab,Brazil,-15.61996762,-56.09137115,1
+311,Feira de Santana,Feira de Santana,Brazil,-12.2525641,-38.95727921,1
+316,Fortaleza,Fortaleza,Brazil,-3.785747348,-38.56030296,1
+340,Goiânia,Goitnia,Brazil,-16.71153307,-49.28015866,1
+450,João Pessoa,Joao Pessoa,Brazil,-7.145364178,-34.87174461,1
+562,Maceió,Macei,Brazil,-9.598100193,-35.748951,1
+578,Manaus,Manaus,Brazil,-3.063915188,-59.9938984,1
+661,Natal,Natal,Brazil,-5.841500953,-35.22169014,1
+737,Porto Alegre,Porto Alegre,Brazil,6.508633755,2.62505273,1
+778,Recife,Recife,Brazil,-8.037228288,-34.92450363,1
+781,Ribeirao Preto,Ribeirao Preto,Brazil,-21.16579789,-47.80419233,1
+783,Rio de Janeiro,Rio de Janeiro,Brazil,-22.83808379,-43.39047626,1
+801,Salvador,Salvador,Brazil,-12.92433867,-38.42545334,1
+822,Santos,Santos,Brazil,-23.9617233,-46.32646983,1
+823,Sao Goncalo,Sao Goncalo,Brazil,-22.83215191,-43.00858739,1
+824,Sao Jose dos Campos,Sao Jose dos Campos,Brazil,-23.23182429,-45.89685271,1
+825,São Luís,Sao Luis,Brazil,-2.546535097,-44.23935975,1
+908,Teresina,Teresina,Brazil,-5.100409279,-42.79030721,1
+942,Uberlândia,Uberlandia,Brazil,-18.91658365,-48.27971892,1
+966,Vila Velha,Vila Velha,Brazil,-20.32801679,-40.3508252,1
+88,Bandar Seri Begawan,Bandar Seri Begawan,Brunei,4.880750176,114.9248353,1
+141,Bobo-Dioulasso,Bobo-Dioulasso,Burkina Faso,11.17845537,-4.294491273,1
+164,Bujumbura,Bujumbura,Burundi,-3.374242753,29.36607135,1
+718,Phnom Penh,Phnom Penh,Cambodia,11.55630663,104.8938437,1
+283,Douala,Douala,Cameroon,4.054415345,9.723482291,1
+327,Garoua,Garoua,Cameroon,9.32503559,13.39244222,1
+620,Mokolo,Mokolo,Cameroon,10.73770893,13.80884401,1
+1007,Yaounde,Yaounde,Cameroon,3.852442559,11.52221064,1
+91,Bangui,Bangui,Central African Republic,4.38866078,18.54393061,1
+358,Haikou,Haikou,China,20.00638212,110.3234402,1
+398,Huangdao,Huangdao,China,35.99283817,120.1928943,1
+469,Kaohsiung,Kaohsiung,China,22.65264367,120.3335897,1
+887,Tainan,Tainan,China,22.98685762,120.2308793,1
+158,Bucaramanga,Bucaramanga,Colombia,7.094304809,-73.12924056,1
+178,Cali,Cali,Colombia,3.430341812,-76.5174626,1
+186,Cartagena,Cartagena,Colombia,10.38786616,-75.50280489,1
+235,Cúcuta,Cocuta,Colombia,7.906936708,-72.49813927,1
+406,Ibagué,Ibagu,Colombia,4.439221242,-75.21557609,1
+601,Medellín,MedellAn,Colombia,6.240716975,-75.58360123,1
+714,Pereira,Pereira,Colombia,4.814273724,-75.70259672,1
+315,Fomboni,Fomboni,Comoros,-12.28564543,43.74642637,1
+4,Abidjan,Abidjan,Cote d'Ivoire,5.349563262,-4.002695996,1
+147,Bouaké,Bouak,Cote d'Ivoire,7.700820107,-5.031655129,1
+374,Havana,Havana,Cuba,23.07138617,-82.35165595,1
+120,Beni,Beni,Democratic Republic of the Congo,0.497250232,29.46522964,1
+152,Brazzaville,Brazzaville,Republic of the Congo,-4.23483437,15.27140126,1
+165,Bukavu,Bukavu,Democratic Republic of the Congo,-2.506981546,28.86434876,1
+169,Bunia,Bunia,Democratic Republic of the Congo,1.565455282,30.2487026,1
+341,Goma,Goma,Democratic Republic of the Congo,-1.666427626,29.23853831,1
+461,Kananga,Kananga,Democratic Republic of the Congo,-5.895758236,22.41345375,1
+487,Kinshasa,Kinshasa,Democratic Republic of the Congo,-4.396631352,15.31920759,1
+489,Kisangani,Kisangani,Democratic Republic of the Congo,0.520849281,25.19024551,1
+567,Mahagi,Mahagi,Democratic Republic of the Congo,2.299159205,30.9938877,1
+598,Mbuji-Mayi,Mbuji-Mayi,Democratic Republic of the Congo,-6.122311793,23.60254374,1
+725,Pointe-Noire,Pointe-Noire,Republic of the Congo,-4.797681595,11.87137915,1
+934,Tshikapa,Tshikapa,Democratic Republic of the Congo,-6.42526257,20.78494259,1
+820,Santiago de los Caballeros,Santiago de los Caballeros,Dominican Republic,19.45839074,-70.68069619,1
+821,Santo Domingo,Santo Domingo,Dominican Republic,18.49480958,-69.90131384,1
+348,Guayaquil,Guayaquil,Ecuador,-2.164296232,-79.91204137,1
+813,San Salvador,San Salvador,El Salvador,13.72425382,-89.18557142,1
+105,Bata,Bata,Equatorial Guinea,1.853044752,9.774096477,1
+878,Suva,Suva,Fiji,-18.10480157,178.4612555,1
+530,Libreville,Libreville,Gabon,0.39260525,9.46405581,1
+837,Serrekunda,Serrekunda,Gambia,13.41248753,-16.69039456,1
+8,Accra,Accra,Ghana,5.621085071,-0.215586875,1
+511,Kumasi,Kumasi,Ghana,6.709183709,-1.610282438,1
+892,Takoradi [Sekondi-Takoradi],Takoradi,Ghana,4.93346452,-1.749461021,1
+347,Guatemala City,Guatemala City,Guatemala,14.59927134,-90.54739573,1
+228,Conakry,Conakry,Guinea,9.66815615,-13.5461834,1
+138,Bissau,Bissau,Guinea-Bissau,11.87048723,-15.61070416,1
+335,Georgetown,Georgetown,Guyana,6.803543894,-58.15903222,1
+734,Port-au-Prince,Port-au-Prince,Haiti,18.55650513,-72.29580022,1
+812,San Pedro Sula,San Pedro Sula,Honduras,15.5021369,-87.98431086,1
+905,Tegucigalpa,Tegucigalpa,Honduras,14.07275283,-87.20403689,1
+15,Agartala,Agartala,India,23.84562166,91.27513642,1
+27,Alappuzha,Alappuzha,India,9.564916376,76.33821859,1
+43,Amravati,Amravati,India,20.91832384,77.75714054,1
+47,Anand,Anand,India,22.55254773,72.94315728,1
+60,Asansol,Asansol,India,23.72245494,86.8693597,1
+112,Belagavi,Belagavi,India,15.85943217,74.50961073,1
+118,Bengaluru,Bengaluru,India,13.02014553,77.574697,1
+123,Berhampore,Berhampore,India,24.0343956,88.2540525,1
+129,Bhopal,Bhopal,India,23.2411772,77.4233425,1
+130,Bhubaneshwar,Bhubaneshwar,India,20.29415958,85.83292975,1
+133,Bilaspur,Bilaspur,India,22.08259698,82.14732532,1
+144,Bokaro,Bokaro,India,23.66589737,86.13748691,1
+150,Brahmapur,Brahmapur,India,19.30341162,84.79134158,1
+203,Chennai,Chennai,India,13.01635766,80.173301,1
+240,Cuttack,Cuttack,India,20.4556057,85.88112324,1
+270,Dhanbad,Dhanbad,India,23.77971249,86.363074,1
+271,Dharwad,Dharwad,India,15.44277038,75.01551214,1
+291,Durg,Durg,India,21.19814648,81.3594441,1
+303,Ettumanoor,Ettumanoor,India,9.519606728,76.55083166,1
+338,Giridih,Giridih,India,24.17491968,86.30592948,1
+353,Guntur,Guntur,India,16.30616891,80.40400371,1
+354,Guruvayur,Guruvayur,India,10.6288488,76.09489452,1
+411,Indore,Indore,India,22.68108191,75.84162043,1
+420,Jabalpur,Jabalpur,India,23.17925819,79.93883313,1
+429,Jamshedpur,Jamshedpur,India,22.79705316,86.19234242,1
+431,Jaynagar Majilpur,Jaynagar Majilpur,India,22.10988752,88.39850556,1
+459,Kalaburagi,Kalaburagi,India,17.33612735,76.83779502,1
+465,Kannur,Kannur,India,11.93650695,75.34421961,1
+481,Kharagpur,Kharagpur,India,22.32927264,87.30792388,1
+494,Kochi,Kochi,India,10.03173451,76.33426768,1
+495,Kolhapur,Kolhapur,India,16.6915796,74.2428502,1
+496,Kolkata,Kolkata,India,22.52488411,88.29249552,1
+497,Kollam,Kollam,India,9.083465423,76.55243729,1
+501,Kozhikode,Kozhikode,India,11.2025714,75.85595005,1
+505,Krishnanagar,Krishnanagar,India,23.39489033,88.4923685,1
+524,Latur,Latur,India,18.40301926,76.56718879,1
+565,Madurai,Madurai,India,9.923590018,78.1237137,1
+573,Malappuram,Malappuram,India,11.01304207,76.06700157,1
+581,Mangaluru,Mangaluru,India,12.90569843,74.85065505,1
+634,Mumbai,Mumbai,India,19.14107332,72.97072133,1
+643,Nagpur,Nagpur,India,21.14343076,79.07140287,1
+651,Nanded-Waghala,Nanded-Waghala,India,19.15345868,77.31955551,1
+658,Nashik,Nashik,India,19.97994865,73.78998078,1
+663,Neeleshwaram,Neeleshwaram,India,12.40460478,75.04844893,1
+664,Nellore,Nellore,India,14.45130439,79.99646664,1
+746,Puducherry,Puducherry,India,11.92709719,79.7938225,1
+749,Pune,Pune,India,18.5691213,73.8524993,1
+769,Raipur,Raipur,India,21.25779665,81.623008,1
+770,Rajamahendravaram,Rajamahendravaram,India,17.00683571,81.79643936,1
+791,Rourkela,Rourkela,India,22.23257483,84.85633717,1
+794,Sagar,Sagar,India,23.84513192,78.76412754,1
+797,Salem,Salem,India,11.66684674,78.14904097,1
+856,Silchar,Silchar,India,24.8150992,92.78545424,1
+877,Surat,Surat,India,21.1772905,72.75651687,1
+894,Tamluk,Tamluk,India,22.42392513,87.88765462,1
+910,Thalassery,Thalassery,India,11.69046148,75.55683059,1
+913,Thiruvananthapuram,Thiruvananthapuram,India,8.514992195,76.97029542,1
+914,Thrissur,Thrissur,India,10.5293822,76.21637426,1
+920,Tiruchirappalli,Tiruchirappalli,India,10.80320509,78.71906394,1
+921,Tirupati,Tirupati,India,13.62743022,79.43391607,1
+946,Ujjain,Ujjain,India,23.17525186,75.7978709,1
+953,Vadodara,Vadodara,India,22.31407074,73.17221766,1
+959,Vasai-Virar,Vasai-Virar,India,19.40714757,72.82755683,1
+960,Vellore,Vellore,India,12.92166037,79.13699098,1
+965,Vijayawada,Vijayawada,India,16.5111884,80.64966395,1
+971,Visakhapatnam,Visakhapatnam,India,17.7159993,83.23285492,1
+978,Warangal,Warangal,India,17.9855873,79.57846715,1
+79,Balikpapan,Balikpapan,Indonesia,-1.243612554,116.8696319,1
+87,Bandar Lampung,Bandar Lampung,Indonesia,-5.407703981,105.2765881,1
+89,Bandung,Bandung,Indonesia,-6.941582418,107.6430998,1
+93,Banjarmasin,Banjarmasin,Indonesia,-3.322646922,114.6050195,1
+106,Batam City,Batam City,Indonesia,1.102073408,103.9802093,1
+213,Cilacap,Cilacap,Indonesia,-7.682078629,109.069364,1
+214,Cilegon,Cilegon,Indonesia,-5.986890232,106.0333707,1
+216,Cirebon,Cirebon,Indonesia,-6.719577938,108.4784476,1
+264,Denpasar,Denpasar,Indonesia,-8.652393053,115.2295882,1
+328,Garut,Garut,Indonesia,-7.188443298,107.9170183,1
+422,Jakarta,Jakarta,Indonesia,-6.380746725,106.852957,1
+426,Jambi,Jambi,Indonesia,-1.619062604,103.6012253,1
+433,Jember,Jember,Indonesia,-8.370030583,113.5900645,1
+454,Jombang,Jombang,Indonesia,-7.58498881,112.2505046,1
+512,Kuningan,Kuningan,Indonesia,-6.953317784,108.5185199,1
+563,Madiun,Madiun,Indonesia,-7.729499134,111.4867848,1
+566,Magelang,Magelang,Indonesia,-7.551087119,110.2580796,1
+570,Makassar,Makassar,Indonesia,-5.173159899,119.4628329,1
+595,Mataram,Mataram,Indonesia,-8.597736557,116.1375214,1
+600,Medan,Medan,Indonesia,3.60476028,98.65144864,1
+619,Mojokerto,Mojokerto,Indonesia,-7.494423139,112.5023371,1
+701,Padang,Padang,Indonesia,-0.912877496,100.3867338,1
+702,Palembang,Palembang,Indonesia,-2.967116102,104.74868,1
+709,Pati,Pati,Indonesia,-6.783551368,110.8537881,1
+712,Pekalongan,Pekalongan,Indonesia,-6.914157276,109.6230154,1
+713,Pekanbaru,Pekanbaru,Indonesia,0.506249071,101.4339642,1
+726,Pontianak,Pontianak,Indonesia,-0.048430927,109.3423422,1
+750,Purwokerto,Purwokerto,Indonesia,-7.39301404,109.2850158,1
+803,Samarinda,Samarinda,Indonesia,-0.507891586,117.1477454,1
+834,Semarang,Semarang,Indonesia,-6.93358473,110.1633366,1
+875,Sumenep,Sumenep,Indonesia,-7.026723937,113.8884819,1
+876,Surabaya,Surabaya,Indonesia,-7.628561821,112.6697063,1
+902,Tasikmalaya,Tasikmalaya,Indonesia,-7.286036549,108.1947535,1
+904,Tegal,Tegal,Indonesia,-6.926582393,109.0631259,1
+937,Tulungagung,Tulungagung,Indonesia,-8.095502304,111.9686916,1
+1017,Yogyakarta,Yogyakarta,Indonesia,-7.686059976,110.5984055,1
+486,Kingston,Kingston,Jamaica,17.99722913,-76.84702145,1
+621,Mombasa,Mombasa,Kenya,-4.03815794,39.65620928,1
+963,Vientiane,Vientiane,Laos,17.97109054,102.6208591,1
+623,Monrovia,Monrovia,Liberia,6.321899475,-10.73716661,1
+166,Bukit Mertajam,Bukit Mertajam,Malaysia,5.357455373,100.4364416,1
+334,George Town,George Town,Malaysia,5.372127221,100.2897535,1
+412,Ipoh,Ipoh,Malaysia,4.613222449,101.0951164,1
+500,Kota Kinabalu,Kota Kinabalu,Malaysia,5.960746947,116.0993263,1
+507,Kuala Lumpur,Kuala Lumpur,Malaysia,3.074778818,101.6268783,1
+574,Malé,Male,Maldives,4.178705836,73.51213453,1
+85,Bamako,Bamako,Mali,12.62064018,-7.979711566,1
+729,Port Louis,Port Louis,Mauritius,-20.28908971,57.48784225,1
+7,Acapulco,Acapulco,Mexico,16.86769935,-99.86174779,1
+182,Cancún,Cancun,Mexico,21.16362243,-86.85945843,1
+236,Cuernavaca,Cuernavaca,Mexico,18.89229174,-99.20837773,1
+607,Mérida,Merida,Mexico,20.97290636,-89.61473615,1
+896,Tampico,Tampico,Mexico,22.26867547,-97.85524009,1
+940,Tuxtla Gutiérrez,Tuxtla Gutierrez,Mexico,16.75353185,-93.11889809,1
+961,Veracruz,Veracruz,Mexico,19.17410361,-96.16724067,1
+967,Villahermosa,Villahermosa,Mexico,17.99288508,-92.9465375,1
+584,Maputo,Maputo,Mozambique,-25.87517019,32.55427612,1
+648,Nampula,Nampula,Mozambique,-15.11905064,39.26239584,1
+580,Mandalay,Mandalay,Myanmar,21.92361867,96.07208878,1
+1004,Yangon,Yangon,Myanmar,16.86997966,96.148838,1
+576,Managua,Managua,Nicaragua,12.1263904,-86.26087379,1
+1,Aba,Aba,Nigeria,5.108868585,7.35086201,1
+3,Abeokuta,Abeokuta,Nigeria,7.162590478,3.344045183,1
+6,Abuja,Abuja,Nigeria,9.061898911,7.433495189,1
+23,Akure,Akure,Nigeria,7.251735516,5.191375359,1
+39,Amaigbo,Amaigbo,Nigeria,5.77616432,7.008981166,1
+107,Bauchi,Bauchi,Nigeria,10.30809876,9.830998469,1
+121,Benin City,Benin City,Nigeria,6.340915228,5.624165135,1
+176,Calabar,Calabar,Nigeria,4.99563793,8.340852293,1
+297,Enugu,Enugu,Nigeria,6.438245599,7.485100975,1
+405,Ibadan,Ibadan,Nigeria,7.393757077,3.917811713,1
+407,Ikorodu,Ikorodu,Nigeria,6.621237963,3.527272576,1
+408,Ilorin,Ilorin,Nigeria,8.480715358,4.559576691,1
+455,Jos,Jos,Nigeria,9.865812783,8.872657951,1
+457,Kaduna,Kaduna,Nigeria,10.51067754,7.427194147,1
+518,Lagos,Lagos,Nigeria,6.567182195,3.297387983,1
+684,Oboama Nguru,Oboama Nguru,Nigeria,5.552050308,7.283026322,1
+688,Okene,Okene,Nigeria,7.549512898,6.209208082,1
+692,Onitsha,Onitsha,Nigeria,6.076530179,6.926669522,1
+700,Oyo,Oyo,Nigeria,7.82883227,3.929658246,1
+728,Port Harcourt,Port Harcourt,Nigeria,4.811395149,7.024894649,1
+952,Uyo,Uyo,Nigeria,5.024856888,7.917982182,1
+979,Warri,Warri,Nigeria,5.55889902,5.762292679,1
+1026,Zaria,Zaria,Nigeria,11.09195479,7.710572646,1
+704,Panama City,Panama City,Panama,9.055191466,-79.49208566,1
+730,Port Moresby,Port Moresby,Papua New Guinea,-9.458371469,147.1784232,1
+48,Angeles [San Fernando],Angeles,Philippines,15.13690331,120.6435016,1
+74,Bacolod,Bacolod,Philippines,10.66167679,122.9574542,1
+174,Cagayan de Oro,Cagayan de Oro,Philippines,8.496738498,124.6666862,1
+188,Cebu City,Cebu City,Philippines,10.30736344,123.8978294,1
+245,Dagupan,Dagupan,Philippines,16.04562497,120.3916337,1
+258,Davao City,Davao City,Philippines,7.129397357,125.6307149,1
+764,Quezon City [Manila],Quezon City,Philippines,14.55191389,121.0191782,1
+485,Kigali,Kigali,Rwanda,-1.947299401,30.089277,1
+318,Freetown,Freetown,Sierra Leone,8.471546576,-13.19424047,1
+859,Singapore,Singapore,Singapore,1.391134069,103.8850508,1
+390,Honiara,Honiara,Solomon Islands,-9.436571158,159.9631013,1
+470,Kapoeta,Kapoeta,South Sudan,4.834586814,33.90910897,1
+955,Valencia [Venezuela],Valencia [Venezuela],Spain,10.15757786,-67.99665151,1
+225,Colombo,Colombo,Sri Lanka,6.929655209,79.94323377,1
+464,Kandy,Kandy,Sri Lanka,7.280355297,80.60592288,1
+707,Paramaribo,Paramaribo,Suriname,5.820099941,-55.18662775,1
+90,Bangkok,Bangkok,Thailand,13.7668898,100.5437099,1
+273,Dili,Dili,Timor-Leste,-8.560606118,125.5613278,1
+541,Lomé,Lom,Togo,6.19074824,1.224744124,1
+731,Port of Spain,Port of Spain,Trinidad and Tobago,10.66660586,-61.48182339,1
+460,Kampala,Kampala,Uganda,0.327337239,32.58416672,1
+59,Arusha,Arusha,Tanzania,-3.384677778,36.69703561,1
+253,Dar es Salaam,Dar es Salaam,Tanzania,-6.821677074,39.20098391,1
+638,Mwanza,Mwanza,Tanzania,-2.53618987,32.92897544,1
+1023,Zanzibar City,Zanzibar City,Tanzania,-6.161685019,39.22843183,1
+391,Honolulu,Honolulu,United States,21.34067769,-157.8934967,1
+611,Miami,Miami,United States,26.17958738,-80.2108039,1
+784,Río Piedras [San Juan],Rio Piedras,United States,18.39900166,-66.09206767,1
+181,Can Tho,Can Tho,Vietnam,10.04586134,105.7531941,1
+241,Da Nang,Da Nang,Vietnam,16.04094152,108.1953831,1
+383,Ho Chi Minh City,Ho Chi Minh City,Vietnam,10.85184777,106.712677,1
+544,Long Xuyen,Long Xuyen,Vietnam,10.32836076,105.4926409,1
+639,My Tho,My Tho,Vietnam,10.33862531,106.3566484,1
+379,Herat,Herat,Afghanistan,34.34573966,62.20932193,2
+456,Kabul,Kabul,Afghanistan,34.52321883,69.15660097,2
+463,Kandahar,Kandahar,Afghanistan,31.61422804,65.72499262,2
+548,Luanda,Luanda,Angola,-8.901886424,13.3028378,2
+606,Mendoza,Mendoza,Argentina,-32.9062643,-68.81413984,2
+1011,Yerevan,Yerevan,Armenia,40.17246613,44.49860052,2
+13,Adelaide,Adelaide,Australia,-34.87754566,138.5958794,2
+78,Baku,Baku,Azerbaijan,40.42025654,49.87263748,2
+577,Manama,Manama,Bahrain,26.18209917,50.56725879,2
+101,Barquisimeto,Barquisimeto,Bolivarian Republic of Venezuela,10.06061543,-69.36010192,2
+586,Maracaibo,Maracaibo,Bolivarian Republic of Venezuela,10.63615291,-71.65385661,2
+222,Cochabamba,Cochabamba,Bolivia,-17.39807799,-66.18052601,2
+325,Gaborone,Gaborone,Botswana,-24.64394498,25.89954308,2
+698,Ouagadougou,Ouagadougou,Burkina Faso,12.36231877,-1.528282384,2
+589,Maroua,Maroua,Cameroon,10.59563662,14.31817635,2
+451,João Teves,Joao Teves,Cape Verde,15.06524845,-23.5874889,2
+662,N'Djamena,N'Djamena,Chad,12.11793261,15.05728294,2
+55,Anyang,Anyang,China,36.110406,114.2829869,2
+94,Baoding,Baoding,China,38.85169521,115.4831142,2
+96,Baotou,Baotou,China,40.6331957,109.8931888,2
+208,Chifeng,Chifeng,China,42.2733351,118.9315497,2
+256,Datong,Datong,China,40.06102437,113.2563659,2
+268,Dezhou,Dezhou,China,37.45148275,116.3178578,2
+386,Hohhot,Hohhot,China,40.81725651,111.6604821,2
+522,Lanzhou,Lanzhou,China,36.07933618,103.7658998,2
+534,Linfen,Linfen,China,36.07775282,111.5211483,2
+848,Shijiazhuang,Shijiazhuang,China,38.06558149,114.514272,2
+888,Taiyuan,Taiyuan,China,37.85134845,112.5452566,2
+927,Tongliao,Tongliao,China,43.61467829,122.244563,2
+951,Ürümqi,Urumqi,China,43.85978989,87.59840634,2
+982,Xianyang,Xianyang,China,34.37791731,108.7840871,2
+994,Xi'an,Xi'an,China,34.25887419,108.917579,2
+998,Xining,Xining,China,36.62465457,101.7744224,2
+1014,Yinchuan,Yinchuan,China,38.48602258,106.234555,2
+1028,Zhangjiakou,Zhangjiakou,China,40.79065671,114.883696,2
+102,Barranquilla,Barranquilla,Colombia,10.94434897,-74.7965547,2
+671,Nicosia,Nicosia,Cyprus,35.1609378,33.34664699,2
+277,Djibouti,Djibouti,Djibouti,11.57867955,43.14287021,2
+25,Al Ismailiya,Al Ismailiya,Egypt,30.58466918,32.2475588,2
+30,Alexandria,Alexandria,Egypt,31.07134156,29.80143483,2
+35,Al-Minya,Al-Minya,Egypt,28.09509519,30.75370865,2
+38,Al-Zaqaziq,Al-Zaqaziq,Egypt,30.59669473,31.49479544,2
+46,An Nazlah,An Nazlah,Egypt,30.60371553,31.65936263,2
+65,Asyut,Asyut,Egypt,27.17739028,31.20326129,2
+92,Banha,Banha,Egypt,30.49803656,31.20537698,2
+175,Cairo,Cairo,Egypt,30.05929287,31.26071834,2
+250,Damietta,Damietta,Egypt,31.42864526,31.81283662,2
+296,El Mahalla El Kubra,El Mahalla El Kubra,Egypt,30.965679,31.18902434,2
+306,Faiyum,Faiyum,Egypt,29.39309613,30.78753833,2
+330,Gaza,Gaza,Egypt,31.4097802,34.37342834,2
+337,Girga,Girga,Egypt,26.40398312,31.82030561,2
+557,Luxor,Luxor,Egypt,25.71035649,32.6512493,2
+582,Mansoura,Mansoura,Egypt,31.05069077,31.39354616,2
+732,Port Said,Port Said,Egypt,31.24650634,32.29529003,2
+865,Sohag,Sohag,Egypt,26.56737449,31.69015357,2
+900,Tanta,Tanta,Egypt,30.78764438,31.00749349,2
+62,Asmara,Asmara,Eritrea,15.32867181,38.91976486,2
+594,Massawa,Massawa,Eritrea,15.61987773,39.46342817,2
+591,Marseille,Marseille,France,43.30069617,5.407161707,2
+912,Thessaloniki,Thessaloniki,Greece,40.64205734,22.93707309,2
+16,Agra,Agra,India,27.16906048,77.99972883,2
+18,Ahmadnagar,Ahmadnagar,India,19.11227917,74.73027309,2
+19,Ahmedabad,Ahmedabad,India,23.03108938,72.5832061,2
+21,Ajmer,Ajmer,India,26.46286606,74.64475898,2
+22,Akola,Akola,India,20.69811061,77.02438249,2
+37,Alwar,Alwar,India,27.54933893,76.64544023,2
+44,Amritsar,Amritsar,India,31.64234507,74.87686296,2
+71,Aurangabad,Aurangabad,India,19.87402085,75.33850423,2
+80,Ballari,Ballari,India,15.14253617,76.91298295,2
+126,Bhavnagar,Bhavnagar,India,21.75796288,72.13880202,2
+132,Bikaner,Bikaner,India,28.02269517,73.31943041,2
+223,Coimbatore,Coimbatore,India,10.99276061,76.99417732,2
+257,Davanagere,Davanagere,India,14.45697737,75.92423133,2
+260,Deesa,Deesa,India,24.25444486,72.18556667,2
+262,Delhi [New Delhi],Delhi,India,28.62877443,77.20326172,2
+272,Dhule,Dhule,India,20.89443023,74.76837921,2
+275,Dindigul,Dindigul,India,10.36505862,77.97812609,2
+299,Erode,Erode,India,11.37945824,77.71085389,2
+301,Etah,Etah,India,27.56433339,78.65820455,2
+313,Firozabad,Firozabad,India,27.16461986,78.40049552,2
+403,Hyberdabad,Hyderabad [India],India,17.41141,78.48478,2
+421,Jaipur,Jaipur,India,26.8961066,75.78329542,2
+423,Jalandhar,Jalandhar,India,31.32979599,75.57490447,2
+424,Jalgaon,Jalgaon,India,21.0004365,75.55955872,2
+428,Jamnagar,Jamnagar,India,22.46272135,70.06077881,2
+452,Jodhpur,Jodhpur,India,26.27026189,73.02141992,2
+499,Kota,Kota,India,25.17311379,75.85662654,2
+575,Malegaon,Malegaon,India,20.5579,74.5089,2
+641,Mysuru,Mysuru,India,12.31789546,76.6366804,2
+705,Panipat,Panipat,India,29.393045,76.97726169,2
+771,Rajkot,Rajkot,India,22.28814015,70.79754339,2
+816,Sangli,Sangli,India,16.85660428,74.60409751,2
+855,Sikar,Sikar,India,27.60792872,75.15350432,2
+867,Solapur,Solapur,India,17.65555096,75.92080282,2
+922,Tiruppur,Tiruppur,India,11.11651191,77.34212829,2
+944,Udaipur,Udaipur,India,24.58767964,73.71383089,2
+964,Vijayapura,Vijayapura,India,16.83446106,75.72095051,2
+10,Ad Diwaniyah,Ad Diwaniyah,Iraq,31.99086633,44.92013364,2
+40,Amarah,Amarah,Iraq,31.83711363,47.14519485,2
+67,At Tarimiyah,At Tarimiyah,Iraq,33.64083734,44.38409996,2
+75,Baghdad,Baghdad,Iraq,33.3214056,44.38012986,2
+103,Basra,Basra,Iraq,30.52401294,47.79332054,2
+381,Hindiya,Hindiya,Iraq,32.53623256,44.27757982,2
+472,Karbala,Karbala,Iraq,32.61625181,44.03156481,2
+488,Kirkuk,Kirkuk,Iraq,35.44204278,44.38589659,2
+646,Najaf,Najaf,Iraq,32.02340046,44.34895644,2
+659,Nasiriyah,Nasiriyah,Iraq,31.0441106,46.25398515,2
+20,Ahwaz,Ahwaz,Iran,31.3097732,48.6748169,2
+57,Ardabil,Ardabil,Iran,38.24672844,48.29012248,2
+362,Hamedan,Hamedan,Iran,34.80929204,48.51726224,2
+414,Isfahan,Isfahan,Iran,32.6683339,51.64550272,2
+479,Kerman,Kerman,Iran,30.2783602,57.05963172,2
+593,Mashhad,Mashhad,Iran,36.32352549,59.57601573,2
+759,Qom,Qom,Iran,34.63446497,50.87164745,2
+849,Shiraz,Shiraz,Iran,29.61545785,52.5224442,2
+883,Tabriz,Tabriz,Iran,38.05088581,46.26534232,2
+906,Tehran,Tehran,Iran,35.69846215,51.22769995,2
+950,Urmia,Urmia,Iran,37.55163848,45.06428632,2
+1009,Yazd,Yazd,Iran,31.88020111,54.34967143,2
+1022,Zahedan,Zahedan,Iran,29.49465224,60.85167429,2
+42,Amman,Amman,Jordan,31.97680056,35.9471688,2
+681,Nur-Sultan,Nur-Sultan,Kazakhstan,51.16382592,71.444687,2
+515,Kuwait City,Kuwait City,Kuwait,29.25631694,48.00970147,2
+137,Bishkek,Bishkek,Kyrgyzstan,42.87735429,74.59108255,2
+932,Tripoli,Tripoli,Libya,32.84313985,13.19896245,2
+284,Drachevo,Drachevo,Macedonia,41.93907025,21.51947496,2
+510,Kumanovo,Kumanovo,Macedonia,42.13836487,21.72422243,2
+744,Prilep,Prilep,Macedonia,41.348548,21.55199996,2
+863,Skopje,Skopje,Macedonia,42.00571799,21.42962887,2
+676,Nouakchott,Nouakchott,Mauritania,18.08009439,-15.96348319,2
+17,Aguascalientes,Aguascalientes,Mexico,21.89441747,-102.2899114,2
+209,Chihuahua,Chihuahua,Mexico,28.65844574,-106.0883967,2
+219,Ciudad Juárez,Ciudad Jumrez,Mexico,31.70384714,-106.3905995,2
+238,Culiacán,Culiacln,Mexico,24.79661078,-107.4071827,2
+289,Durango,Durango,Mexico,24.02823065,-104.6492757,2
+380,Hermosillo,Hermosillo,Mexico,29.08551907,-110.9745991,2
+526,León,Leon,Mexico,21.1239562,-101.6665674,2
+609,Mexicali,Mexicali,Mexico,32.62543862,-115.4476576,2
+624,Monterrey,Monterrey,Mexico,25.71167126,-100.2783275,2
+679,Nuevo Laredo,Nuevo Laredo,Mexico,27.50072964,-99.51214633,2
+683,Oaxaca,Oaxaca,Mexico,17.06521504,-96.73268271,2
+762,Querétaro,Querrtaro,Mexico,20.60134744,-100.4139457,2
+780,Reynosa,Reynosa,Mexico,26.04441546,-98.30413095,2
+800,Saltillo,Saltillo,Mexico,25.42337096,-100.9796813,2
+810,San Luis Potos?¡,San Luis Potosi,Mexico,22.15148295,-100.9591934,2
+929,Torreon,Torreon,Mexico,25.55055601,-103.4327176,2
+117,Bender,Bender,Moldova,29.46201,46.822755,2
+947,Ulaanbaatar,Ulaanbaatar,Mongolia,47.91950419,106.8729635,2
+14,Agadir,Agadir,Morocco,30.38567798,-9.541463005,2
+590,Marrakesh,Marrakesh,Morocco,31.63953063,-7.987747772,2
+699,Oujda,Oujda,Morocco,34.68176584,-1.907964908,2
+986,Windhoek,Windhoek,Namibia,-22.54190429,17.05309296,2
+669,Niamey,Niamey,Niger,13.52344281,2.111580725,2
+884,Tahoua,Tahoua,Niger,14.88822962,5.26384058,2
+1039,Zinder,Zinder,Niger,13.80716763,8.98400938,2
+466,Kano,Kano,Nigeria,11.97602191,8.519616119,2
+568,Maiduguri,Maiduguri,Nigeria,11.83354615,13.15378347,2
+866,Sokoto,Sokoto,Nigeria,13.04228404,5.239694734,2
+833,Seeb,Seeb,Oman,23.62724211,58.22286952,2
+305,Faisalabad,Faisalabad,Pakistan,31.41397392,73.1111297,2
+351,Gujranwala,Gujranwala,Pakistan,32.13245677,74.18499706,2
+404,Hyberdabad,Hyderabad [Pakistan],Pakistan,25.381933,68.37305,2
+471,Karachi,Karachi,Pakistan,24.89930801,67.07801037,2
+519,Lahore,Lahore,Pakistan,31.51786508,74.25264996,2
+588,Mardan,Mardan,Pakistan,34.1866258,72.07729303,2
+633,Multan,Multan,Pakistan,30.18241638,71.4657791,2
+716,Peshawar,Peshawar,Pakistan,33.99942046,71.53737672,2
+763,Quetta,Quetta,Pakistan,30.18174027,66.99287504,2
+830,Sargodha,Sargodha,Pakistan,32.06557582,72.6774595,2
+58,Arequipa,Arequipa,Peru,-16.39533264,-71.53812755,2
+207,Chiclayo,Chiclayo,Peru,-6.773100997,-79.84370658,2
+533,Lima,Lima,Peru,-12.02606763,-77.01529684,2
+933,Trujillo,Trujillo,Peru,-8.094693943,-79.03342155,2
+279,Doha,Doha,Qatar,25.28137914,51.46691629,2
+63,Astrakhan,Astrakhan,Russia,46.35201273,48.02518429,2
+571,Makhachkala,Makhachkala,Russia,42.96413959,47.47874243,2
+973,Volgograd,Volgograd,Russia,48.72434291,44.50557722,2
+66,At Taif,At Taif,Saudi Arabia,21.28413084,40.42399871,2
+251,Dammam,Dammam,Saudi Arabia,26.46415153,50.05867644,2
+385,Hofuf,Hofuf,Saudi Arabia,25.40753172,49.62587347,2
+432,Jeddah,Jeddah,Saudi Arabia,21.52003575,39.21397624,2
+599,Mecca,Mecca,Saudi Arabia,21.41376321,39.83104089,2
+602,Medina,Medina,Saudi Arabia,24.45961838,39.59102661,2
+785,Riyadh,Riyadh,Saudi Arabia,24.68844112,46.73541853,2
+246,Dakar,Dakar,Senegal,14.74292116,-17.3794757,2
+930,Touba,Touba,Senegal,14.85103907,-15.88803444,2
+372,Hargeisa,Hargeisa,Somalia,9.558937719,44.0646944,2
+618,Mogadishu,Mogadishu,Somalia,2.05254057,45.33159728,2
+727,Port Elizabeth,Port Elizabeth,South Africa,-33.92028747,25.55577491,2
+98,Barcelona [Venezuela],Barcelona [Venezuela],Spain,10.1466621,-64.67693106,2
+564,Madrid,Madrid,Spain,40.40404665,-3.708166287,2
+1025,Zaragoza,Zaragoza,Spain,41.6528066,-0.891803969,2
+9,Ad Da'ein,Ad Da'ein,Sudan,11.46282258,26.13432264,2
+26,Al Managil,Al Managil,Sudan,14.23963012,32.99790151,2
+31,Al-Fashir,Al-Fashir,Sudan,13.62106965,25.35298738,2
+36,Al-Ubayyid,Al-Ubayyid,Sudan,13.18307176,30.22180419,2
+170,Buram,Buram,Sudan,10.85336455,25.15905251,2
+478,Kebkabiya,Kebkabiya,Sudan,13.64734151,24.08945478,2
+483,Khartoum,Khartoum,Sudan,15.61807611,32.51218853,2
+682,Nyala,Nyala,Sudan,12.05435479,24.8807785,2
+733,Port Sudan,Port Sudan,Sudan,19.61454891,37.20510628,2
+975,Wad Madan,Wad Madan,Sudan,14.38689741,33.53354728,2
+29,Aleppo,Aleppo,Syrian Arab Republic,36.20427692,37.14624295,2
+249,Damascus,Damascus,Syrian Arab Republic,33.50072543,36.31323124,2
+292,Dushanbe,Dushanbe,Tajikistan,38.54277227,68.77693072,2
+839,Sfax,Sfax,Tunisia,34.76501636,10.74346414,2
+49,Ankara,Ankara,Turkey,39.95213112,32.84670683,2
+300,Eskisehir,Eskisehir,Turkey,39.76471718,30.54439833,2
+476,Kayseri,Kayseri,Turkey,38.73952138,35.52441961,2
+498,Konya,Konya,Turkey,37.86949398,32.493574,2
+858,Sincan,Sincan,Turkey,39.94649505,32.6107513,2
+61,Ashgabat,Ashgabat,Turkmenistan,37.93541694,58.39178673,2
+686,Odesa,Odesa,Ukraine,46.4474816,30.7144524,2
+5,Abu Dhabi,Abu Dhabi,United Arab Emirates,24.42015132,54.43606686,2
+24,Al Ain,Al Ain,United Arab Emirates,24.21233088,55.72145414,2
+286,Dubai,Dubai,United Arab Emirates,25.22126099,55.3301766,2
+28,Albuquerque,Albuquerque,United States,35.12903763,-106.629162,2
+77,Bakersfield,Bakersfield,United States,35.36381044,-119.0475354,2
+265,Denver,Denver,United States,39.72837393,-104.9803877,2
+319,Fresno,Fresno,United States,36.78757662,-119.7705095,2
+523,Las Vegas,Las Vegas,United States,36.14443328,-115.1590734,2
+719,Phoenix,Phoenix,United States,33.47756006,-112.0005369,2
+798,Salt Lake City,Salt Lake City,United States,40.64504711,-111.9172804,2
+917,Tijuana,Tijuana,United States,32.82158244,-117.1106947,2
+935,Tucson,Tucson,United States,32.24353876,-110.9313916,2
+647,Namangan,Namangan,Uzbekistan,40.99228147,71.68001288,2
+754,Qarshi,Qarshi,Uzbekistan,38.8346334,65.76399031,2
+804,Samarkand,Samarkand,Uzbekistan,39.64565628,66.95878291,2
+384,Hodeidah,Hodeidah,Yemen,14.79990492,42.96279643,2
+814,Sana'a,Sana'a,Yemen,15.36848199,44.20505061,2
+890,Ta'izz,Ta'izz,Yemen,13.58179798,44.01725801,2
+168,Bulawayo,Bulawayo,Zimbabwe,-20.15502313,28.53201223,2
+918,Tirana,Tirana,Albania,41.34426373,19.79836162,3
+32,Algiers,Algiers,Algeria,36.72933862,3.131149093,3
+140,Blida,Blida,Algeria,36.49951091,2.840009586,3
+231,Constantine,Constantine,Algeria,36.36951547,6.617895958,3
+693,Oran,Oran,Algeria,35.68315486,-0.606878268,3
+397,Huambo,Huambo,Angola,-12.77040724,15.74456172,3
+549,Lubango,Lubango,Angola,-14.91413133,13.51083806,3
+162,Buenos Aires,Buenos Aires,Argentina,-34.65058344,-58.53886524,3
+233,Cordoba,Cordoba,Argentina,-31.39589028,-64.20712883,3
+517,La Plata,La Plata,Argentina,-34.91047119,-57.96212292,3
+585,Mar del Plata,Mar del Plata,Argentina,-38.00776575,-57.57362105,3
+788,Rosario,Rosario,Argentina,-32.91967652,-60.69623646,3
+799,Salta,Salta,Argentina,-24.80729766,-65.41546801,3
+811,San Miguel de Tucum?ín,San Miguel de Tucumhn,Argentina,-26.82429766,-65.21389337,3
+155,Brisbane,Brisbane,Australia,-27.49018691,153.0489651,3
+605,Melbourne,Melbourne,Australia,-37.85556174,145.0747051,3
+715,Perth,Perth,Australia,-31.94517038,115.8451125,3
+881,Sydney,Sydney,Australia,-33.85123993,151.0668102,3
+199,Chapainawabganj,Chapainawabganj,Bangladesh,24.61403981,88.23778096,3
+775,Rangpur,Rangpur,Bangladesh,25.73537817,89.29362455,3
+860,Sirajganj,Sirajganj,Bangladesh,24.41254333,89.64289183,3
+54,Antwerp,Antwerp,Belgium,51.21633713,4.396139109,3
+157,Brussels,Brussels,Belgium,50.84995677,4.370280821,3
+738,Porto-Novo,Porto-Novo,Benin,-30.06555449,-51.14728293,3
+191,Chang bangdu,Chang bangdu,Bhutan,27.44616276,89.66174387,3
+97,Barcelona [Spain],Barcelona [Spain],Bolivarian Republic of Venezuela,41.40643704,2.157110723,3
+179,Campinas,Campinas,Brazil,-22.91189031,-47.11250757,3
+239,Curitiba,Curitiba,Brazil,-25.44276336,-49.26146328,3
+314,Florianópolis,Florianopolis,Brazil,-27.59519191,-48.61715306,3
+543,Londrina,Londrina,Brazil,-23.30688224,-51.17438621,3
+677,Novo Hamburgo,Novo Hamburgo,Brazil,-29.70793422,-51.12533512,3
+826,São Paulo,Sao Paulo,Brazil,-23.57275267,-46.59943039,3
+868,Sorocaba,Sorocaba,Brazil,-23.49704058,-47.46857462,3
+957,Vancouver,Vancouver,Canada,49.2292552,-122.9851417,3
+229,Concepción,Concepcion,Chile,-36.79422664,-73.08442863,3
+819,Santiago,Santiago,Chile,-33.47750516,-70.65601838,3
+969,Viña del Mar [Valparaíso],Vina del Mar,Chile,-33.02103693,-71.51314359,3
+50,Anqing,Anqing,China,30.53175154,117.0633122,3
+95,Baoji,Baoji,China,34.36498756,107.2160163,3
+109,Beihai,Beihai,China,21.48028022,109.1523519,3
+119,Bengbu,Bengbu,China,32.93686484,117.3355687,3
+193,Changde,Changde,China,29.03575119,111.6833856,3
+194,Changsha,Changsha,China,28.18405712,113.0043732,3
+195,Changshu,Changshu,China,31.65635876,120.768318,3
+198,Changzhou,Changzhou,China,31.74523466,119.9829082,3
+202,Chengdu,Chengdu,China,30.68884238,104.0344387,3
+212,Chongqing,Chongqing,China,29.55380994,106.5254798,3
+220,Cixi,Cixi,China,30.14621392,121.2257106,3
+259,Dazhou,Dazhou,China,31.20551145,107.4848084,3
+308,Fancheng,Fancheng,China,32.07168759,112.1350119,3
+323,Fuyang,Fuyang,China,32.89900374,115.8159597,3
+324,Fuzhou,Fuzhou,China,26.06082327,119.2927415,3
+326,Ganzhou,Ganzhou,China,25.85436462,114.9388353,3
+346,Guangzhou,Guangzhou,China,22.63353449,113.997383,3
+349,Guilin,Guilin,China,25.285441,110.2632499,3
+350,Guiyang,Guiyang,China,26.59878939,106.6820871,3
+366,Hangzhou,Hangzhou,China,30.22283817,120.3168158,3
+375,Hefei,Hefei,China,31.83675832,117.2793862,3
+378,Hengyang,Hengyang,China,26.90622396,112.5870657,3
+389,Hong Kong,Hong Kong,China,22.34181845,114.1182458,3
+393,Hsinchu,Hsinchu,China,24.82332931,120.9927758,3
+394,Huadu Qu,Huadu,China,23.41578598,113.2206656,3
+395,Huai'an,Huai'an,China,33.59803971,119.0452208,3
+396,Huaibei,Huaibei,China,33.93619679,116.7901696,3
+399,Huangshi,Huangshi,China,30.17116628,115.0104521,3
+400,Huiyang Qu,Huiyang,China,22.7952681,114.455477,3
+401,Huizhou,Huizhou,China,23.08774383,114.4076663,3
+439,Jiangyin,Jiangyin,China,31.90205286,120.2438102,3
+441,Jiaxing,Jiaxing,China,30.77125901,120.7734351,3
+442,Jieyang,Jieyang,China,23.42940623,116.4624775,3
+445,Jingzhou,Jingzhou,China,30.33227777,112.2260884,3
+446,Jinhua,Jinhua,China,29.09805191,119.6289869,3
+449,Jiujiang,Jiujiang,China,29.70506968,115.9874007,3
+513,Kunming,Kunming,China,25.034796,102.7312274,3
+537,Liuzhou,Liuzhou,China,24.31289576,109.3884829,3
+545,Longgang,Longgang,China,22.7211257,114.2481198,3
+553,Luohe,Luohe,China,33.57478501,114.0297581,3
+554,Luoyang,Luoyang,China,34.66925728,112.4321052,3
+558,Luzhou,Luzhou,China,28.92299308,105.4544878,3
+561,Ma'anshan,Ma'anshan,China,31.69641844,118.5036931,3
+583,Maoming,Maoming,China,21.66741199,110.8982114,3
+612,Mianyang,Mianyang,China,31.47239445,104.7192136,3
+649,Nanchang,Nanchang,China,28.68782153,115.8958718,3
+650,Nanchong,Nanchong,China,30.79106424,106.0834621,3
+652,Nanjing,Nanjing,China,32.01271314,118.8093005,3
+653,Nanning,Nanning,China,22.82853003,108.3059681,3
+655,Nantong,Nantong,China,32.04110806,120.8938066,3
+656,Nanyang,Nanyang,China,32.99499428,112.536593,3
+666,New Taipei [Taipei],New Taipei,China,25.00684104,121.4128047,3
+672,Ningbo,Ningbo,China,29.86731752,121.5676503,3
+721,Pingdingshan,Pingdingshan,China,33.7363497,113.3014901,3
+722,Pingxiang,Pingxiang,China,27.63604572,113.8206706,3
+748,Pukou,Pukou,China,32.10571181,118.6730126,3
+751,Putian,Putian,China,25.42720305,119.0584073,3
+756,Qingyuan,Qingyuan,China,23.71279058,113.0322391,3
+760,Quanzhou,Quanzhou,China,24.76624412,118.55558,3
+840,Sha Tin,Sha Tin,China,22.44459825,114.1865318,3
+843,Shanghai,Shanghai,China,31.19249624,121.4271278,3
+845,Shaoyang,Shaoyang,China,27.23785574,111.4846456,3
+850,Shiyan,Shiyan,China,32.64454461,110.7501822,3
+879,Suzhou,Suzhou,China,31.41580071,120.5734952,3
+886,Taichung,Taichung,China,24.16871389,120.6697872,3
+889,Taizhou,Taizhou,China,28.57637539,121.3808121,3
+915,Tianjia‘an,Tianjia an,China,32.6256818,116.9438673,3
+985,Wenzhou,Wenzhou,China,27.80514182,120.6876659,3
+989,Wuhan,Wuhan,China,30.55372322,114.2947295,3
+990,Wuhu,Wuhu,China,31.36102511,118.3857218,3
+993,Xiamen,Xiamen,China,24.56953434,118.0671108,3
+995,Xiangtan,Xiangtan,China,27.85818747,112.9235529,3
+996,Xiaogan,Xiaogan,China,30.93583691,113.923858,3
+1000,Xuchang,Xuchang,China,34.03598358,113.8210182,3
+1003,Yancheng,Yancheng,China,33.37898584,120.1444938,3
+1005,Yangzhou,Yangzhou,China,32.39073537,119.4158892,3
+1012,Yibin,Yibin,China,28.76389817,104.6035265,3
+1013,Yichang,Yichang,China,30.70945756,111.3199325,3
+1015,Yiwu,Yiwu,China,29.29806314,120.1062853,3
+1016,Yiyang,Yiyang,China,28.58545432,112.3479026,3
+1018,Yueqing,Yueqing,China,28.09070941,120.9425064,3
+1019,Yueyang,Yueyang,China,29.37888704,113.1328619,3
+1020,Yulin,Yulin,China,22.63576715,110.1491652,3
+1027,Zhangjiagang,Zhangjiagang,China,31.87389324,120.4757617,3
+1029,Zhangzhou,Zhangzhou,China,24.51211454,117.6705601,3
+1030,Zhanjiang,Zhanjiang,China,21.24411133,110.3770748,3
+1031,Zhaoqing,Zhaoqing,China,23.06038891,112.4624881,3
+1032,Zhengzhou,Zhengzhou,China,34.76223689,113.6596172,3
+1033,Zhenjiang,Zhenjiang,China,32.19908316,119.4592766,3
+1034,Zhongshan,Zhongshan,China,22.52370781,113.385307,3
+1035,Zhuhai,Zhuhai,China,22.29462613,113.5063263,3
+1036,Zhuzhou,Zhuzhou,China,27.84902712,113.1485764,3
+1038,Zigong,Zigong,China,29.35590709,104.7540699,3
+1040,Zunyi,Zunyi,China,27.69127404,106.933781,3
+142,Bogota,Bogota,Colombia,4.650884533,-74.12380412,3
+808,San Jose [Costa Rica],San Jose [Costa Rica],Costa Rica,37.32711544,-121.9332989,3
+1021,Zagreb,Zagreb,Croatia,45.80148941,15.98818068,3
+550,Lubumbashi,Lubumbashi,Democratic Republic of the Congo,-11.65666679,27.48504607,3
+765,Quito,Quito,Ecuador,-0.219360764,-78.49159445,3
+12,Addis Ababa,Addis Ababa,Ethiopia,8.992593826,38.75908952,3
+145,Bordeaux,Bordeaux,France,44.83713582,-0.595450807,3
+531,Lille,Lille,France,50.66252749,3.111005531,3
+560,Lyon,Lyon,France,45.75117226,4.860845174,3
+670,Nice,Nice,France,43.64599973,7.143746234,3
+708,Paris,Paris,France,48.83990462,2.322010194,3
+931,Toulouse,Toulouse,France,43.60921593,1.423000223,3
+622,Monaco,Monaco,Monaco,43.73763291,7.420938662,3
+903,Tbilisi,Tbilisi,Georgia,41.71201949,44.82634197,3
+224,Cologne,Cologne,Germany,50.93296068,6.97971731,3
+282,Dortmund,Dortmund,Germany,51.48882434,7.068158741,3
+293,Dusseldorf,Dusseldorf,Germany,51.22073602,6.774369155,3
+317,Frankfurt am Main,Frankfurt am Main,Germany,50.1206306,8.681664237,3
+361,Hamburg,Hamburg,Germany,53.57410427,9.993622262,3
+368,Hanover,Hanover,Germany,52.38538248,9.749231126,3
+872,Stuttgart,Stuttgart,Germany,48.80670604,9.202667574,3
+991,Wuppertal,Wuppertal,Germany,51.22095504,7.096836493,3
+68,Athens,Athens,Greece,37.9999031,23.74268788,3
+33,Aligarh,Aligarh,India,27.90366611,78.08159667,3
+41,Ambala,Ambala,India,30.36293712,76.81495411,3
+73,Azamgarh,Azamgarh,India,26.05741914,83.18074326,3
+76,Bahraich,Bahraich,India,27.5819141,81.61379142,3
+81,Ballia,Ballia,India,25.77393872,84.17299082,3
+82,Balrampur,Balrampur,India,27.41765306,82.17279514,3
+86,Banda,Banda,India,25.48199754,80.33971103,3
+99,Bareilly,Bareilly,India,28.38445351,79.4171516,3
+104,Basti,Basti,India,26.80447362,82.74845757,3
+108,Begusarai,Begusarai,India,25.42988965,86.06190419,3
+125,Bhadohi,Bhadohi,India,25.38779792,82.58366246,3
+127,Bhind,Bhind,India,26.56195687,78.78553439,3
+128,Bhinga,Bhinga,India,27.70020103,81.93378295,3
+131,Bihar Sharif,Bihar Sharif,India,25.19887279,85.52076173,3
+161,Budaun,Budaun,India,28.03343703,79.13073658,3
+167,Bulandshahr,Bulandshahr,India,28.4046037,77.84113133,3
+190,Chandigarh,Chandigarh,India,30.7111596,76.7605466,3
+205,Chhapra,Chhapra,India,25.78335835,84.74070705,3
+254,Darbhanga,Darbhanga,India,26.14898868,85.90405389,3
+255,Darjeeling,Darjeeling,India,27.04246652,88.25608606,3
+261,Dehradun,Dehradun,India,30.31060039,78.03875131,3
+266,Deoria,Deoria,India,26.5026097,83.7816497,3
+274,Dimapur,Dimapur,India,25.8871605,93.741763,3
+302,Etawah,Etawah,India,26.79823919,79.00821031,3
+307,Faizabad,Faizabad,India,26.77031727,82.13750374,3
+309,Farrukhabad,Farrukhabad,India,27.38108948,79.60539066,3
+310,Fatehpur,Fatehpur,India,25.92937893,80.81607981,3
+329,Gaya,Gaya,India,24.79709356,85.01223066,3
+336,Ghazipur,Ghazipur,India,25.5853719,83.56249831,3
+342,Gonda,Gonda,India,27.1381103,81.96232773,3
+343,Gorakhpur,Gorakhpur,India,26.7526177,83.34182775,3
+355,Guwahati,Guwahati,India,26.15120742,91.75521205,3
+356,Gwalior,Gwalior,India,26.22445835,78.17529041,3
+365,Handia,Handia,India,25.33888303,82.27043741,3
+371,Hardoi,Hardoi,India,27.39233521,80.1378138,3
+373,Haridwar,Haridwar,India,29.93946427,78.1012138,3
+409,Imphal,Imphal,India,24.75331317,93.93392608,3
+425,Jalpaiguri,Jalpaiguri,India,26.53516613,88.7021984,3
+427,Jammu,Jammu,India,32.70204015,74.8661761,3
+430,Jaunpur,Jaunpur,India,25.74944901,82.68661675,3
+437,Jhansi,Jhansi,India,25.45087471,78.56309856,3
+467,Kanpur,Kanpur,India,26.45445053,80.30918546,3
+474,Katihar,Katihar,India,25.54334629,87.56714252,3
+508,Kuchai Kot,Kuchai Kot,India,26.65444699,84.30766688,3
+514,Kushinagar,Kushinagar,India,26.7381816,83.88170029,3
+520,Lakhimpur,Lakhimpur,India,27.95093065,80.78150056,3
+551,Lucknow,Lucknow,India,26.86128817,80.97615776,3
+552,Ludhiana,Ludhiana,India,30.89583327,75.89225193,3
+569,Mainpuri,Mainpuri,India,27.22705055,79.02516933,3
+597,Mau,Mau,India,25.94391589,83.56076777,3
+603,Meerut,Meerut,India,28.98586378,77.69905225,3
+617,Mirzapur,Mirzapur,India,25.14949682,82.55867933,3
+627,Moradabad,Moradabad,India,28.82746514,78.74343736,3
+636,Muzaffarnagar,Muzaffarnagar,India,29.46881258,77.711755,3
+637,Muzaffarpur,Muzaffarpur,India,26.12355211,85.36676316,3
+654,Nanpara,Nanpara,India,27.85658432,81.50654523,3
+685,Obra,Obra,India,24.45753218,83.01802971,3
+710,Patiala,Patiala,India,30.3456016,76.39590234,3
+711,Patna,Patna,India,25.59973435,85.13338152,3
+720,Pilibhit,Pilibhit,India,28.62326789,79.80966924,3
+741,Pratapgarh,Pratapgarh,India,25.92649153,81.99763358,3
+742,Prayagraj,Prayagraj,India,25.43842349,81.83780545,3
+767,Rae Bareli,Rae Bareli,India,26.23370628,81.25302579,3
+768,Raiganj,Raiganj,India,25.62259315,88.12960562,3
+773,Rampur,Rampur,India,28.79255822,79.03047962,3
+774,Ranchi,Ranchi,India,23.3627202,85.32733959,3
+795,Saharanpur,Saharanpur,India,29.96308908,77.56072713,3
+805,Sambhal,Sambhal,India,28.57465469,78.56985293,3
+815,Sandila,Sandila,India,27.06805595,80.50290227,3
+817,Sansarpur,Sansarpur,India,28.07743845,80.47567381,3
+831,Satna,Satna,India,24.57705885,80.83382425,3
+841,Shahabad,Shahabad,India,27.64807242,79.93913011,3
+842,Shahjahanpur,Shahjahanpur,India,27.85725215,79.9113641,3
+857,Siliguri,Siliguri,India,26.71422079,88.40996036,3
+861,Sitamarhi,Sitamarhi,India,26.58247314,85.51086184,3
+862,Sitapur,Sitapur,India,27.56193995,80.68981646,3
+869,Srinagar,Srinagar,India,34.09819585,74.81931643,3
+874,Sultanpur,Sultanpur,India,26.25293047,82.06833047,3
+911,Thanagaon,Thanagaon,India,27.42230999,81.26000569,3
+936,Tulsipur,Tulsipur,India,27.53251078,82.40945742,3
+943,Uchkagaon,Uchkagaon,India,26.37760849,84.16391931,3
+949,Unnao,Unnao,India,26.52907036,80.47638681,3
+958,Varanasi,Varanasi,India,25.29533686,83.00568721,3
+977,Waidhan,Waidhan,India,24.11458432,82.66730271,3
+1002,Yamunanagar,Yamunanagar,India,30.13390128,77.29086085,3
+288,Duhok,Duhok,Iraq,36.85769385,42.9377864,3
+298,Erbil,Erbil,Iraq,36.17751579,44.03658465,3
+631,Mosul,Mosul,Iraq,36.3561101,43.10275123,3
+873,Sulaymaniyah,Sulaymaniyah,Iraq,35.56129689,45.42170215,3
+287,Dublin,Dublin,Ireland,53.32733117,-6.261728188,3
+480,Kermanshah,Kermanshah,Iran,34.34044767,47.08813396,3
+776,Rasht,Rasht,Iran,37.28184677,49.58685848,3
+907,Tel Aviv,Tel Aviv,Israel,32.06616267,34.84843996,3
+333,Genoa,Genoa,Italy,44.4184188,8.917256522,3
+613,Milan,Milan,Italy,45.54463407,9.1899412,3
+657,Naples,Naples,Italy,40.86518786,14.33619261,3
+703,Palermo,Palermo,Italy,38.13624749,13.33786802,3
+787,Rome,Rome,Italy,41.89715399,12.53231298,3
+939,Turin,Turin,Italy,45.07125588,7.650765077,3
+320,Fukuoka,Fukuoka,Japan,33.60202361,130.4282875,3
+360,Hamamatsu,Hamamatsu,Japan,34.73628052,137.7285653,3
+382,Hiroshima,Hiroshima,Japan,34.40983978,132.4508307,3
+462,Kanazawa,Kanazawa,Japan,36.57483534,136.62909,3
+491,Kitakyushu,Kitakyushu,Japan,33.88835279,130.8576725,3
+509,Kumamoto,Kumamoto,Japan,32.79474497,130.7110315,3
+629,Moriyama [Otsu],Moriyama,Japan,35.03968179,135.9364277,3
+642,Nagoya,Nagoya,Japan,35.1212196,136.8713458,3
+644,Naha,Naha,Japan,26.25652695,127.7474003,3
+687,Okayama,Okayama,Japan,34.59904266,133.8524007,3
+695,Osaka [Kyoto],Osaka,Japan,34.70012803,135.4198332,3
+835,Sendai,Sendai,Japan,38.27557021,140.9104717,3
+852,Shizuoka,Shizuoka,Japan,34.99284736,138.432997,3
+891,Takasaki [Maebashi],Takasaki,Japan,36.33286272,139.2150134,3
+923,Tokyo,Tokyo,Japan,35.68148131,139.649416,3
+413,Irbid,Irbid,Jordan,32.55102361,35.85749412,3
+645,Nairobi,Nairobi,Kenya,-1.26326509,36.82441076,3
+111,Beirut,Beirut,Lebanon,33.91206711,35.57206528,3
+592,Maseru,Maseru,Lesotho,-29.32409267,27.5224983,3
+556,Luxembourg,Luxembourg,Luxembourg,49.61432293,6.12223011,3
+139,Bitola,Bitola,Macedonia,41.02990379,21.32914703,3
+344,Gostivar,Gostivar,Macedonia,41.80167218,20.9090052,3
+53,Antananarivo,Antananarivo,Madagascar,-18.89829912,47.52444422,3
+532,Lilongwe,Lilongwe,Malawi,-13.96698973,33.77998146,3
+956,Valletta,Valletta,Malta,35.88747407,14.49190279,3
+345,Guadalajara,Guadalajara,Mexico,20.63761304,-103.3591386,3
+610,Mexico City,Mexico City,Mexico,19.45159047,-99.10560261,3
+628,Morelia,Morelia,Mexico,19.70733153,-101.1995103,3
+747,Puebla,Puebla,Mexico,19.04691142,-98.22301187,3
+924,Toluca,Toluca,Mexico,19.29244605,-99.62317247,3
+992,Xalapa,Xalapa,Mexico,19.53935074,-96.90910069,3
+724,Podgorica,Podgorica,Montenegro,42.44148588,19.26251599,3
+187,Casablanca,Casablanca,Morocco,33.58610659,-7.548582377,3
+312,Fez,Fez,Morocco,34.01985487,-5.008683599,3
+604,Meknes,Meknes,Morocco,33.87833316,-5.54012499,3
+766,Rabat,Rabat,Morocco,33.99724764,-6.827786032,3
+898,Tangier,Tangier,Morocco,35.74999162,-5.825183517,3
+416,Itahari,Itahari,Nepal,26.64208704,87.26494293,3
+473,Kathmandu,Kathmandu,Nepal,27.69363635,85.33790729,3
+45,Amsterdam,Amsterdam,Netherlands,52.35571208,4.850577718,3
+790,Rotterdam [The Hague],Rotterdam,Netherlands,51.91002633,4.476586801,3
+70,Auckland,Auckland,New Zealand,-36.92012789,174.7964426,3
+435,Jerusalem,Jerusalem,Occupied Palestinian territory,31.79984039,35.19587095,3
+2,Abbottabad,Abbottabad,Pakistan,34.19086747,73.23266806,3
+352,Gujrat,Gujrat,Pakistan,32.57199198,74.06754412,3
+777,Rawalpindi [Islamabad],Rawalpindi,Pakistan,33.62356078,73.07171088,3
+854,Sialkot,Sialkot,Pakistan,32.49950667,74.51575555,3
+880,Swat City,Swat City,Pakistan,34.77510276,72.33309864,3
+976,Wah Cantonment,Wah Cantonment,Pakistan,33.79306974,72.72585304,3
+217,Ciudad del Este,Ciudad del Este,Paraguay,-25.51919643,-54.60919265,3
+536,Lisbon,Lisbon,Portugal,38.74193979,-9.22688201,3
+736,Porto,Porto,Portugal,41.16465387,-8.60914901,3
+172,Busan,Busan,Republic of Korea,35.16895667,129.0163099,3
+196,Changwon,Changwon,Republic of Korea,35.21832771,128.6256646,3
+357,Gwangju,Gwangju,Republic of Korea,35.16423971,126.8568152,3
+948,Ulsan,Ulsan,Republic of Korea,35.51135156,129.3602436,3
+503,Krasnodar,Krasnodar,Russia,45.05865497,39.00730676,3
+114,Belgrade,Belgrade,Serbia,44.79759373,20.45656039,3
+184,Cape Town,Cape Town,South Africa,-33.94764796,18.57842297,3
+290,Durban,Durban,South Africa,-29.78780375,31.01235218,3
+304,Evaton,Evaton,South Africa,-26.53041644,27.84894468,3
+453,Johannesburg,Johannesburg,South Africa,-26.17977081,28.05553562,3
+493,Klipgat,Klipgat,South Africa,-25.49793797,28.07796479,3
+743,Pretoria,Pretoria,South Africa,-25.74294845,28.23791091,3
+134,Bilbao,Bilbao,Spain,43.29752228,-2.972245446,3
+572,Malaga,Malaga,Spain,36.67033498,-4.474219443,3
+838,Seville,Seville,Spain,37.37619005,-5.986844189,3
+1041,Zurich,Zurich,Switzerland,47.35646431,8.561740229,3
+388,Homs,Homs,Syrian Arab Republic,34.72320382,36.71582553,3
+938,Tunis,Tunis,Tunisia,36.82336488,10.20061538,3
+11,Adana,Adana,Turkey,37.00341935,35.28313393,3
+52,Antalya,Antalya,Turkey,36.91734206,30.72508187,3
+171,Bursa,Bursa,Turkey,40.22026715,29.04885828,3
+263,Denizli,Denizli,Turkey,37.78465996,29.07363095,3
+276,Diyarbakir,Diyarbakir,Turkey,37.9314745,40.19921157,3
+331,Gaziantep,Gaziantep,Turkey,37.05015513,37.38272532,3
+415,Istanbul,Istanbul,Turkey,40.99506693,29.03102284,3
+418,Izmir,Izmir,Turkey,38.42475693,27.1390667,3
+419,Izmit,Izmit,Turkey,40.76171519,29.89580732,3
+608,Mersin,Mersin,Turkey,36.80135275,34.61478265,3
+806,Samsun,Samsun,Turkey,41.28934046,36.33308762,3
+136,Birmingham,Birmingham,United Kingdom,52.51213812,-1.965490369,3
+156,Bristol,Bristol,United Kingdom,51.47568809,-2.582049449,3
+339,Glasgow,Glasgow,United Kingdom,55.85618871,-4.301855947,3
+525,Leeds,Leeds,United Kingdom,53.76734323,-1.622234959,3
+538,Liverpool,Liverpool,United Kingdom,53.43350797,-2.874288738,3
+542,London,London,United Kingdom,51.49357981,-0.129891877,3
+579,Manchester,Manchester,United Kingdom,53.49196147,-2.241619756,3
+668,Newcastle upon Tyne,Newcastle upon Tyne,United Kingdom,54.98532234,-1.559533344,3
+675,Nottingham,Nottingham,United Kingdom,52.95386433,-1.184420173,3
+846,Sheffield,Sheffield,United Kingdom,53.388841,-1.417890387,3
+69,Atlanta,Atlanta,United States,33.84096954,-84.30090571,3
+72,Austin,Austin,United States,30.37163753,-97.73513149,3
+84,Baltimore,Baltimore,United States,39.31155264,-76.61148208,3
+148,Bradenton,Bradenton,United States,27.29726911,-82.49541578,3
+230,Concord,Concord,United States,37.91394614,-122.0483181,3
+248,Dallas,Dallas,United States,32.8573485,-96.96526227,3
+392,Houston,Houston,United States,29.78137075,-95.40836967,3
+546,Los Angeles,Los Angeles,United States,33.95381355,-117.9539253,3
+547,Louisville,Louisville,United States,38.22451115,-85.69906478,3
+665,New Orleans,New Orleans,United States,29.96009972,-90.10226475,3
+689,Oklahoma City,Oklahoma City,United States,35.46309323,-97.52442303,3
+694,Orlando,Orlando,United States,28.53910259,-81.37360347,3
+717,Philadelphia,Philadelphia,United States,39.90704662,-75.23605793,3
+735,Portland,Portland,United States,45.53094903,-122.6657332,3
+793,Sacramento,Sacramento,United States,38.60280713,-121.3875759,3
+807,San Antonio,San Antonio,United States,29.49173859,-98.5206364,3
+809,San Jose [USA],San Jose [USA],United States,37.32711544,-121.9332989,3
+832,Seattle,Seattle,United States,47.49542197,-122.2998149,3
+895,Tampa,Tampa,United States,27.80797724,-82.70346723,3
+970,Virginia Beach,Virginia Beach,United States,36.84947257,-76.22371144,3
+981,Washington D.C.,Washington D.C.,United States,38.9228404,-77.14196317,3
+625,Montevideo,Montevideo,Uruguay,-34.85897695,-56.17204343,3
+901,Tashkent,Tashkent,Uzbekistan,41.2698132,69.25583856,3
+359,Haiphong,Haiphong,Vietnam,20.87176633,106.6596108,3
+367,Hanoi,Hanoi,Vietnam,21.03718905,105.8578878,3
+492,Kitwe,Kitwe,Zambia,-12.81258059,28.21725317,3
+555,Lusaka,Lusaka,Zambia,-15.40247343,28.29973984,3
+369,Harare,Harare,Zimbabwe,-17.83564824,31.03669143,3
+962,Vienna,Vienna,Austria,48.19840819,16.38397587,4
+616,Minsk,Minsk,Belarus,53.89104161,27.57441764,4
+828,Sarajevo,Sarajevo,Bosnia and Herzegovina,43.8552841,18.35258807,4
+864,Sofia,Sofia,Bulgaria,42.68535839,23.32534196,4
+177,Calgary,Calgary,Canada,51.039687,-114.0703599,4
+294,Edmonton,Edmonton,Canada,53.54200131,-113.4855766,4
+626,Montreal,Montreal,Canada,45.53269003,-73.66822949,4
+697,Ottawa,Ottawa,Canada,45.41781152,-75.69404691,4
+761,Quebec,Quebec,Canada,46.82043598,-71.27167611,4
+928,Toronto,Toronto,Canada,43.65246768,-79.53381024,4
+987,Winnipeg,Winnipeg,Canada,49.87947386,-97.1510269,4
+51,Anshan,Anshan,China,41.13402115,123.0037329,4
+110,Beijing,Beijing,China,39.89899941,116.3498742,4
+122,Benxi,Benxi,China,41.29502822,123.7508069,4
+135,Binhai,Binhai,China,39.01161645,117.6592647,4
+183,Cangzhou,Cangzhou,China,38.30050739,116.8492697,4
+192,Changchun,Changchun,China,43.87101943,125.2955128,4
+197,Changzhi,Changzhi,China,36.18135906,113.115651,4
+247,Dalian,Dalian,China,38.99840628,121.6392087,4
+281,Dongying Qu,Dongying,China,37.46098274,118.5939694,4
+321,Fushun,Fushun,China,41.85891045,123.8778578,4
+322,Fuxin,Fuxin,China,41.99939175,121.6601749,4
+364,Handan,Handan,China,36.59983674,114.4874898,4
+370,Harbin,Harbin,China,45.71793479,126.6440473,4
+376,Hegang,Hegang,China,47.30539978,130.2607911,4
+402,Huludao,Huludao,China,40.75185347,120.8500422,4
+438,Jiamusi,Jiamusi,China,46.8035844,130.3707586,4
+440,Jiaozuo,Jiaozuo,China,35.2462597,113.2460203,4
+443,Jilin,Jilin,China,43.86050355,126.5476792,4
+444,Jinan,Jinan,China,36.66141424,117.0062826,4
+447,Jining,Jining,China,35.41705962,116.6049728,4
+448,Jinzhou,Jinzhou,China,41.11350609,121.1340982,4
+458,Kaifeng,Kaifeng,China,34.79140669,114.3374195,4
+527,Lianyungang,Lianyungang,China,34.61235702,119.181601,4
+528,Liaocheng,Liaocheng,China,36.46937784,115.9743268,4
+529,Liaoyang,Liaoyang,China,41.24869835,123.1843782,4
+535,Linyi,Linyi,China,35.09169336,118.2942689,4
+632,Mudanjiang,Mudanjiang,China,44.58134465,129.6025019,4
+706,Panjin,Panjin,China,41.1277898,122.0714065,4
+752,Puyang,Puyang,China,35.75245789,115.0270594,4
+755,Qingdao,Qingdao,China,36.23877694,120.4082764,4
+757,Qinhuangdao,Qinhuangdao,China,39.94219536,119.5960896,4
+758,Qiqihar,Qiqihar,China,47.33859453,123.9721091,4
+786,Rizhao,Rizhao,China,35.41108471,119.4991147,4
+844,Shangqiu,Shangqiu,China,34.41067195,115.6320451,4
+847,Shenyang,Shenyang,China,41.78761691,123.3846706,4
+851,Shizhong Qu,Shizong Qu,China,31.456781,102.843018,4
+885,Tai'an,Tai'an,China,36.17870771,117.1622818,4
+899,Tangshan,Tangshan,China,39.63879094,118.2041694,4
+916,Tianjin,Tianjin,China,39.11942201,117.2131708,4
+983,Weifang,Weifang,China,36.70126835,119.1295817,4
+984,Weihai,Weihai,China,37.50146375,122.074675,4
+997,Xingtai,Xingtai,China,37.06683351,114.4875349,4
+999,Xinxiang,Xinxiang,China,35.30389938,113.8866514,4
+1001,Xuzhou,Xuzhou,China,34.26297163,117.2028934,4
+1006,Yantai,Yantai,China,37.49898722,121.3562853,4
+1037,Zibo,Zibo,China,36.70300256,117.9884705,4
+740,Prague,Prague,Czech Republic,50.07205213,14.4535896,4
+211,Chongjin,Chongjin,Democratic People's Republic of Korea,41.77275197,129.7625449,4
+252,Dandong,Dandong,Democratic People's Republic of Korea,40.13694038,124.3824211,4
+363,Hamhung,Hamhung,Democratic People's Republic of Korea,39.90959484,127.5328792,4
+753,Pyongyang,Pyongyang,Democratic People's Republic of Korea,39.0309475,125.7383919,4
+232,Copenhagen,Copenhagen,Denmark,55.68060577,12.46953043,4
+893,Tallinn,Tallinn,Estonia,59.42790477,24.73923365,4
+377,Helsinki,Helsinki,Finland,60.22358683,24.93691625,4
+124,Berlin,Berlin,Germany,52.50695177,13.40979396,4
+285,Dresden,Dresden,Germany,51.05563564,13.73742967,4
+635,Munich,Munich,Germany,48.13800202,11.56343509,4
+680,Nuremberg,Nuremberg,Germany,49.45156471,11.04671048,4
+160,Budapest,Budapest,Hungary,47.48300634,19.10974193,4
+779,Reykjavik,Reykjavik,Iceland,64.11728904,-21.88496011,4
+827,Sapporo,Sapporo,Japan,43.07052122,141.3738144,4
+34,Almaty,Almaty,Kazakhstan,43.26431692,76.90272911,4
+853,Shymkent,Shymkent,Kazakhstan,42.32968781,69.59777438,4
+782,Riga,Riga,Latvia,56.96254221,24.12365616,4
+968,Vilnius,Vilnius,Lithuania,54.69174814,25.25848596,4
+909,Tetovo,Tetovo,Macedonia,42.00921452,20.96858739,4
+83,Balti,Balti,Moldova,47.754,27.9184,4
+210,Chisinau,Chisinau,Moldova,47.00834663,28.86597181,4
+792,Rybnitsa,Rybnitsa,Moldova,47.76726891,29.01180803,4
+919,Tiraspol,Tiraspol,Moldova,46.8482149,29.59863667,4
+696,Oslo,Oslo,Norway,59.90823209,10.74324845,4
+332,Gdansk,Gdansk,Poland,54.42049673,18.5868245,4
+475,Katowice,Katowice,Poland,50.29903539,18.96249677,4
+502,Krakow,Krakow,Poland,50.05369122,19.98552452,4
+540,Lodz,Lodz,Poland,51.76518341,19.45015381,4
+739,Poznan,Poznan,Poland,52.40097057,16.91828237,4
+980,Warsaw,Warsaw,Poland,52.22529923,20.99571251,4
+988,Wroclaw,Wroclaw,Poland,51.10776275,17.02906238,4
+204,Cheongju-si,Cheongju-si,Republic of Korea,36.63504341,127.459031,4
+242,Daegu,Daegu,Republic of Korea,35.86394684,128.6369154,4
+243,Daejeon,Daejeon,Republic of Korea,36.35837925,127.3824877,4
+434,Jeonju,Jeonju,Republic of Korea,35.83282783,127.1151103,4
+836,Seoul,Seoul,Republic of Korea,37.47555477,126.9243735,4
+159,Bucharest,Bucharest,Romania,44.43524697,26.10496247,4
+100,Barnaul,Barnaul,Russia,53.3467502,83.70426167,4
+201,Chelyabinsk,Chelyabinsk,Russia,55.16811064,61.40023046,4
+417,Izhevsk,Izhevsk,Russia,56.84675308,53.21053748,4
+477,Kazan,Kazan,Russia,55.79752053,49.13336971,4
+504,Krasnoyarsk,Krasnoyarsk,Russia,56.02633173,92.91986442,4
+630,Moscow,Moscow,Russia,55.73855188,37.64862463,4
+673,Nizhny Novgorod,Nizhny Novgorod,Russia,56.29190875,43.91017048,4
+678,Novosibirsk,Novosibirsk,Russia,55.00873974,82.95028355,4
+691,Omsk,Omsk,Russia,54.9860852,73.34659965,4
+789,Rostov-on-Don,Rostov-on-Don,Russia,47.24882569,39.71689838,4
+796,Saint Petersburg,Saint Petersburg,Russia,59.92075415,30.33491092,4
+802,Samara,Samara,Russia,53.22520245,50.21982161,4
+829,Saratov,Saratov,Russia,51.54189642,45.96900846,4
+925,Tolyatti,Tolyatti,Russia,53.54441454,49.35127887,4
+926,Tomsk,Tomsk,Russia,56.52943946,84.96118509,4
+941,Tyumen,Tyumen,Russia,57.14704798,65.57572,4
+945,Ufa,Ufa,Russia,54.78961905,56.04349575,4
+972,Vladivostok,Vladivostok,Russia,43.1648372,131.9573159,4
+974,Voronezh,Voronezh,Russia,51.6730136,39.20696046,4
+1008,Yaroslavl,Yaroslavl,Russia,57.62326389,39.86295174,4
+1010,Yekaterinburg,Yekaterinburg,Russia,56.83451101,60.59768138,4
+151,Bratislava,Bratislava,Slovakia,48.15237844,17.13249373,4
+539,Ljubljana,Ljubljana,Slovenia,46.06539993,14.51480371,4
+871,Stockholm,Stockholm,Sweden,59.33157275,18.00055029,4
+278,Dnipro,Dnipro,Ukraine,48.45934339,35.0324005,4
+280,Donetsk,Donetsk,Ukraine,48.01138624,37.84520888,4
+482,Kharkiv,Kharkiv,Ukraine,49.98371693,36.2661233,4
+506,Kryvyi Rih,Kryvyi Rih,Ukraine,47.89661718,33.39064397,4
+516,Kyiv,Kyiv,Ukraine,50.44105299,30.52241148,4
+559,Lviv,Lviv,Ukraine,49.83580718,24.01918216,4
+1024,Zaporizhzhia,Zaporizhzhia,Ukraine,47.83964808,35.15096253,4
+146,Boston,Boston,United States,42.38499617,-71.06303941,4
+153,Bridgeport,Bridgeport,United States,41.23347258,-73.05220162,4
+163,Buffalo,Buffalo,United States,42.9237412,-78.81130882,4
+206,Chicago,Chicago,United States,41.79396274,-87.82253727,4
+215,Cincinnati,Cincinnati,United States,39.2369108,-84.46200196,4
+221,Cleveland,Cleveland,United States,41.47505094,-81.64622338,4
+226,Columbus,Columbus,United States,40.0147868,-82.99973942,4
+267,Detroit,Detroit,United States,42.43812719,-83.15206612,4
+410,Indianapolis,Indianapolis,United States,39.80875482,-86.14531263,4
+468,Kansas City,Kansas City,United States,39.04474577,-94.60456837,4
+614,Milwaukee,Milwaukee,United States,43.03168731,-88.0110039,4
+615,Minneapolis [Saint Paul],Minneapolis,United States,44.99994671,-93.2301204,4
+667,New York,New York,United States,40.77321423,-73.88090455,4
+690,Omaha,Omaha,United States,41.2406688,-96.0581449,4
+723,Pittsburgh,Pittsburgh,United States,40.41596736,-79.97203034,4
+745,Providence,Providence,United States,41.78361702,-71.40117983,4
+870,St. Louis,St. Louis,United States,38.64866335,-90.29516847,4
+295,El Alto,El Alto,Bolivia,-16.52021327,-68.16338661,5

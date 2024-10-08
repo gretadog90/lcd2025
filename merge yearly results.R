@@ -95,4 +95,4 @@ lcd2025$clim_region <- factor(lcd2025$clim_region,
 country_count<-unique(lcd2025$country) #174
 city_count<-unique(lcd2025$city) #1042
 
-write.csv(lcd2025, "merged_data_2025.csv")
+write.csv(lcd2025, "lcd2025.csv")

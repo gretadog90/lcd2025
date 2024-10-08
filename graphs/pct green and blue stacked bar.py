@@ -30,23 +30,22 @@ merged_results=pd.read_csv(data_folder+'Lancet 2025/output/stacked_bar.csv')
 merged_results["Blue_Area_2020"]=merged_results["GreenBlue_Area_2020"]-merged_results["Green_Area_2020"]
 merged_results["Urban_Area_2020"]=1-merged_results["GreenBlue_Area_2020"]
 
-stackedbar=merged_results[["seq", "Green_Area_2020", "Blue_Area_2020", "Urban_Area_2020"]]
-
+#Africa=merged_results[merged_results["lc_group"]=="Africa"]
 city_labels= merged_results['city']
-
-print(stackedbar["Green_Area_2020"])
+stackedbar=merged_results[["seq", "Green_Area_2020", "Blue_Area_2020", "Urban_Area_2020"]]
 
 #%% make graph
 sns.set(style='white')
-sns.set(font_scale = .4)
-fig = plt.figure(figsize=(20, 65))
+sns.set(font_scale = .2)
+fig = plt.figure(figsize=(20, 70))
 fig, ax = plt.subplots()
+
 
 # create stacked bar chart for monthly temperatures
 stackedbar.set_index('seq').plot(kind='barh', ax=ax,
-                                              stacked=True, color=['darkgreen', 'deepskyblue', 'lightgrey'],
-                                              width=1)
-
+                                stacked=True, color=['darkgreen', 'deepskyblue', 'lightgrey'],
+                                width=.1)
+                                
 ax.set_yticks(range(len(city_labels)), labels=city_labels, size=3)
 ax.legend().remove()
 ax.set_facecolor('white')  
