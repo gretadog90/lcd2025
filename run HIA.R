@@ -19,11 +19,11 @@ output='outputHIA/'
 merged_data_2025<-read.csv("output/merged_data_2025.csv")
 hia_100m<-merged_data_2025[,c("country", "city", "ID_HDC_G0", "hdi_level", "lc_group",
                          "PopWeight_Peak_NDVI_2015_100m", "PopWeight_Peak_NDVI_2020_100m","PopWeight_Peak_NDVI_2023_100m",
-                         "Population_2015_100m", "Population_2020_100m",
+                         "Population_2015_100m", "Population_2020_100m", "Longitude", "Latitude",
                          "val.2015", "upper.2015", "lower.2015","val.2020", "upper.2020", "lower.2020")]
 hia<-merged_data_2025[,c("country", "city", "ID_HDC_G0", "hdi_level", "lc_group",
                               "PopWeight_Peak_NDVI_2015", "PopWeight_Peak_NDVI_2020","PopWeight_Peak_NDVI_2023",
-                              "Population_2015", "Population_2020",
+                              "Population_2015", "Population_2020", "Longitude", "Latitude",
                               "val.2015", "upper.2015", "lower.2015","val.2020", "upper.2020", "lower.2020")]
 
 #set the protective HR, lb and ub per .1 increase in NDVI

@@ -1,0 +1,213 @@
+/*
+
+1. Calculate seasonal average NDVI 
+2. Calculate seaonal pop-weighted NDVI (numerator of weighted average)
+  a. 1km pop
+  b. 100m pop
+3. Calculate population size (denominator of weighted average)
+  a. 1km pop
+  b. 100m pop
+Note: rest of data processing done in R due to issues in way GEE handled missing values
+The filter dates for each season were determined by Jochem Klompmaker.
+
+Sources:
+ndvi: https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1
+water: https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_YearlyHistory
+pop (1km): https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv411_GPW_Population_Count
+pop (100m): https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_POP
+landcover: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD12Q1#bands
+
+*/
+
+// Code revised Oct 9, 2024
+
+/////////////////////////////////////////////////////////////////////
+/////// Import assets ///////
+/////////////////////////////////////////////////////////////////////
+//Import 1042 LCD cities
+var cities = ee.FeatureCollection('users/gretam/LCD_cities');
+//Selecting one city for testing/mapping
+var dc = cities
+    .filter(ee.Filter.equals('city', 'Washington D.C.'));
+
+//Import Lancet 30m NDVI data 
+var ndvi=ee.ImageCollection('LANDSAT/LC08/C02/T1');
+//Import 30m global surface water
+var jrc = ee.Image('JRC/GSW1_4/YearlyHistory/2015');
+
+// Import 2015 Population data (# of residents per pixel, 100m)
+var pop2015_100m = ee.Image('JRC/GHSL/P2023A/GHS_POP/2015');
+
+////////////////////////////////////////////////////////////////////////
+// Create a water mask
+///////////////////////////////////////////////////////////////////////
+// Will use to mask NDVI image where there is water so that city average
+// ignores water. In this dataset, 'waterClass' takes values of:
+//0=unknown, 1=not water, 2= seasonal water and 3= permanent water.
+// Most pixels are masked (land)
+
+//First, unmask all the uncategorized (land) pixels in this data set
+// Chose 5, but could be any number that is not currently used
+var water =jrc.select('waterClass').unmask(5);
+
+// define water mask. This sets waterClass=3 to 0 and all other values to 1
+var mask=water.neq(3);
+
+/////////////////////////////////////////////////////////////////////
+/// Seasonal NDVI 
+/////////////////////////////////////////////////////////////////////
+
+// WINTER 2019
+//filter to correct date range
+var winter = ndvi.filterDate('2018-12-01', '2019-02-28');
+
+//use simple composite algorithm to minimize clouds, calculate NDVI from red (B4)
+//and nir (B5) bands, rename as NDVI and select only NDVI band
+var NDVI_winter = ee.Algorithms.Landsat.simpleComposite(winter)
+          .normalizedDifference(['B5', 'B4'])
+          .rename('NDVI')
+          .select('NDVI');
+
+// override NDVI to be missing where GSW map indicates water
+var NDVI_winter = NDVI_winter.mask(mask);
+
+// map to make sure mask is working correctly. water should be missing, 
+// urban area should be white or very light blue or very light green and 
+// vegetation should be a darker green 
+Map.centerObject(dc);
+var ndviParams = {min: -1, max: 1, palette: ['blue', 'white', 'green']};
+Map.addLayer(NDVI_winter, ndviParams, 'NDVI image');
+
+ 
+////Spring 2019
+//filter to correct date range
+var spring = ndvi.filterDate('2019-03-01', '2019-05-31');
+
+//use simple composite algorithm to minimize clouds, calculate NDVI from red (B4)
+//and nir (B5) bands, rename as NDVI and select only NDVI band
+var NDVI_spring = ee.Algorithms.Landsat.simpleComposite(spring)
+          .normalizedDifference(['B5', 'B4'])
+          .rename('NDVI')
+          .select('NDVI');
+
+// override NDVI to be missing where GSW map indicates water
+var NDVI_spring = NDVI_spring.mask(mask);
+ 
+////Summer 2019
+//filter to correct date range
+var summer = ndvi.filterDate('2019-06-01', '2019-08-31');
+
+//use simple composite algorithm to minimize clouds, calculate NDVI from red (B4)
+//and nir (B5) bands, rename as NDVI and select only NDVI band
+var NDVI_summer = ee.Algorithms.Landsat.simpleComposite(summer)
+          .normalizedDifference(['B5', 'B4'])
+          .rename('NDVI')
+          .select('NDVI');
+
+// override NDVI to be missing where GSW map indicates water
+var NDVI_summer = NDVI_summer.mask(mask);
+
+////Fall 2019
+//filter to correct date range
+var fall = ndvi.filterDate('2019-09-01', '2019-11-30');
+
+//use simple composite algorithm to minimize clouds, calculate NDVI from red (B4)
+//and nir (B5) bands, rename as NDVI and select only NDVI band
+var NDVI_fall = ee.Algorithms.Landsat.simpleComposite(fall)
+          .normalizedDifference(['B5', 'B4'])
+          .rename('NDVI')
+          .select('NDVI');
+
+// override NDVI to be missing where GSW map indicates water
+var NDVI_fall = NDVI_fall.mask(mask);
+
+ 
+// Cumulative averages computed in R by averaging seasonal values
+// Peak greenness computed in R by extracting max from seasonal data
+
+/////////////////////////////////////////////
+/// Seasonal population-weighted NDVI (100m)
+/////////////////////////////////////////////
+var pop_vis_100m = {
+  min: 0.0,
+  max: 100.0,
+  palette:
+      ['000004', '320A5A', '781B6C', 'BB3654', 'EC6824', 'FBB41A', 'FCFFA4']
+};
+Map.addLayer(pop2015_100m, pop_vis_100m, 'population_count');
+
+///////////////WINTER//////////////////
+// Multiply each NDVI value per the population size within the same pixel
+var ndvi_pop_winter_100m = pop2015_100m.multiply(NDVI_winter); 
+
+// Sum over all pixels within one city 
+var winter_numerator_100m = ndvi_pop_winter_100m.reduceRegions({
+  collection: cities,
+  reducer: ee.Reducer.sum(),
+  scale: 100,
+});
+
+// Export Sum1
+Export.table.toDrive({
+  collection: winter_numerator_100m,
+  description: '2019_winter_num_100m',
+  folder: 'Lancet2025',
+  fileFormat: 'CSV'
+});
+
+///////////////SPRING//////////////////
+// Multiply each NDVI value per the population size within the same pixel
+var ndvi_pop_spring_100m = pop2015_100m.multiply(NDVI_spring); 
+
+// Sum over all pixels within one city 
+var spring_numerator_100m = ndvi_pop_spring_100m.reduceRegions({
+  collection: cities,
+  reducer: ee.Reducer.sum(),
+  scale: 100,
+});
+
+// Export Sum1
+Export.table.toDrive({
+  collection: spring_numerator_100m,
+  description: '2019_spring_num_100m',
+  folder: 'Lancet2025',
+  fileFormat: 'CSV'
+});
+
+///////////////SUMMER//////////////////
+// Multiply each NDVI value per the population size within the same pixel
+var ndvi_pop_summer_100m = pop2015_100m.multiply(NDVI_summer); 
+
+// Sum over all pixels within one city 
+var summer_numerator_100m = ndvi_pop_summer_100m.reduceRegions({
+  collection: cities,
+  reducer: ee.Reducer.sum(),
+  scale: 100,
+});
+
+// Export Sum1
+Export.table.toDrive({
+  collection: summer_numerator_100m,
+  description: '2019_summer_num_100m',
+  folder: 'Lancet2025',
+  fileFormat: 'CSV'
+});
+
+///////////////FALL//////////////////
+// Multiply each NDVI value per the population size within the same pixel
+var ndvi_pop_fall_100m = pop2015_100m.multiply(NDVI_fall); 
+
+// Sum over all pixels within one city 
+var fall_numerator_100m = ndvi_pop_fall_100m.reduceRegions({
+  collection: cities,
+  reducer: ee.Reducer.sum(),
+  scale: 100,
+});
+
+// Export Sum1
+Export.table.toDrive({
+  collection: fall_numerator_100m,
+  description: '2019_fall_num_100m',
+  folder: 'Lancet2025',
+  fileFormat: 'CSV'
+});

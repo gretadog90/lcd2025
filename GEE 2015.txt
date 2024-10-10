@@ -1,24 +1,3 @@
-/*
-
-1. Calculate seasonal average NDVI 
-2. Calculate seaonal pop-weighted NDVI (numerator of weighted average)
-  a. 1km pop
-  b. 100m pop
-3. Calculate population size (denominator of weighted average)
-  a. 1km pop
-  b. 100m pop
-4. Calculate landcover-based green and green+ blue area
-
-Note: rest of data processing done in R due to issues in way GEE handled missing values
-The filter dates for each season were determined by Jochem Klompmaker.
-
-Sources:
-ndvi: https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1
-water: https://developers.google.com/earth-engine/datasets/catalog/JRC_GSW1_4_YearlyHistory
-pop (1km): https://developers.google.com/earth-engine/datasets/catalog/CIESIN_GPWv411_GPW_Population_Count
-pop (100m): https://developers.google.com/earth-engine/datasets/catalog/JRC_GHSL_P2023A_GHS_POP
-landcover: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD12Q1#bands
-
 */
 
 // Code revised Sept 12, 2024
