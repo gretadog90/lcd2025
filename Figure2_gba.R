@@ -56,7 +56,7 @@ tab(long$type)
 pdf(file = "graphs/Figure2 gba.pdf", width=15, height=4)
 
 #bar graph with separate plots for each region
-ggplot(long, aes(fill=type, y=value, x=city)) + 
+ggplot(long, aes(fill=type, y=value, x=order)) + 
   geom_bar(position="stack", stat="identity")+
   scale_fill_manual("Land type", 
                     values = c("Green_Area_2020" = "darkgreen", "Blue_Area_2020" = "dodgerblue", "Urban_Area_2020" = "grey"),
@@ -68,6 +68,8 @@ ggplot(long, aes(fill=type, y=value, x=city)) +
     strip.position = "left"
   ) +labs(x = "city", y = "Proportion")+
   theme(axis.ticks.x = element_blank(), axis.text.x =element_blank(),
-        legend.text = element_text(size = 6), legend.title = element_text(size = 8))
-
+        legend.text = element_text(size = 6), legend.title = element_text(size = 8),
+        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "white"))
 dev.off()
+expand=c(0,0)

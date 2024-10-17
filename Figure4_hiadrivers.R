@@ -15,7 +15,7 @@ library(dplyr)
 setwd('~/Documents/data/Lancet 2025/')
 
 #read in HIA results
-hia<-read.csv("outputHIA/hia_100m.csv")
+hia<-read.csv("outputHIA/hia_100m_sensitivity.csv")
 
 #create % of HIA contribution vars
 hia$pct_
