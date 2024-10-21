@@ -72,4 +72,3 @@ ggplot(long, aes(fill=type, y=value, x=order)) +
         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "white"))
 dev.off()
-expand=c(0,0)

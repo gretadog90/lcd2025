@@ -57,48 +57,14 @@ hia_100m$ndvi2019_2023 <- rowMeans(hia_100m[,c("PopWeight_Peak_NDVI_2019_100m", 
                                                "PopWeight_Peak_NDVI_2023_100m")])
 
 #set the protective HR, lb and ub per .1 increase in NDVI
-phr= (1-0.96)/.1
-phr_lb=(1-0.94)/.1 
-phr_ub=(1-0.97)/.1
+hr= (0.96)
+hr_lb=(0.94) 
+hr_ub=(0.97)
+
+hia_100m$diff<-hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018
 
 ### 100m
-# hia. 4 equations to seperate out drivers of HIA
-#using 2015 pop and 2015 baseline mort
-hia_100m$e2020_all2015=hia_100m$val.2015*hia_100m$Population_2015_100m*(hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018)*phr
-
-#using 2015 pop and 2020 baseline mort
-hia_100m$e2020_pop2015=hia_100m$val.2020*hia_100m$Population_2015_100m*(hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018)*phr
-
-#using 2020 pop and 2015 baseline mort
-hia_100m$e2020_mort2015=hia_100m$val.2015*hia_100m$Population_2020_100m*(hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018)*phr
-
 #using 2020 pop and 2020 baseline mort
-hia_100m$e2020_all2020=hia_100m$val.2020*hia_100m$Population_2020_100m*(hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018)*phr
+hia_100m$delta_mortality=hia_100m$val.2020*hia_100m$Population_2020_100m*(hia_100m$diff/.1)*hr
 
 write.csv(hia_100m, paste0(output,"hia_100m_5yr.csv"))
-
-
-subset<-hia_100m[,c("city", "lc_group", "hdi_level", "clim_region",  "who_region", "sub.region",
-                   "PopWeight_Peak_NDVI_2014_100m", "PopWeight_Peak_NDVI_2015_100m", 
-                   "PopWeight_Peak_NDVI_2016_100m","PopWeight_Peak_NDVI_2017_100m", 
-                   "PopWeight_Peak_NDVI_2018_100m","PopWeight_Peak_NDVI_2019_100m", 
-                   "PopWeight_Peak_NDVI_2020_100m", "PopWeight_Peak_NDVI_2021_100m", 
-                   "PopWeight_Peak_NDVI_2022_100m", "PopWeight_Peak_NDVI_2023_100m")]  
-
-#reshape long so that each row represents a city/year combo               
-long <- melt(setDT(subset), 
-             id.vars = c("city", "lc_group", "hdi_level", "clim_region", "who_region", "sub.region"), 
-             variable.name = "year")
-
-#get rid of variable prefix/suffix so year now= "2015" etc.
-long<-long %>% 
-  mutate(year = str_remove(year, '^PopWeight_Peak_NDVI_'))
-long<-long %>% 
-  mutate(year = str_remove(year, '_100m$'))
-long<-long %>% 
-  group_by(city) %>% 
-  mutate(city_id = cur_group_id())
-
-long$year_num<-as.numeric(as.character(long$year))
-
-lm(value ~ year_num+ (1 | city_id), data=long)

@@ -26,6 +26,7 @@ data_folder = '/Users/gretam/Documents/data/shapefiles/'
 # import shapefile using geopandas
 smod_raw = gpd.read_file(data_folder+
                 'GHS_SMOD_E2020_GLOBE_R2023A_54009_1000_UC_V2_0.shp') 
+print(smod_raw[['BU_m2_2020']])
 
 #subset data to only what I need (id, city name, country name, geometry)
 ghs_smod=smod_raw[['ID_UC_G0', 'geometry']]
