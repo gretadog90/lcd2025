@@ -57,14 +57,17 @@ hia_100m$ndvi2019_2023 <- rowMeans(hia_100m[,c("PopWeight_Peak_NDVI_2019_100m", 
                                                "PopWeight_Peak_NDVI_2023_100m")])
 
 #set the protective HR, lb and ub per .1 increase in NDVI
-hr= (0.96)
-hr_lb=(0.94) 
-hr_ub=(0.97)
+hr= 0.96
+hr_lb=0.94 
+hr_ub=0.97
 
 hia_100m$diff<-hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018
 
 ### 100m
 #using 2020 pop and 2020 baseline mort
 hia_100m$delta_mortality=hia_100m$val.2020*hia_100m$Population_2020_100m*(hia_100m$diff/.1)*hr
+
+hia_100m$lb=hia_100m$lower.2020*hia_100m$Population_2020_100m*(hia_100m$diff/.1)*hr_ub
+hia_100m$ub=hia_100m$upper.2020*hia_100m$Population_2020_100m*(hia_100m$diff/.1)*hr_lb
 
 write.csv(hia_100m, paste0(output,"hia_100m_5yr.csv"))

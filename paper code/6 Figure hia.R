@@ -46,8 +46,8 @@ ggplot() +
   scale_color_manual(name = "Change in deaths per 100,000\nto 2020 population from\nNDVI differences\n2014-18 to 2019-2023", 
                      values=c( "#67001F", "#B2182B", "#D6604D", "#F4A582", "#FDDBC7", "#F7F7F7", "#D1E5F0", "#92C5DE",
                                "#4393C3", "#2166AC", "#053061"),
-                     labels=c("250+ fewer", "100+ fewer", "50+ fewer", "25+ fewer", "5+ fewer", "less than 5 change", 
-                              "5+ more", "25+ more", "50+ more", "100+ more", "250+ more"))+ 
+                     labels=c("250+ more", "100+ more", "50+ more", "25+ more", "5+ more", "less than 5 change", 
+                              "5+ fewer", "25+ fewer", "50+ fewer", "100+ fewer", "250+ fewer"))+ 
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
         legend.text = element_text(size = 8), 
