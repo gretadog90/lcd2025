@@ -27,6 +27,7 @@ for (i in 1:length(file_list)) assign(str_remove(file_list[i],".csv"),
 capitals<-read.csv(paste0(import_dir, "Urban Green Spaces Capitals.csv"))
 country_lcd<-read.csv(paste0(import_dir,"country_names_groupings.csv"))
 clim_region<-read.csv(paste0(import_dir, "clim_reg_cities.csv"))
+who_region<-read.csv(paste0(import_dir, "who_regions.csv"))
 
 #### merge all the yearly greenspace data sets together ####
 lcd2025 <- data2015 %>%
@@ -88,6 +89,10 @@ lcd2025<- lcd2025 %>%
 lcd2025$clim_region <- factor(lcd2025$clim_region,
                                   levels = c(1,2,3,4,5),
                                   labels = c("Tropical", "Arid", "Temperate", "Continental", "Polar"))
+
+#add on WHO sub region labels
+lcd2025<-merge(lcd2025, who_region[,c("alpha.3", "sub.region")], 
+               by.x="ISO3",by.y="alpha.3", all.x = TRUE)
 
 #################
 # Check numbers #
