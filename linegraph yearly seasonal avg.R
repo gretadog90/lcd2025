@@ -35,7 +35,6 @@ data2018<-read.csv("output/data2018.csv")
 data2018<-data2018[,c("ID_HDC_G0", "PopWeight_Avg_NDVI_2018_100m")]
 data2019<-read.csv("output/data2019.csv")
 data2019<-data2019[,c("ID_HDC_G0", "PopWeight_Avg_NDVI_2019_100m")]
-who_region<-read.csv("groupings/who_regions.csv")
 
 #### merge all the yearly greenspace data sets together ####
 lcd2025 <- lcd2025 %>%
@@ -44,11 +43,6 @@ lcd2025 <- lcd2025 %>%
   inner_join(data2017) %>%
   inner_join(data2018) %>%
   inner_join(data2019)
-
-#find which names don't match and edit gbd names to match lcd universe
-lcd2025$IS03[!lcd2025$IS03 %in% who_region$alpha.3]
-lcd2025<-merge(lcd2025, who_region[,c("alpha.3", "sub.region")], 
-               by.x="ISO3",by.y="alpha.3", all.x = TRUE)
 
 subset<-lcd2025[,c("city", "lc_group", "hdi_level", "clim_region",  "who_region", "sub.region",
                    "PopWeight_Avg_NDVI_2014_100m", "PopWeight_Avg_NDVI_2015_100m", 
@@ -69,7 +63,7 @@ long<-long %>%
   mutate(year = str_remove(year, '_100m$'))
 
 #set up the file to save figure
-pdf(file = "graphs/line graph averages.pdf", width=13.5, height=8.5)
+
 
 ## LC_GROUP
 # create means by region/climate group
@@ -100,11 +94,12 @@ ggplot() +
 means_who_sub <- aggregate(long$value, by=list(long$sub.region, long$clim_region, long$year), 
                            function(x)mean(x, na.rm=TRUE))
 # rename columns to match
-colnames(means_who_sub) <- c("sub.region","clim_region","year", "value")
+colnames(means_who_sub) <- c("sub.region","clim_region","year", "mean")
+pdf(file = "graphs/line graph averages who subregion.pdf", width=13.5, height=8.5)
 #plot
 ggplot() +
-  geom_line(data=long, aes(x=year, y=value, group=city, color=clim_region), alpha=.1) +
-  geom_point(data=means_who_sub, aes(x=year, y=value, color=clim_region), size=1)+
+  geom_line(data=long, aes(x=year, y=value, group=city, color=clim_region), alpha=.2, size=.5) +
+  geom_line(data=means_who_sub, aes(x=year, y=mean,group=clim_region, color=clim_region), size=1)+
   xlab('Year') + ylab('Pop-weighted Avg season NDVI')+ facet_wrap(~sub.region, ncol=4)
 dev.off()
 

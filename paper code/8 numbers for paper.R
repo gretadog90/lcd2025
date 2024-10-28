@@ -66,9 +66,12 @@ hia %>%
 
 #Get summary stats for FIG 3
 hia$delta_mortality<-(hia$delta_mortality/hia$Population_2020_100m)*100000
+hia$ub<-(hia$ub/hia$Population_2020_100m)*100000
+hia$lb<-(hia$lb/hia$Population_2020_100m)*100000
 summary(hia$delta_mortality)
 hist(hia$delta_mortality)
-
+summary(hia$ub)
+summary(hia$lb)
 tapply(hia$delta_mortality, hia$clim_region, summary)
 tapply(hia$delta_mortality, hia$sub.region, summary)
 
