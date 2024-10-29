@@ -1,5 +1,5 @@
 #########################################################################
-# Figure 1: NDVI by region and climate zone
+# Figure S5
 #########################################################################
 #### Set up ####
 #clear objects
@@ -33,26 +33,21 @@ hia<- hia %>%
   group_by(ndvi_climregion) %>% 
   mutate(order = cur_group_id())
 
+#figure out value for polar and then drop
+polar<-subset(hia, clim_region=="Polar")
+hia<-subset(hia, clim_region!="Polar")
+
 #set up the file to save figure
 pdf(file = "graphs/boxplots_climzone.pdf")
 
 #make boxplots for NDVI by region
 ggplot(hia, aes(x=reorder(clim_region, order), y=ndvi2019_2023)) + 
   geom_boxplot(outlier.shape = NA)+
-  geom_jitter(aes(color=sub.region), position=position_jitter(0.2), size=.6)+
+  geom_jitter(aes(color=clim_region), position=position_jitter(0.2), size=.6)+
+  scale_color_brewer(palette = "PuOr")+
   ylim(0, 0.6)+
   xlab("")+ 
   ylab("Average greenest-season NDVI (2019-2023)")+
   coord_flip()
 
 dev.off()
-
-
-boxplot2023<-ggplot(hia, aes(x=reorder(sub.region, order), y=ndvi2019_2023)) + 
-  geom_boxplot(outlier.shape = NA)+
-  geom_jitter(aes(color=clim_region), position=position_jitter(0.2), size=.6)+
-  scale_colour_discrete(name="Climate region")+
-  xlab("")+ 
-  ylab("Average greenest-season NDVI (2019-2023)")+
-  ylim(0, 0.6)+
-  coord_flip()

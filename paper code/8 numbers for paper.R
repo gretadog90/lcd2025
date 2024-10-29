@@ -51,12 +51,16 @@ tapply(lcd$Blue_Area_2020, lcd$clim_region, summary)
 #get smumary stats for FIG 2
 summary(hia$ndvi2014_2018)
 summary(hia$ndvi2019_2023)
+
 tapply(hia$ndvi2019_2023, hia$sub.region, summary)
+tapply(hia$ndvi2014_2018, hia$sub.region, summary)
+
 tapply(hia$ndvi2019_2023, hia$clim_region, summary)
 
 summary(hia$pct_diff)
 summary(hia$diff)
 
+tapply(hia$diff, hia$clim_region, summary)
 #get regions from top and bottom most % change
 hia<- hia[order(hia$pct_diff),]
 hia$id<- seq.int(nrow(hia))
