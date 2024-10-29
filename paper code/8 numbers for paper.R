@@ -23,11 +23,15 @@ setwd('~/Documents/data/Lancet 2025/')
 #read in HIA results
 hia<-read.csv("outputHIA/hia_100m_5yr.csv")
 lcd<-read.csv("output/lcd2025.csv")
+un_countries = readxl::read_xlsx("groupings/UNSD — Methodology.xlsx")
 
 #drop the one w/ misisng data and get diff
 hia<-hia[!is.na(hia$ndvi2019_2023),]
 hia$pct_diff<-((hia$ndvi2019_2023-hia$ndvi2014_2018)/hia$ndvi2014_2018)*100
 hia$diff<-(hia$ndvi2019_2023-hia$ndvi2014_2018)
+
+#countries not in the analysis
+un_countries$`Country or Area`[!un_countries$`ISO-alpha3 Code` %in% lcd$ISO3]
 
 #no. countries 
 hia %>% summarise(count = n_distinct(country))
