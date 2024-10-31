@@ -101,3 +101,22 @@ country_count<-unique(lcd2025$country) #174
 city_count<-unique(lcd2025$city) #1042
 
 write.csv(lcd2025, "lcd2025.csv")
+
+summary(lcd2025$PopWeight_Peak_NDVI_2015)
+summary(lcd2025$PopWeight_Peak_NDVI_2015_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2016)
+summary(lcd2025$PopWeight_Peak_NDVI_2016_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2017)
+summary(lcd2025$PopWeight_Peak_NDVI_2017_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2018)
+summary(lcd2025$PopWeight_Peak_NDVI_2018_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2019)
+summary(lcd2025$PopWeight_Peak_NDVI_2019_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2020)
+summary(lcd2025$PopWeight_Peak_NDVI_2020_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2021)
+summary(lcd2025$PopWeight_Peak_NDVI_2021_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2022)
+summary(lcd2025$PopWeight_Peak_NDVI_2022_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2023)
+summary(lcd2025$PopWeight_Peak_NDVI_2023_100m)

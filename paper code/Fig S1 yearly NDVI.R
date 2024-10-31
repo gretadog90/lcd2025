@@ -18,6 +18,8 @@ library(ggpubr)
 library(egg)
 library(data.table)
 library(stringr)
+library(lemon)
+library(gtable)
 
 ####import####
 #set working directory
@@ -73,11 +75,37 @@ colnames(means_who_sub) <- c("sub.region","clim_region","year", "mean")
 long$year<-gsub("^20","'",long$year)
 means_who_sub$year<-gsub("^20","'",means_who_sub$year)
 
+#function to select location for legend
+shift_legend <- function(p) {
+  # ...
+  # to grob
+  gp <- ggplotGrob(p)
+  facet.panels <- grep("^panel", gp[["layout"]][["name"]])
+  empty.facet.panels <- sapply(facet.panels, function(i) "zeroGrob" %in% class(gp[["grobs"]][[i]]))
+  empty.facet.panels <- facet.panels[empty.facet.panels]
+  
+  # establish name of empty panels
+  empty.facet.panels <- gp[["layout"]][empty.facet.panels, ]
+  names <- empty.facet.panels$name
+  # example of names:
+  #[1] "panel-3-2" "panel-3-3"
+  
+  # now we just need a simple call to reposition the legend
+  reposition_legend(p, 'center', panel=names)
+}
+
 #plot
 pdf(file = "graphs/line graph averages who subregion.pdf", width=13.5, height=8.5)
-ggplot() +
-  geom_line(data=long, aes(x=year, y=value, group=city, color=clim_region), alpha=.2, size=.5) +
+a<-ggplot() +
+  geom_line(data=long, aes(x=year, y=value, group=city, color=clim_region), size=.3) +
   geom_line(data=means_who_sub, aes(x=year, y=mean,group=clim_region, color=clim_region), size=1)+
   scale_color_brewer(palette = "PuOr", name = "Köppen-Geiger\nclimate classification")+
-  xlab('Year') + ylab('Population-weighted greenest season NDVI')+ facet_wrap(~sub.region, ncol=4)
+  xlab('Year') + ylab('Population-weighted greenest season NDVI')+ facet_wrap(~sub.region, ncol=4)+
+  theme(legend.key.size = unit(1, 'cm'), #change legend key size
+        legend.key.height = unit(.6, 'cm'), #change legend key height
+        legend.key.width = unit(1, 'cm'), #change legend key width
+        legend.title = element_text(size=12), #change legend title font size
+        legend.text = element_text(size=10)) #change legend text font size
+a<-shift_legend(a)
+a
 dev.off()

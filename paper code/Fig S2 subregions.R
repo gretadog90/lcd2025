@@ -70,7 +70,10 @@ world_map<-merge(world_map, subgroups[,c("country", "sub.region")],
                by.x="region",by.y="country", all.x = TRUE)
 #drop Antarctica
 world_map<-subset(world_map, region != "Antarctica")
+world_map <- world_map %>% dplyr::filter(!is.na(sub.region))
+world_map<-arrange(world_map, order)
 
+pdf(file ="graphs/S2 subregion map.pdf", height=5, width=8)
 ggplot() +
   ## First layer: worldwide map
   geom_polygon(data = map_data('world')[map_data('world')$region != "Antarctica",], #drop Antarctica
@@ -79,61 +82,10 @@ ggplot() +
   geom_polygon(data = world_map, 
                aes(x=long, y=lat, group=group, fill=sub.region),
                color = 'black') +
+  labs(fill="Geographic region")+
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
         legend.text = element_text(size = 8), 
         legend.title = element_text(size = 10))
 
-
-#map the subregions
-ggplot() +
-  ## First layer: worldwide map
-  geom_polygon(data = world_map,
-               aes(x=long, y=lat, group = group)) +
-  ## Second layer: Country map
-  geom_polygon(data = world_map,
-               aes(x=long, y=lat, group=group, fill=sub.region)) 
-
-+
-  theme(legend.position="none")
-
-
-+
-  geom_polygon(data = hia, aes(x = Longitude, y = Latitude, 
-                             colour = cut(ndvi2014_2018, c(0, .1, .2, .3, .4, .5, 1))), size=.5) +
-  scale_color_manual(name = "2014-2018\nPopulation-weighted\nGreenest Season NDVI",
-                     values=c("#EEB99F","#EAB64E","#E6E600","#63C600","#3b7600","#003100", "#F2F2F2"),
-                     labels=c("0-0.09", "0.10-0.19", "0.20-0.29", "0.30-0.39", "0.40-0.49", "0.5+")) +
-  theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
-        axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 8), 
-        legend.title = element_text(size = 10))
-
-
-[1] "British Indian Ocean Territory"                      
-[2] "French Southern Territories"                         
-[3] "Réunion" 
-[7] "Cabo Verde"  
-[9] "Antigua and Barbuda"                                 
-[10] "Bonaire, Sint Eustatius and Saba"                    
-[11] "British Virgin Islands"                              
-[12] "Curaçao"                                             
-[13] "Saint Barthélemy"                                    
-[14] "Saint Kitts and Nevis"                               
-[15] "Saint Martin (French Part)"                          
-[16] "Saint Vincent and the Grenadines"                    
-[17] "Sint Maarten (Dutch part)"   
-[19] "United States Virgin Islands"     
-[21] "Bouvet Island"                                       
-[22] "Falkland Islands (Malvinas)"                         
-[23] "South Georgia and the South Sandwich Islands"    
-[40] "Åland Islands"                                       
-[41] "Svalbard and Jan Mayen Islands" 
-[43] "Gibraltar"  
-[46] "Cocos (Keeling) Islands"                             
-[47] "Heard Island and McDonald Islands"  
-[49] "United States Minor Outlying Islands"                
-[50] "Pitcairn"   
-[53] "Wallis and Futuna Islands" 
-[51] "Tokelau"  
-[52] "Tuvalu"  
+dev.off()

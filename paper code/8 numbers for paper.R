@@ -84,3 +84,15 @@ tapply(hia$delta_mortality, hia$clim_region, summary)
 tapply(hia$delta_mortality, hia$sub.region, summary)
 
 hia<- hia[order(hia$sub.region, hia$delta_mortality),]
+
+#merged exposure data
+summary(hia$PopWeight_Peak_NDVI_2014_100m)
+summary(hia$PopWeight_Peak_NDVI_2015_100m)
+summary(hia$PopWeight_Peak_NDVI_2016_100m)
+summary(hia$PopWeight_Peak_NDVI_2017_100m)
+summary(hia$PopWeight_Peak_NDVI_2018_100m)
+summary(hia$PopWeight_Peak_NDVI_2019_100m)
+summary(hia$PopWeight_Peak_NDVI_2020_100m)
+summary(hia$PopWeight_Peak_NDVI_2021_100m)
+summary(hia$PopWeight_Peak_NDVI_2022_100m)
+summary(hia$PopWeight_Peak_NDVI_2023_100m)
