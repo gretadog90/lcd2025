@@ -1,5 +1,5 @@
 #########################################################################
-# Figure 2: % Diff by sub.region and HIA per 100,000 by sub.region
+# Figure 3: % Exposure by sub.region (diff and pct diff)
 #########################################################################
 #### Set up ####
 #clear objects
@@ -24,6 +24,8 @@ setwd('~/Documents/data/Lancet 2025/')
 hia<-read.csv("outputHIA/hia_100m_5yr.csv")
 hia<-hia[!is.na(hia$ndvi2019_2023),]
 
+hia$diff<-hia$ndvi2019_2023-hia$ndvi2014_2018
+hist(hia$diff)
 hia$pct_diff<-((hia$ndvi2019_2023-hia$ndvi2014_2018)/hia$ndvi2014_2018)*100
 hist(hia$pct_diff)
 

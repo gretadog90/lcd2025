@@ -52,6 +52,29 @@ subset<-lcd2025[,c("city", "lc_group", "hdi_level", "clim_region",  "who_region"
                    "PopWeight_Avg_NDVI_2018_100m","PopWeight_Avg_NDVI_2019_100m", 
                    "PopWeight_Avg_NDVI_2020_100m", "PopWeight_Avg_NDVI_2021_100m", 
                    "PopWeight_Avg_NDVI_2022_100m", "PopWeight_Avg_NDVI_2023_100m")]  
+
+#reshape long so that each row represents a city/year combo               
+long <- melt(setDT(subset), 
+             id.vars = c("city", "lc_group", "hdi_level", "clim_region", "who_region", "sub.region"), 
+             variable.name = "year")
+
+#get rid of variable prefix/suffix so year now= "2015" etc.
+long<-long %>% 
+  mutate(year = str_remove(year, '^PopWeight_Avg_NDVI_'))
+long<-long %>% 
+  mutate(year = str_remove(year, '_100m$'))
+
+## WHO_SUB_REGION
+# create means by region/climate group
+means_who_sub <- aggregate(long$value, by=list(long$sub.region, long$clim_region, long$year), 
+                           function(x)mean(x, na.rm=TRUE))
+# rename columns to match
+colnames(means_who_sub) <- c("sub.region","clim_region","year", "mean")
+
+#remove 20 from years so that it shows up better in graph
+long$year<-gsub("^20","'",long$year)
+means_who_sub$year<-gsub("^20","'",means_who_sub$year)
+
 #create a pct change over time var
 lcd2025_pctChange <- subset[, c("city", "lc_group", "hdi_level", "clim_region",  "who_region", "sub.region")]
 lcd2025_pctChange$pctChange2014<-0
@@ -75,26 +98,27 @@ long_pctChange<-long_pctChange %>%
   mutate(year = str_remove(year, '^pctChange'))
 long_pctChange$value<-long_pctChange$value*100
 
-means_pctChange <- aggregate(long_pctChange$value, 
-                             by=list(long_pctChange$sub.region, long_pctChange$clim_region, long_pctChange$year), 
-                             function(x)mean(x, na.rm=TRUE))
+## PCT change
+# create means by region/climate group
+means_who_sub_pctChange <- aggregate(long_pctChange$value, 
+                                     by=list(long_pctChange$sub.region, long_pctChange$clim_region, long_pctChange$year), 
+                                     function(x)mean(x, na.rm=TRUE))
 # rename columns to match
-colnames(means_pctChange) <- c("sub.region","clim_region","year", "mean")
+colnames(means_who_sub_pctChange) <- c("sub.region","clim_region","year", "value")
 
-#remove 20 from years so that it shows up better in graph
-long_pctChange$year<-gsub("^20","'",long_pctChange$year)
-means_pctChange$year<-gsub("^20","'",means_pctChange$year)
+#set up the file to save figure
+pdf(file = "graphs/line graph pct change by climate.pdf")
 
 #plot
-pdf(file = "graphs/line graph pct change who subregion.pdf", width=13.5, height=8.5)
 ggplot() +
-  geom_line(data=long_pctChange, aes(x=year, y=value, group=city, color=clim_region), size=.3) +
-  geom_line(data=means_pctChange, aes(x=year, y=mean,group=clim_region), size=1)+
-  scale_color_brewer(palette = "PuOr")+
-  xlab('Year') + ylab('Population-weighted greenest season NDVI')+ facet_wrap(~clim_region, ncol=4)+
+  geom_line(data=long_pctChange, aes(x=year, y=value, group=city, color=sub.region), alpha=.2, size=.5) +
+  geom_line(data=means_who_sub_pctChange, aes(x=year, y=value, group=sub.region, color=sub.region), size=1)+
+  xlab('Year') + ylab('% change in pop-weighted greenest season NDVI')+ 
+  facet_wrap(~clim_region, nrow=3, scales = "free_y")+
   theme(legend.key.size = unit(1, 'cm'), #change legend key size
-        legend.key.height = unit(.6, 'cm'), #change legend key height
+        legend.key.height = unit(.3, 'cm'), #change legend key height
         legend.key.width = unit(1, 'cm'), #change legend key width
-        legend.title = element_text(size=12), #change legend title font size
-        legend.text = element_text(size=10)) #change legend text font size
+        legend.title = element_text("Geographical region", size=9), #change legend title font size
+        legend.text = element_text(size=8)) #change legend text font size
+
 dev.off()
