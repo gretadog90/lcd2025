@@ -58,7 +58,7 @@ city_range<-hia[,c("sub.region","clim_region", "city",
 city_range$min<-as.numeric(apply(city_range, 1, FUN = min))
 city_range$max<-as.numeric(apply(city_range[,4:13], 1, FUN = max))
 city_range$range<-city_range$max-city_range$min
-
+summary(city_range$range)
 tapply(city_range$range, city_range$clim_region, summary)
 tapply(city_range$range, city_range$sub.region, summary)
 
@@ -66,6 +66,7 @@ tapply(city_range$range, city_range$sub.region, summary)
 summary(hia$ndvi2014_2018)
 summary(hia$ndvi2019_2023)
 summary(hia$pct_diff)
+tapply(hia$ndvi2019_2023, hia$sub.region, summary)
 
 #summary stats for FIG 3
 #get regions from top and bottom most % change
