@@ -62,10 +62,16 @@ summary(city_range$range)
 tapply(city_range$range, city_range$clim_region, summary)
 tapply(city_range$range, city_range$sub.region, summary)
 
+city_range$pctdiff_range<-(city_range$max-city_range$min)/city_range$min
+summary(city_range$pctdiff_range)
+city_range<- city_range[order(city_range$pctdiff_range),]
+sum(city_range$pctdiff_range > .2)
+  
 #get summary stats for FIG 2
 summary(hia$ndvi2014_2018)
 summary(hia$ndvi2019_2023)
 summary(hia$pct_diff)
+tapply(hia$ndvi2014_2018, hia$sub.region, summary)
 tapply(hia$ndvi2019_2023, hia$sub.region, summary)
 
 #summary stats for FIG 3
@@ -144,3 +150,11 @@ tapply(hia$delta_mortality, hia$sub.region, summary)
 
 hia<- hia[order(hia$sub.region, hia$delta_mortality),]
 
+#discussion
+euro<-hia %>%
+  mutate(Europe = ifelse(str_detect(sub.region, "Europe"),
+                       1,
+                       0))
+
+tapply(euro$ndvi2019_2023, euro$Europe, summary)
+tapply(euro$delta_mortality, euro$Europe, summary)

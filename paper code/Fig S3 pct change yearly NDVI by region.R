@@ -115,8 +115,10 @@ a<-ggplot() +
   theme(legend.key.size = unit(1, 'cm'), #change legend key size
         legend.key.height = unit(.6, 'cm'), #change legend key height
         legend.key.width = unit(1, 'cm'), #change legend key width
-        legend.title = element_text(size=12), #change legend title font size
-        legend.text = element_text(size=10)) #change legend text font size
+        legend.title = element_text(size=13), #change legend title font size
+        legend.text = element_text(size=12),
+        strip.text = element_text(size = 12),
+        axis.title=element_text(size=13)) #change legend text font size
 a<-shift_legend(a)
 a
 dev.off()

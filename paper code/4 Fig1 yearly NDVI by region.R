@@ -100,12 +100,14 @@ a<-ggplot() +
   geom_line(data=long, aes(x=year, y=value, group=city, color=clim_region), size=.3) +
   geom_line(data=means_who_sub, aes(x=year, y=mean,group=clim_region, color=clim_region), size=1)+
   scale_color_manual(values=c("#E66101","#FDB863","#DEE6E7","#B2ABD2", "#5E3C99"), name = "Köppen-Geiger\nclimate classification")+
-  xlab('Year') + ylab('Population-weighted greenest season NDVI')+ facet_wrap(~sub.region, ncol=4)+
+  xlab('Year') + ylab('Population-weighted greenest season NDVI')+ facet_wrap(~sub.region, ncol=4)+ylim(0, 0.6)+
   theme(legend.key.size = unit(1, 'cm'), #change legend key size
         legend.key.height = unit(.6, 'cm'), #change legend key height
         legend.key.width = unit(1, 'cm'), #change legend key width
-        legend.title = element_text(size=12), #change legend title font size
-        legend.text = element_text(size=10)) #change legend text font size
+        legend.title = element_text(size=13), #change legend title font size
+        legend.text = element_text(size=12),
+        strip.text = element_text(size = 12),
+        axis.title=element_text(size=13)) #change region title text font size
 a<-shift_legend(a)
 a
 dev.off()
