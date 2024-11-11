@@ -158,3 +158,13 @@ euro<-hia %>%
 
 tapply(euro$ndvi2019_2023, euro$Europe, summary)
 tapply(euro$delta_mortality, euro$Europe, summary)
+
+#appendix fig S5
+hia<-hia[!is.na(hia$ndvi2019_2023),]
+hia$delta_mortality<-hia$delta_mortality*-1
+summary(hia$delta_mortality)
+summary(hia$lb)
+summary(hia$ub)
+
+hia<- hia[order(hia$delta_mortality),]
+
