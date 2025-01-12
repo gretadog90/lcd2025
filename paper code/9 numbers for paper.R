@@ -150,6 +150,11 @@ tapply(hia$delta_mortality, hia$sub.region, summary)
 
 hia<- hia[order(hia$sub.region, hia$delta_mortality),]
 
+hia %>% 
+  filter(sub.region=="Eastern Asia") %>% 
+  select(city, delta_mortality, lb, ub) 
+  
+
 #discussion
 euro<-hia %>%
   mutate(Europe = ifelse(str_detect(sub.region, "Europe"),
@@ -160,11 +165,14 @@ tapply(euro$ndvi2019_2023, euro$Europe, summary)
 tapply(euro$delta_mortality, euro$Europe, summary)
 
 #appendix fig S5
+hia<-read.csv("outputHIA/hia_100m_5yr.csv")
 hia<-hia[!is.na(hia$ndvi2019_2023),]
-hia$delta_mortality<-hia$delta_mortality*-1
+hia$delta_mortality<-hia$delta_mortality
 summary(hia$delta_mortality)
 summary(hia$lb)
 summary(hia$ub)
+
+tapply(hia$delta_mortality, hia$clim_region, summary)
 
 hia<- hia[order(hia$delta_mortality),]
 

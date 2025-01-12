@@ -29,7 +29,7 @@ hist(hia$delta_mortality)
 hia$diff<-hia$ndvi2019_2023-hia$ndvi2014_2018
 hist(hia$diff)
 
-hia$delta_mortality<-(hia$delta_mortality/hia$Population_2020_100m)*-100000
+hia$delta_mortality<-(hia$delta_mortality/hia$Population_2020_100m)*100000
 summary(hia$delta_mortality)
 hist(hia$delta_mortality)
 
@@ -48,8 +48,8 @@ a<-ggplot(data=hia, aes(x=delta_mortality, y=reorder(sub.region, order), fill=su
   xlab("")+
   ylab("")+
   labs(fill="Geographic Region")+
-  scale_x_continuous(breaks=c(-500,-250,0, 250, 500),
-                     labels=c("500 fewer", "250 fewer", "0", "250 more", "500 more"))+
+  scale_x_continuous(breaks=c(-25,-10,0, 10, 25),
+                     labels=c("25 fewer", "10 fewer", "0", "10 more", "25 more"))+
   theme(legend.position = "none",
         axis.text=element_text(size=9),
         axis.title=element_text(size=11))
@@ -60,8 +60,8 @@ b<-ggplot(data=nopolar, aes(x=delta_mortality, y=reorder(clim_region, order), fi
   xlab("Attributable deaths per 100,000 from changes in NDVI")+
   labs(fill="Köppen-Geiger\nclimate classification")+
   scale_fill_brewer(palette = "PuOr")+
-  scale_x_continuous(breaks=c(-500,-250,0, 250, 500),
-                     labels=c("500 fewer", "250 fewer", "0", "250 more", "500 more"))+
+  scale_x_continuous(breaks=c(-25,-10,0, 10, 25),
+                     labels=c("25 fewer", "10 fewer", "0", "10 more", "25 more"))+
   theme(legend.position = "none",
         axis.text=element_text(size=9),
         axis.title=element_text(size=11))

@@ -29,7 +29,7 @@ hist(hia$delta_mortality)
 hia$diff<-hia$ndvi2019_2023-hia$ndvi2014_2018
 hist(hia$diff)
 
-hia$delta_mortality<-hia$delta_mortality*-1
+hia$delta_mortality<-hia$delta_mortality
 
 summary(hia$delta_mortality)
 hist(hia$delta_mortality)
@@ -53,8 +53,8 @@ a<-ggplot(data=hia, aes(x=delta_mortality, y=reorder(sub.region, order), fill=su
   xlab("")+
   ylab("")+
   labs(fill="Geographic Region")+
-  scale_x_continuous(breaks=c(-60000,-40000,-20000, 0, 20000),
-                     labels=c("60,000 fewer", "40,000 fewer","20,000 fewer", "0", "20,000 more"))+
+  scale_x_continuous(breaks=c(-2000,-1000, 0,  1000),
+                     labels=c("2,000 fewer", "1,000 fewer", "0",  "1,000 more"))+
   theme(legend.position = "none",
         axis.text=element_text(size=9),
         axis.title=element_text(size=11))
@@ -65,8 +65,8 @@ b<-ggplot(data=nopolar, aes(x=delta_mortality, y=reorder(clim_region, order), fi
   xlab("Attributable deaths from changes in NDVI")+
   labs(fill="Köppen-Geiger\nclimate classification")+
   scale_fill_brewer(palette = "PuOr")+
-  scale_x_continuous(breaks=c(-60000,-40000,-20000, 0, 20000),
-                     labels=c("60,000 fewer", "40,000 fewer","20,000 fewer", "0", "20,000 more"))+
+  scale_x_continuous(breaks=c(-2000,-1000, 0, 1000),
+                     labels=c("2,000 fewer", "1,000 fewer", "0", "1,000 more"))+
   theme(legend.position = "none",
         axis.text=element_text(size=9),
         axis.title=element_text(size=11))
