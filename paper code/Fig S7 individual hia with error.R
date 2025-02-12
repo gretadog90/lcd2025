@@ -73,7 +73,7 @@ a<-ggplot(region_sum) +
   geom_linerange( aes(x=sub.region, y=delta_mortality, ymin=lb, ymax=ub), colour="black", alpha=0.9)+
   coord_flip()+
   xlab("")+
-  ylab("Attributable deaths form changes in NDVI")+
+  ylab("Attributable deaths from changes in NDVI")+
   scale_y_continuous(breaks=c(-10,-5, 0, 5, 10),
                      labels=c("10 fewer", "5 fewer", "0", "5 more", "10 more"))+
   theme(legend.position = "none")
@@ -84,7 +84,7 @@ b<-ggplot(climate_sum) +
   scale_fill_brewer(palette = "PuOr")+
   coord_flip()+
   xlab("")+
-  ylab("Attributable deaths form changes in NDVI")+
+  ylab("Attributable deaths from changes in NDVI")+
   scale_y_continuous(breaks=c(-10,-5, 0, 5, 10),
                      labels=c("10 fewer", "5 fewer", "0", "5 more", "10 more"))+
   theme(legend.position = "none")

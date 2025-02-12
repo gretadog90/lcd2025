@@ -27,7 +27,7 @@ setwd('~/Documents/data/Lancet 2025/')
 hia<-read.csv("outputHIA/hia_100m_5yr.csv")
 hia<-hia[!is.na(hia$ndvi2019_2023),]
 
-pdf(file ="graphs/S2 climate class map city dots.pdf", height=5, width=8)
+pdf(file ="graphs/S2 climate class map city dots.pdf", height=4, width=9)
 
 ggplot() +
   ## First layer: worldwide map
