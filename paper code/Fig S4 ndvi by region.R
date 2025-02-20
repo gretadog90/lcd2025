@@ -34,7 +34,7 @@ hia<- hia %>%
   mutate(order = cur_group_id())
 
 #set up the file to save figure
-pdf(file = "graphs/boxplot_region.pdf")
+pdf(file = "graphs/S4 boxplot_region.pdf")
 
 #make boxplots for NDVI by region
 ggplot(hia, aes(x=reorder(sub.region, order), y=ndvi2019_2023)) + 
@@ -44,6 +44,7 @@ ggplot(hia, aes(x=reorder(sub.region, order), y=ndvi2019_2023)) +
   xlab("")+ 
   ylab("Average greenest-season NDVI (2019-2023)")+
   coord_flip()+
-  theme(legend.position="none")
+  theme(legend.position="none", axis.title=element_text(size=14),
+        axis.text = element_text(size = 12))
 
 dev.off()

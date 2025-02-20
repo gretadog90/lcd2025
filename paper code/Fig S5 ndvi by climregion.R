@@ -38,7 +38,7 @@ polar<-subset(hia, clim_region=="Polar")
 hia<-subset(hia, clim_region!="Polar")
 
 #set up the file to save figure
-pdf(file = "graphs/boxplots_climzone.pdf")
+pdf(file = "graphs/S5 boxplots_climzone.pdf")
 
 #make boxplots for NDVI by region
 ggplot(hia, aes(x=reorder(clim_region, order), y=ndvi2019_2023)) + 
@@ -49,6 +49,7 @@ ggplot(hia, aes(x=reorder(clim_region, order), y=ndvi2019_2023)) +
   xlab("")+ 
   ylab("Average greenest-season NDVI (2019-2023)")+
   coord_flip()+
-  theme(legend.position="none")
+  theme(legend.position="none", axis.title=element_text(size=14),
+        axis.text = element_text(size = 12))
 
 dev.off()

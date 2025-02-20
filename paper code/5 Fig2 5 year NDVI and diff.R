@@ -46,8 +46,8 @@ map_early<-ggplot() +
                      labels=c("0-0.09", "0.10-0.19", "0.20-0.29", "0.30-0.39", "0.40-0.49", "0.5+")) +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 8), 
-        legend.title = element_text(size = 10))
+        legend.text = element_text(size = 10), 
+        legend.title = element_text(size = 12))
 
 #panel b: 2019-2023 100m pop weighted NDVI 
 map_late<-ggplot() +
@@ -65,8 +65,8 @@ map_late<-ggplot() +
                      labels=c("0-0.09", "0.10-0.19", "0.20-0.29", "0.30-0.39", "0.40-0.49", "0.5+")) +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 8), 
-        legend.title = element_text(size = 10))
+        legend.text = element_text(size = 10), 
+        legend.title = element_text(size = 12))
 
 #panel c: 100m pop weighted NDVI pct diff
 map_pctdiff<-ggplot() +
@@ -85,11 +85,11 @@ map_pctdiff<-ggplot() +
                               "5-9% increase", "10-19% increase", ">20% increase"))+ 
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 8), 
-        legend.title = element_text(size = 10))
+        legend.text = element_text(size = 10), 
+        legend.title = element_text(size = 12))
 
 #set up the file to save figure
-pdf(file = "graphs/Figure1_5yr.pdf")
+pdf(file = "graphs/Fig2 5yr.pdf")
 
 figure <- ggarrange(map_early, map_late, map_pctdiff,
                     widths =8, heights=c(5,5,5),

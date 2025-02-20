@@ -56,8 +56,8 @@ a<-ggplot(data=hia, aes(x=delta_mortality, y=reorder(sub.region, order), fill=su
   scale_x_continuous(breaks=c(-2000,-1000, 0,  1000),
                      labels=c("2,000 fewer", "1,000 fewer", "0",  "1,000 more"))+
   theme(legend.position = "none",
-        axis.text=element_text(size=9),
-        axis.title=element_text(size=11))
+        axis.text=element_text(size=11),
+        axis.title=element_text(size=13))
 
 b<-ggplot(data=nopolar, aes(x=delta_mortality, y=reorder(clim_region, order), fill=clim_region,)) +
   geom_violin(width=2.1, size=0.2) +
@@ -68,11 +68,11 @@ b<-ggplot(data=nopolar, aes(x=delta_mortality, y=reorder(clim_region, order), fi
   scale_x_continuous(breaks=c(-2000,-1000, 0, 1000),
                      labels=c("2,000 fewer", "1,000 fewer", "0", "1,000 more"))+
   theme(legend.position = "none",
-        axis.text=element_text(size=9),
-        axis.title=element_text(size=11))
+        axis.text=element_text(size=11),
+        axis.title=element_text(size=13))
 
 #set up the file to save figure
-pdf(file ="graphs/Fig S6 abs mort by region and climate.pdf")
+pdf(file ="graphs/FigS6 abs mort by region and climate.pdf")
 
 figure <- ggarrange(a, b,
                     widths=11, heights=c(5,5),

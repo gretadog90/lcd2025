@@ -8,6 +8,7 @@ rm(list = ls())
 #libraries
 library(tidyr)
 library(tidyverse)
+library(plyr)
 library(dplyr)
 library(ggplot2)
 library(ggmap)
@@ -26,51 +27,53 @@ hia<-read.csv("outputHIA/hia_100m_5yr.csv")
 hia<-hia[!is.na(hia$ndvi2019_2023),]
 hist(hia$delta_mortality)
 
-hia$delta_mortality<-(hia$delta_mortality/hia$Population_2020_100m)*100000
-summary(hia$delta_mortality)
-hist(hia$delta_mortality)
-hia$a<-(hia$lb/hia$Population_2020_100m)*100000
-hia$b<-(hia$ub/hia$Population_2020_100m)*100000
-hia <- transform(hia, lb = pmin(a, b))
-hia <- transform(hia, ub = pmax(a, b))
-summary(hia$lb)
-summary(hia$ub)
-
-hia$lb_str<-as.character(round(hia$lb, 2))
-hia$ub_str<-as.character(round(hia$ub, 2))
-hia$ci<-paste("(",hia$lb_str,", ",hia$ub_str,")", sep="")
-summary<-hia[,c("city", "country", "sub.region", "clim_region", "delta_mortality", "ci")]
-
-summary<-summary[order(summary$sub.region, summary$city),]
-
-write.csv(summary, "graphs/tableS1.csv")
-
-region_sum<-hia %>% 
+hia_sum<- hia %>% 
   group_by(sub.region) %>% 
   summarize(
-    delta_mortality = mean(delta_mortality),
-    lb = mean(lb),
-    ub=mean(ub),
+    delta_mortality = sum(delta_mortality),
+    pop = sum(Population_2020_100m),
+    lb=sum(lb),
+    ub=sum(ub)
   )
 
-region_sum<- region_sum %>%
-  mutate(id = (row_number()-15)*-1)
+hia_sum$delta_mortality_per100000<-(hia_sum$delta_mortality/hia_sum$pop)*100000
+hia_sum$a<-hia_sum$lb
+hia_sum$b<-hia_sum$ub
+hia_sum <- transform(hia_sum, lb = pmin(a, b))
+hia_sum <- transform(hia_sum, ub = pmax(a, b))
+
+hia_sum$lb_per100000<-(hia_sum$lb/hia_sum$pop)*100000
+hia_sum$ub_per100000<-(hia_sum$ub/hia_sum$pop)*100000
 
 climate_sum<-hia %>% 
   group_by(clim_region) %>% 
   summarize(
-    delta_mortality = mean(delta_mortality),
-    lb = mean(lb),
-    ub=mean(ub),
+    delta_mortality = sum(delta_mortality),
+    pop = sum(Population_2020_100m),
+    lb=sum(lb),
+    ub=sum(ub)
   )
+
+climate_sum$delta_mortality_per100000<-(climate_sum$delta_mortality/climate_sum$pop)*100000
+climate_sum$a<-climate_sum$lb
+climate_sum$b<-climate_sum$ub
+climate_sum <- transform(climate_sum, lb = pmin(a, b))
+climate_sum <- transform(climate_sum, ub = pmax(a, b))
+
+climate_sum$lb_per100000<-(climate_sum$lb/climate_sum$pop)*100000
+climate_sum$ub_per100000<-(climate_sum$ub/climate_sum$pop)*100000
+
+
+hia_sum<- hia_sum %>%
+  mutate(id = (row_number()-15)*-1)
 
 climate_sum<-climate_sum[climate_sum$clim_region!="Polar",]
 climate_sum<- climate_sum %>%
   mutate(id = (row_number()-4)*-1)
 
-a<-ggplot(region_sum) +
-  geom_bar( aes(x=sub.region, y=delta_mortality, fill=sub.region), stat="identity", alpha=0.5) +
-  geom_linerange( aes(x=sub.region, y=delta_mortality, ymin=lb, ymax=ub), colour="black", alpha=0.9)+
+a<-ggplot(hia_sum) +
+  geom_bar( aes(x=reorder(sub.region, id), y=delta_mortality_per100000, fill=sub.region), stat="identity", alpha=0.5) +
+  geom_linerange( aes(x=sub.region, y=delta_mortality_per100000, ymin=lb_per100000, ymax=ub_per100000), colour="black", alpha=0.9)+
   coord_flip()+
   xlab("")+
   ylab("Attributable deaths from changes in NDVI")+
@@ -79,8 +82,8 @@ a<-ggplot(region_sum) +
   theme(legend.position = "none")
 
 b<-ggplot(climate_sum) +
-  geom_bar( aes(x=clim_region, y=delta_mortality, fill=clim_region), stat="identity", alpha=0.5) +
-  geom_linerange( aes(x=clim_region, y=delta_mortality, ymin=lb, ymax=ub), colour="black", alpha=0.9)+
+  geom_bar( aes(x=reorder(clim_region, id), y=delta_mortality_per100000, fill=clim_region), stat="identity", alpha=0.5) +
+  geom_linerange( aes(x=clim_region, y=delta_mortality_per100000, ymin=lb_per100000, ymax=ub_per100000), colour="black", alpha=0.9)+
   scale_fill_brewer(palette = "PuOr")+
   coord_flip()+
   xlab("")+
@@ -90,7 +93,7 @@ b<-ggplot(climate_sum) +
   theme(legend.position = "none")
 
 #set up the file to save figure
-pdf(file ="graphs/Fig S7 mort by region with error.pdf")
+pdf(file ="graphs/FigS7 mort by region with error.pdf")
 
 figure <- ggarrange(a, b,
                     widths=8, heights=c(3.5,3.5),

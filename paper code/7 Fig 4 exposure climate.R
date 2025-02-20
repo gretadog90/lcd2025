@@ -57,7 +57,7 @@ b<-ggplot(hia, aes(x=reorder(clim_region, order), y=pct_diff)) +
   theme(legend.position="none")
 
 #set up the file to save figure
-pdf(file = "graphs/Fig 3 exposure by climate.pdf")
+pdf(file = "graphs/Fig4 exposure by climate.pdf")
 
 figure <- ggarrange(a, b,
                     widths=8.5, heights=c(5,5),

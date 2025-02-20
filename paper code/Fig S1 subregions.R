@@ -41,7 +41,7 @@ ggplot() +
   theme_classic()+
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 8), 
-        legend.title = element_text(size = 10),  axis.line=element_blank())
+        legend.text = element_text(size = 10), 
+        legend.title = element_text(size = 12),  axis.line=element_blank())
 
 dev.off()

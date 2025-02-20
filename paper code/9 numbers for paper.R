@@ -145,8 +145,9 @@ summary(hia$delta_mortality)
 hist(hia$delta_mortality)
 summary(hia$ub)
 summary(hia$lb)
-tapply(hia$delta_mortality, hia$clim_region, summary)
+
 tapply(hia$delta_mortality, hia$sub.region, summary)
+tapply(hia$delta_mortality, hia$clim_region, summary)
 
 hia<- hia[order(hia$sub.region, hia$delta_mortality),]
 

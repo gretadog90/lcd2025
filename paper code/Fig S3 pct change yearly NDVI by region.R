@@ -106,7 +106,7 @@ shift_legend <- function(p) {
 }
 
 #plot
-pdf(file = "graphs/line graph pct change who subregion set scale.pdf", width=13.5, height=8.5)
+pdf(file = "graphs/S3 line graph pct change who subregion set scale.pdf", width=13.5, height=8.5)
 a<-ggplot() +
   geom_line(data=long_pctChange, aes(x=year, y=value, group=city, color=clim_region), size=.3) +
   geom_line(data=means_pctChange, aes(x=year, y=mean,group=clim_region, color=clim_region), size=1)+
@@ -115,10 +115,10 @@ a<-ggplot() +
   theme(legend.key.size = unit(1, 'cm'), #change legend key size
         legend.key.height = unit(.6, 'cm'), #change legend key height
         legend.key.width = unit(1, 'cm'), #change legend key width
-        legend.title = element_text(size=13), #change legend title font size
-        legend.text = element_text(size=12),
-        strip.text = element_text(size = 12),
-        axis.title=element_text(size=13)) #change legend text font size
+        legend.title = element_text(size=14), #change legend title font size
+        legend.text = element_text(size=13),
+        strip.text = element_text(size = 13),
+        axis.title=element_text(size=14)) #change legend text font size
 a<-shift_legend(a)
 a
 dev.off()
