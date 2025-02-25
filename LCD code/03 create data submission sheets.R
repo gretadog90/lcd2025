@@ -28,17 +28,23 @@ data_100m<-select(lcd2025, c("Latitude", "Longitude", "ISO3", "city", "country",
                              "Green_Area_2020", "GreenBlue_Area_2020"))
 names(data_100m) <- sub("_100m", "", names(data_100m))
 
+#get rid of indicator variable because R can't reshape both numeric & cat
 data_100m<- data_100m %>% select(-contains("indicator"))
- 
+
+#remove all underscores but last (so that we can seperate off year)
+data_100m<- data_100m %>% setNames(gsub("(_[^_]*)$|_", "\\1", names(.)))
+
+#reshape long-- each row now has city, year, and indicator columns
 long <- data_100m %>%
   pivot_longer(
     cols = matches("[_20][1-2][0-9]$"), 
-    names_to = "year",
-    values_to = "value")      
+    names_to = c("indicator", "year"),
+    names_sep = "_")  
 
-long$year2 <- str_extract(long$year, "20[1-2][0-9]$")
-long$year<-gsub('_20[1-2][0-9]', '', long$year)
+#reshape wide-- now each row has city, year columns plus one column for each 
+# indicator i.e. peakNDVI, avgNDVI 
+global <- long %>%
+  pivot_wider(names_from = indicator, values_from = value)
 
-test<- long %>%
-  pivot_wider(names_from = year, values_from = year2)
-test<-reshape(long, idvar = "year2", timevar = "year", direction = "wide")
+#export data for global tab
+write.csv(data2015, paste0(output_dir, 'data2015.csv'))
