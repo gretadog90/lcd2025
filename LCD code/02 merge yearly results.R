@@ -77,20 +77,6 @@ lcd2025$Latitude[lcd2025$city=="Sao Tome"]<-0.336111 #lat
 lcd2025$Longitude[lcd2025$city=="Sao Tome"]<-6.730556 #lon
 
 #### Create variables ####
-# for all the pop-weighted peak NDVI variables (years and 100m versions), 
-# create greenness indicator
-lcd2025<- lcd2025 %>%
-  mutate(across(starts_with('PopWeight_Peak_NDVI_'),
-                ~case_when( . >=0.7 ~ 'Exceptionally High',
-                           . >= 0.6 & . <0.7 ~ 'Very High',
-                           . >= 0.5 & . <0.6 ~ 'High',
-                           . >= 0.4 & . <0.5 ~ 'Moderate',
-                           . >= 0.3 & . <0.4 ~ 'Low',
-                           . >= 0.2 & . <0.3 ~ 'Very Low',
-                           . <= 0.2 ~ 'Exceptionally Low',
-                           TRUE ~ 'NA'), 
-                .names = '{sub("PopWeight_Peak_NDVI_", "indicator_", .col)}'))
-                                  
 lcd2025$clim_region <- factor(lcd2025$clim_region,
                                   levels = c(1,2,3,4,5),
                                   labels = c("Tropical", "Arid", "Temperate", "Continental", "Polar"))

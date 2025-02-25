@@ -46,5 +46,11 @@ long <- data_100m %>%
 global <- long %>%
   pivot_wider(names_from = indicator, values_from = value)
 
+# create greenness indicator
+global$greennessIndicator <- cut(global$PopWeightPeakNDVI, 
+                   breaks=c(-Inf, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, Inf), 
+                   labels=c('Exceptionally Low','Very Low', 'Low', 
+                            'Moderate','High', 'Very High', 'Exceptionally High'))
+                           
 #export data for global tab
-write.csv(data2015, paste0(output_dir, 'data2015.csv'))
+write.csv(global, 'global.csv')
