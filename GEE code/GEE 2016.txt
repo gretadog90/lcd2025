@@ -78,7 +78,21 @@ Map.centerObject(dc);
 var ndviParams = {min: -1, max: 1, palette: ['blue', 'white', 'green']};
 Map.addLayer(NDVI_winter, ndviParams, 'NDVI image');
 
- 
+//Calculate mean per city
+var winter_cities = NDVI_winter.reduceRegions({
+  collection: cities, 
+  reducer: ee.Reducer.mean(),
+  scale: 30
+});
+
+//export table to drive
+Export.table.toDrive({
+  collection: winter_cities,
+  folder: 'Lancet2025',
+  description: '2016_winter',
+  fileFormat: 'CSV'
+});
+
 ////Spring 2016
 //filter to correct date range
 var spring = ndvi.filterDate('2016-03-01', '2016-05-31');
@@ -92,6 +106,21 @@ var NDVI_spring = ee.Algorithms.Landsat.simpleComposite(spring)
 
 // override NDVI to be missing where GSW map indicates water
 var NDVI_spring = NDVI_spring.mask(mask);
+
+//Calculate mean per city
+var spring_cities = NDVI_spring.reduceRegions({
+  collection: cities, 
+  reducer: ee.Reducer.mean(),
+  scale: 30
+});
+
+//export table to drive
+Export.table.toDrive({
+  collection: spring_cities,
+  description: '2016_spring',
+  folder: 'Lancet2025',
+  fileFormat: 'CSV'
+});
  
 ////Summer 2016
 //filter to correct date range
@@ -107,6 +136,21 @@ var NDVI_summer = ee.Algorithms.Landsat.simpleComposite(summer)
 // override NDVI to be missing where GSW map indicates water
 var NDVI_summer = NDVI_summer.mask(mask);
 
+//Calculate mean per city
+var summer_cities = NDVI_summer.reduceRegions({
+  collection: cities, 
+  reducer: ee.Reducer.mean(),
+  scale: 30
+});
+
+//export table to drive
+Export.table.toDrive({
+  collection: summer_cities,
+  description: '2016_summer',
+  folder: 'Lancet2025',
+  fileFormat: 'CSV'
+});
+
 ////Fall 2016
 //filter to correct date range
 var fall = ndvi.filterDate('2016-09-01', '2016-11-30');
@@ -121,6 +165,20 @@ var NDVI_fall = ee.Algorithms.Landsat.simpleComposite(fall)
 // override NDVI to be missing where GSW map indicates water
 var NDVI_fall = NDVI_fall.mask(mask);
 
+//Calculate mean per city
+var fall_cities = NDVI_fall.reduceRegions({
+  collection: cities, 
+  reducer: ee.Reducer.mean(),
+  scale: 30
+});
+
+//export table to drive
+Export.table.toDrive({
+  collection: fall_cities,
+  folder: 'Lancet2025',
+  description: '2016_fall',
+  fileFormat: 'CSV'
+});
  
 // Cumulative averages computed in R by averaging seasonal values
 // Peak greenness computed in R by extracting max from seasonal data
