@@ -88,8 +88,8 @@ shift_legend <- function(p) {
 pdf(file = "line graph lc group hdi.pdf", width=13.5, height=8.5)
 a<-ggplot() +
   geom_line(data=long, aes(x=year, y=value, group=city, color=hdi_level), size=.3) +
-  scale_color_manual(values=c("Very High"="#63B8FF","High"="#D8BFD8","Medium"="#B8860B",
-                              "Low"="#40E0D0", "N/A"="#708090"), name = "HDI level")+
+  scale_color_manual(values=c("Very High"="purple4","High"="deepskyblue4","Medium"="mediumseagreen",
+                              "Low"="gold", "NA"="gray42"), name = "HDI level")+
   xlab('Year') + ylab('Population-weighted greenest season NDVI')+ facet_wrap(~sub.region, ncol=4)+ylim(0, 0.6)+
   theme(legend.key.size = unit(5, 'cm'), #change legend key size
         legend.key.height = unit(.6, 'cm'), #change legend key height

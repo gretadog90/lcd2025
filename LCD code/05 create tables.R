@@ -57,3 +57,63 @@ pw_peak<- pw_peak %>%
 
 #export
 write.csv(pw_peak, 'table1.csv')
+
+#subset to 2024 for the following tables
+current_year<-select(data_100m, c("lc_group", "who_region", "hdi_level", "clim_region",
+                                                    ends_with("2024")))
+
+#table 2. avg ndvi, peak ndvi, pop-weighted avg + peak ndvi by HDI
+#collapse to hdi
+hdi<- current_year %>%
+  group_by(hdi_level) %>%
+  summarize(
+    peak_ndvi=mean(Peak_NDVI_2024),
+    avg_ndvi=mean(Avg_NDVI_2024),
+    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2024),
+    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2024)
+  )
+
+#export
+write.csv(hdi, 'table2.csv')
+
+#table 3. avg ndvi, peak ndvi, pop-weighted avg + peak ndvi by climate region
+#collapse to clim_region
+clim_region<- current_year %>%
+  group_by(clim_region) %>%
+  summarize(
+    peak_ndvi=mean(Peak_NDVI_2024),
+    avg_ndvi=mean(Avg_NDVI_2024),
+    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2024),
+    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2024)
+  )
+
+#export
+write.csv(clim_region, 'table3.csv')
+
+#table 4. avg ndvi, peak ndvi, pop-weighted avg + peak ndvi by who_region
+#collapse to who_region
+who_region<- current_year %>%
+  group_by(who_region) %>%
+  summarize(
+    peak_ndvi=mean(Peak_NDVI_2024),
+    avg_ndvi=mean(Avg_NDVI_2024),
+    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2024),
+    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2024)
+  )
+
+#export
+write.csv(who_region, 'table4.csv')
+
+#table 3. avg ndvi, peak ndvi, pop-weighted avg + peak ndvi by lc_group
+#collapse to clim_region
+lc_group<- current_year %>%
+  group_by(lc_group) %>%
+  summarize(
+    peak_ndvi=mean(Peak_NDVI_2024),
+    avg_ndvi=mean(Avg_NDVI_2024),
+    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2024),
+    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2024)
+  )
+
+#export
+write.csv(lc_group, 'table5.csv')
