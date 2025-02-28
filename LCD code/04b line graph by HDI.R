@@ -62,7 +62,7 @@ colnames(means_lc) <- c("lc_group","hdi_level","year", "mean")
 long$year<-gsub("^20","'",long$year)
 means_lc$year<-gsub("^20","'",means_lc$year)
 
-#make hdi into a factor var with a more sensibel order
+#make hdi into a factor var with a more sensible order
 long$hdi_level <- factor(long$hdi_level, levels = c("Very High", "High", "Medium", "Low", "N/A"))
 
 #function to select location for legend
