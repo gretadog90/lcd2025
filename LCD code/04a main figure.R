@@ -53,8 +53,8 @@ map_2024<-ggplot() +
                      drop=FALSE) +
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 6), 
-        legend.title = element_text(size = 8))
+        legend.text = element_text(size = 8), 
+        legend.title = element_text(size = 10))
 
 #panel b: pct diff 2015-2020 v 2024 pop weighted peak NDVI 
 map_pctdiff<-ggplot() +
@@ -73,8 +73,8 @@ map_pctdiff<-ggplot() +
                               "5-9% increase", "10-19% increase", ">20% increase"))+ 
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
-        legend.text = element_text(size = 6), 
-        legend.title = element_text(size = 8))
+        legend.text = element_text(size = 8), 
+        legend.title = element_text(size = 10))
 
 #set up the file to save figure
 pdf(file = "main fig.pdf")

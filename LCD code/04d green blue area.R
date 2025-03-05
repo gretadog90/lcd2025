@@ -66,7 +66,7 @@ ggplot(long, aes(fill=type, y=value, x=order)) +
     strip.position = "left"
   ) +labs(x = "city", y = "Proportion")+
   theme(axis.ticks.x = element_blank(), axis.text.x =element_blank(),
-        legend.text = element_text(size = 6), legend.title = element_text(size = 8),
+        legend.text = element_text(size = 8), legend.title = element_text(size = 10),
         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
         panel.background = element_blank(), axis.line = element_line(colour = "white"))
 dev.off()
