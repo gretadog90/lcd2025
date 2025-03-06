@@ -117,3 +117,13 @@ lc_group<- current_year %>%
 
 #export
 write.csv(lc_group, 'table5.csv')
+
+#generate an urban area var that will be 1-green or blue area
+lcd2025$Blue_Area_2015<-lcd2025$GreenBlue_Area_2015-lcd2025$Green_Area_2015
+lcd2025$Blue_Area_2020<-lcd2025$GreenBlue_Area_2020-lcd2025$Green_Area_2020
+hist(lcd2025$Blue_Area_2020)
+
+blue_area_2020<-select(lcd2025, c("Latitude", "Longitude", "ISO3", "city", "country", 
+                                  "lc_group", "who_region", "hdi_level", "clim_region",
+                                  "Blue_Area_2020"))
+write.csv(blue_area_2020, 'blue_area.csv')
