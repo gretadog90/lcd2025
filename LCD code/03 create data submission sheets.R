@@ -52,5 +52,9 @@ global$greennessIndicator <- cut(global$PopWeightPeakNDVI,
                    labels=c('Exceptionally Low','Very Low', 'Low', 
                             'Moderate','High', 'Very High', 'Exceptionally High'))
                            
-#export data for global tab
+###### export data for GLOBAL tab ######
 write.csv(global, 'global.csv')
+
+lc_region <- aggregate(global, by=global$lc_group, 
+                           function(x)mean(x, na.rm=TRUE))
+
