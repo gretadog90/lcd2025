@@ -13,7 +13,7 @@ library(dplyr)
 
 #set working directory
 setwd('~/Documents/data/Lancet 2025/2017')
-output_dir="/Users/gretam/Documents/data/Lancet 2025/output/"
+output_dir="~/Documents/data/Lancet 2025/output/"
 
 ####import####
 #get list of all files ending in .csv in wd
@@ -23,8 +23,17 @@ file_list = list.files(pattern="\\.csv$")
 for (i in 1:length(file_list)) assign(str_remove(str_remove(file_list[i], "2017_"),".csv"), 
                                       read.csv(file_list[i])) 
 
+#### Seasonal NDVI data mgmt ####
+#combine all the seasons together in one long dataframe
+seasons<-rbind(fall,winter,spring,summer)
+
+#collapse to get mean and max of season mean NDVI by city
+seasons<- seasons %>%
+  group_by(ID_HDC_G0, city, country, UC_NM_MN, XC_ISO_LST) %>%
+  summarize(Avg_NDVI_2017 = mean(mean, na.rm = TRUE), Peak_NDVI_2017=max(mean, na.rm = TRUE))
+
 #import 2015 pop denom
-pop_denom_100m<-read.csv("/Users/gretam/Documents/data/Lancet 2025/2015/2015_pop_denom_100m.csv")
+pop_denom_100m<-read.csv("~/Documents/data/Lancet 2025/2015/2015_pop_denom_100m.csv")
 
 #### Pop-weighted NDVI data mgmt (100m) ####
 #combine all the seasons together in one long dataframe
@@ -46,4 +55,7 @@ seasons_popw_100m$PopWeight_Peak_NDVI_2017_100m<-seasons_popw_100m$annual_max_nu
 seasons_popw_100m[c("annual_avg_num_2017", "annual_max_num_2017", "annual_avg_num_2017_100m", 
                     "annual_max_num_2017_100m")] <- list(NULL) 
 
-write.csv(seasons_popw_100m, paste0(output_dir, 'data2017.csv'))
+data2017<-seasons %>%
+  inner_join(seasons_popw_100m)
+
+write.csv(data2017, paste0(output_dir, 'data2017.csv'))
