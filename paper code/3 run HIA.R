@@ -55,13 +55,19 @@ hia_100m$ndvi2014_2018 <- rowMeans(hia_100m[,c("PopWeight_Peak_NDVI_2014_100m", 
 hia_100m$ndvi2019_2023 <- rowMeans(hia_100m[,c("PopWeight_Peak_NDVI_2019_100m", "PopWeight_Peak_NDVI_2020_100m", 
                                                "PopWeight_Peak_NDVI_2021_100m",  "PopWeight_Peak_NDVI_2022_100m", 
                                                "PopWeight_Peak_NDVI_2023_100m")])
+hia_100m$diff<-(hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018)/.1
+
+mc<-hia_100m[,c("ID_HDC_G0", "city", "country", "sub.region", "clim_region",
+                "diff", "Population_2020_100m", "val.2020", "lower.2020", "upper.2020")]
+
+#save off the bare minimum for monte carlo analysis
+write.csv(mc, paste0(output,"mc.csv"))
 
 #set the protective HR, lb and ub per .1 increase in NDVI
 hr= 0.96
 hr_lb=0.94 
 hr_ub=0.97
 
-hia_100m$diff<-(hia_100m$ndvi2019_2023-hia_100m$ndvi2014_2018)/.1
 hia_100m$paf<-1-(1/hr^hia_100m$diff) 
 hia_100m$paf_lb<-1-(1/hr_lb^hia_100m$diff) 
 hia_100m$paf_ub<-1-(1/hr_ub^hia_100m$diff) 

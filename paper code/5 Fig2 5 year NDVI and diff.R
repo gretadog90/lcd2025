@@ -38,7 +38,7 @@ map_early<-ggplot() +
   ## Second layer: Country map
   geom_polygon(data = map_data('world')[map_data('world')$region != "Antarctica",],
                aes(x=long, y=lat, group=group),
-               color = 'black', fill = 'white') +
+               color = 'black', fill = 'white', size = .2) +
   geom_point(data = hia, aes(x = Longitude, y = Latitude, 
                                  colour = cut(ndvi2014_2018, c(0, .1, .2, .3, .4, .5, 1))), size=.5) +
   scale_color_manual(name = "2014-2018\nPopulation-weighted\nGreenest Season NDVI",
@@ -57,7 +57,7 @@ map_late<-ggplot() +
   ## Second layer: Country map
   geom_polygon(data = map_data('world')[map_data('world')$region != "Antarctica",],
                aes(x=long, y=lat, group=group),
-               color = 'black', fill = 'white') +
+               color = 'black', fill = 'white', size=.2) +
   geom_point(data = hia, aes(x = Longitude, y = Latitude, 
                              colour = cut(ndvi2019_2023, c(0, .1, .2, .3, .4, .5, 1))), size=.5) +
   scale_color_manual(name = "2019-2023\nPopulation-weighted\nGreenest Season NDVI",
@@ -76,7 +76,7 @@ map_pctdiff<-ggplot() +
   ## Second layer: Country map
   geom_polygon(data = map_data('world')[map_data('world')$region != "Antarctica",],
                aes(x=long, y=lat, group=group),
-               color = 'black', fill = 'white') +
+               color = 'black', fill = 'white', size=.2) +
   geom_point(data = hia, aes(x = Longitude, y = Latitude, 
                                  colour =cut(pct_diff, c(-Inf, -20, -10, -5, 5, 10, 20, Inf))), size=.5) +
   scale_color_manual(name = "Percent Change", 
@@ -89,7 +89,7 @@ map_pctdiff<-ggplot() +
         legend.title = element_text(size = 12))
 
 #set up the file to save figure
-pdf(file = "graphs/Fig2 5yr.pdf")
+pdf(file = "graphs/Fig2 5yr UPDATE.pdf")
 
 figure <- ggarrange(map_early, map_late, map_pctdiff,
                     widths =8, heights=c(5,5,5),

@@ -31,26 +31,21 @@ hist(hia$pct_diff)
 
 hia <- hia %>% 
   group_by(sub.region) %>% 
-  mutate(subregion_mean = mean(diff))
-
-hia<- hia %>%
-  group_by(sub.region) %>% 
-  mutate(order = (cur_group_id()-15)*-1)
-
+  mutate(avg_lat = mean(Latitude))
 
 #make boxplots for NDVI by region
-a<-ggplot(hia, aes(x=reorder(sub.region, order), y=diff)) + 
-  geom_boxplot(outlier.shape = NA)+
-  geom_jitter(aes(color=sub.region), position=position_jitter(0.2), size=.6)+
+a<-ggplot(hia, aes(x=reorder(sub.region, avg_lat), y=diff)) + 
+  geom_boxplot(outlier.shape = NA, lwd=.2)+
+  geom_jitter(aes(color=sub.region), position=position_jitter(0.2), size=.8)+
   xlab("")+ 
   ylab("Absolute change in NDVI 2014-2018 v. 2019-2023")+
   scale_y_continuous(breaks=c(-0.075, -.05,-.025, 0, .025, .05))+
   coord_flip()+
   theme(legend.position="none")
 
-b<-ggplot(hia, aes(x=reorder(sub.region, order), y=pct_diff)) + 
-  geom_boxplot(outlier.shape = NA)+
-  geom_jitter(aes(color=sub.region), position=position_jitter(0.2), size=.6)+
+b<-ggplot(hia, aes(x=reorder(sub.region, avg_lat), y=pct_diff)) + 
+  geom_boxplot(outlier.shape = NA, lwd=.2)+
+  geom_jitter(aes(color=sub.region), position=position_jitter(0.2), size=.8)+
   xlab("")+ 
   ylab("Percent change in NDVI 2014-2018 v. 2019-2023")+
   scale_y_continuous(breaks=c(-20,-10,0, 10, 20, 30),
@@ -59,7 +54,7 @@ b<-ggplot(hia, aes(x=reorder(sub.region, order), y=pct_diff)) +
   theme(legend.position="none")
 
 #set up the file to save figure
-pdf(file = "graphs/Fig3 exposure by subregion.pdf")
+pdf(file = "graphs/Fig3 exposure by subregion UPDATE.pdf")
 
 figure <- ggarrange(a, b,
                     widths=8.5, heights=c(5,5),

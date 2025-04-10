@@ -151,6 +151,9 @@ tapply(hia$delta_mortality, hia$clim_region, summary)
 
 hia<- hia[order(hia$sub.region, hia$delta_mortality),]
 
+northam<-hia %>% 
+  filter(sub.region=="Northern America") 
+
 hia %>% 
   filter(sub.region=="Eastern Asia") %>% 
   select(city, delta_mortality, lb, ub) 
