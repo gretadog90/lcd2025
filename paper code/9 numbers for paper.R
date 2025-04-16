@@ -168,6 +168,15 @@ euro<-hia %>%
 tapply(euro$ndvi2019_2023, euro$Europe, summary)
 tapply(euro$delta_mortality, euro$Europe, summary)
 
+outliers<-hia[,c("city", "country", "sub.region", "diff", "pct_diff", "delta_mortality")]
+outliers<- outliers[order(outliers$sub.region, outliers$diff),]
+
+ggplot(outliers, aes(x=sub.region, y=diff)) + 
+  geom_boxplot(lwd=.2)+
+  geom_jitter(aes(color=sub.region), position=position_jitter(0.2), size=.8)+
+  coord_flip()+
+  theme(legend.position="none")
+
 #appendix fig S5
 hia<-read.csv("outputHIA/hia_100m_5yr.csv")
 hia<-hia[!is.na(hia$ndvi2019_2023),]
@@ -179,4 +188,6 @@ summary(hia$ub)
 tapply(hia$delta_mortality, hia$clim_region, summary)
 
 hia<- hia[order(hia$delta_mortality),]
+
+
 
