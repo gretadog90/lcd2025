@@ -129,3 +129,23 @@ dev.off()
 
 long$year<-as.numeric(long$year)
 cor(long$year, long$urban, method="pearson")
+
+long$year<-as.numeric(long$year)
+regional<-read.csv("output/lcd2025.csv")
+regional<-regional[,c("ID_HDC_G0", "sub.region")]
+long<-merge(long, regional, "ID_HDC_G0")
+
+regional_urban<- long %>%
+  group_by(sub.region, year) %>%
+  summarise(urban = mean(urban))
+
+pdf(file = "graphs/FigS8 urbanization year.pdf", width=9, height=8)
+ggplot(regional_urban) +
+  geom_point(aes(x=year, y=urban, color=sub.region))+
+  xlab("Year")+ylab("Urban fraction")+ 
+  guides(color = guide_legend(title = "Geographic region"))+
+  geom_smooth(aes(x=year, y=urban), method = "lm", se=FALSE, color='black')
+dev.off()
+
+
+cor(long$year, long$urban, method="pearson")

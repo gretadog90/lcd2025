@@ -59,11 +59,9 @@ global$greennessIndicator <- cut(global$PopWeightPeakNDVI,
 ###### export data for GLOBAL tab ######
 write.csv(global, 'global.csv')
 
-<<<<<<< HEAD
 lc_region <- aggregate(global, by=global$lc_group, 
                            function(x)mean(x, na.rm=TRUE))
 
-=======
 # summarize to lc_region level
 lc_region<- global %>%
   group_by(lc_group, year) %>%
@@ -129,4 +127,3 @@ weighting_var<- pop %>%
 
 #export data for weighting var tab
 write.csv(weighting_var, 'weighting_var.csv')
->>>>>>> d8ad4f6e5d479238db3c21f7039589e916d29616
