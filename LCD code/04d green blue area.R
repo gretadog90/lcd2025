@@ -32,12 +32,15 @@ lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 tapply(lcd2025$GreenBlue_Area_2020, lcd2025$hdi_level, summary)
 cor(lcd2025$GreenBlue_Area_2020, lcd2025$Peak_NDVI_2020, method="pearson")
 
+tapply(lcd2025$Green_Area_2020, lcd2025$hdi_level, summary)
 
 #generate an urban area var that will be 1-green or blue area
 lcd2025$Urban_Area_2015<-1-lcd2025$GreenBlue_Area_2015
 lcd2025$Urban_Area_2020<-1-lcd2025$GreenBlue_Area_2020
 lcd2025$Blue_Area_2015<-lcd2025$GreenBlue_Area_2015-lcd2025$Green_Area_2015
 lcd2025$Blue_Area_2020<-lcd2025$GreenBlue_Area_2020-lcd2025$Green_Area_2020
+
+tapply(lcd2025$Blue_Area_2020, lcd2025$hdi_level, summary)
 
 #just verifying they all sum to 1
 lcd2025$total<-lcd2025$Green_Area_2020+lcd2025$Blue_Area_2020+lcd2025$Urban_Area_2020
