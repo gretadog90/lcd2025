@@ -33,6 +33,8 @@ lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 lcd2025$Blue_Area_2015<-lcd2025$GreenBlue_Area_2015-lcd2025$Green_Area_2015
 lcd2025$Blue_Area_2020<-lcd2025$GreenBlue_Area_2020-lcd2025$Green_Area_2020
 hist(lcd2025$Blue_Area_2020)
+summary(lcd2025$Blue_Area_2020)
+tapply(lcd2025$Blue_Area_2020, lcd2025$hdi_level, summary)
 
 pdf(file = "pct blue area.pdf", width=8, height=5)
 

@@ -106,9 +106,9 @@ shift_legend <- function(p) {
 }
 
 #plot
-pdf(file = "graphs/S3 line graph pct change who subregion set scale.pdf", width=13.5, height=8.5)
+pdf(file = "graphs/Fig 1 pct change.pdf", width=13.5, height=8.5)
 a<-ggplot() +
-  geom_line(data=long_pctChange, aes(x=year, y=value, group=city, color=clim_region), size=.3) +
+  #geom_line(data=long_pctChange, aes(x=year, y=value, group=city, color=clim_region), size=.3) +
   geom_line(data=means_pctChange, aes(x=year, y=mean,group=clim_region, color=clim_region), size=1)+
   scale_color_brewer(palette = "PuOr", name = "Köppen-Geiger\nclimate classification")+
   xlab('Year') + ylab('Population-weighted greenest season NDVI')+ ylim(-50, 50)+facet_wrap(~sub.region, ncol=4)+
