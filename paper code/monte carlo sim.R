@@ -20,6 +20,7 @@ set.seed(122690)
 
 #read in info for MC analysis
 mc<-read.csv("outputHIA/mc.csv")
+mc<-mc[mc$city !="Kapoeta",]
 
 ################################################################################
 # First run 1000 simulations of a draw from normal distribution for hazard ratio
@@ -31,10 +32,10 @@ hr<-0.96 #mean from rojas-rueda paper
 sd_hr<- (log(0.97)-log(0.94))/(2*1.96)
 
 # list to store simulated HRs
-hazard_ratios <- numeric(1000)
+hazard_ratios <- numeric(10000)
 
 # Perform Monte Carlo simulations
-for (i in 1:1000) {
+for (i in 1:10000) {
   # Generate a sample from a normal distribution
   draw <- rnorm(1, mean = hr, sd = sd_hr)
   
@@ -61,13 +62,13 @@ for(city in cities)  {
   sd<-(data$upper.2020-data$lower.2020)/(2*1.96)
   
   #expand data set so that there are 1,000 rows
-  expanded_df <- expand(data, ID_HDC_G0, diff, Population_2020_100m, val.2020, sequence = 1:1000) 
+  expanded_df <- expand(data, ID_HDC_G0, diff, Population_2020_100m, val.2020, sequence = 1:10000) 
   
   # list to store simulated mortality rates
-  baseline_mortality_rates <- numeric(1000)
+  baseline_mortality_rates <- numeric(10000)
   
   # Perform Monte Carlo simulations
-  for (i in 1:1000) {
+  for (i in 1:10000) {
     # Generate a sample from a normal distribution
     draw<- rnorm(1, mean = mean, sd = sd)
     
@@ -76,7 +77,7 @@ for(city in cities)  {
   }
   
   #merge simulated HRs and simulated BMRs
-  new_df<-do.call(rbind, Map(data.frame, sequence = 1:1000, hrs=hazard_ratios, bmrs=baseline_mortality_rates))
+  new_df<-do.call(rbind, Map(data.frame, sequence = 1:10000, hrs=hazard_ratios, bmrs=baseline_mortality_rates))
   
   #merge to city info
   expanded_df<-merge(expanded_df, new_df, by='sequence')
