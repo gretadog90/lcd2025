@@ -62,13 +62,13 @@ for(city in cities)  {
   sd<-(data$upper.2020-data$lower.2020)/(2*1.96)
   
   #expand data set so that there are 1,000 rows
-  expanded_df <- expand(data, ID_HDC_G0, diff, Population_2020_100m, val.2020, sequence = 1:10000) 
+  expanded_df <- expand(data, ID_HDC_G0, diff, Population_2020_100m, val.2020, sequence = 1:1000) 
   
   # list to store simulated mortality rates
-  baseline_mortality_rates <- numeric(10000)
+  baseline_mortality_rates <- numeric(1000)
   
   # Perform Monte Carlo simulations
-  for (i in 1:10000) {
+  for (i in 1:1000) {
     # Generate a sample from a normal distribution
     draw<- rnorm(1, mean = mean, sd = sd)
     
@@ -77,7 +77,7 @@ for(city in cities)  {
   }
   
   #merge simulated HRs and simulated BMRs
-  new_df<-do.call(rbind, Map(data.frame, sequence = 1:10000, hrs=hazard_ratios, bmrs=baseline_mortality_rates))
+  new_df<-do.call(rbind, Map(data.frame, sequence = 1:1000, hrs=hazard_ratios, bmrs=baseline_mortality_rates))
   
   #merge to city info
   expanded_df<-merge(expanded_df, new_df, by='sequence')
@@ -87,12 +87,12 @@ for(city in cities)  {
   expanded_df$delta_mortality=expanded_df$bmrs*expanded_df$Population_2020_100m*expanded_df$paf
 
   #get the mean, lb, and ub from the 1000 simulations
-  data$lower_ci <- quantile(expanded_df$delta_mortality, 0.025)
-  data$upper_ci <- quantile(expanded_df$delta_mortality, 0.975)
-  data$mean<- mean(expanded_df$delta_mortality)
+  expanded_df$lower_ci <- quantile(expanded_df$delta_mortality, 0.025)
+  expanded_df$upper_ci <- quantile(expanded_df$delta_mortality, 0.975)
+  expanded_df$mean<- mean(expanded_df$delta_mortality)
   
   #save city datasets
-  saveRDS(data, file=paste0("tmp/",city,".rds"))
+  saveRDS(expanded_df, file=paste0("tmp/",city,".rds"))
   
   #clean excess memory
   gc()
