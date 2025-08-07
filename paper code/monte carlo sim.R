@@ -177,7 +177,8 @@ simulation_means_region_std<- simulation_means_region %>%
     lower_ci_std=quantile(delta_mortality_100, 0.025),
     upper_ci_std=quantile(delta_mortality_100, 0.975)
   )
-    
+write.csv(simulation_means_region_std, "graphs/tableS2.csv")
+  
 # get climate zone CIs
 simulation_means_clim<- all %>% 
   group_by(clim_region, sequence)  %>% 
@@ -200,3 +201,4 @@ simulation_means_clim_std<- simulation_means_clim %>%
     lower_ci_std=quantile(delta_mortality_100, 0.025),
     upper_ci_std=quantile(delta_mortality_100, 0.975)
   )
+write.csv(simulation_means_clim_std, "graphs/tableS3.csv")
