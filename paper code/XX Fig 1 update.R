@@ -81,41 +81,99 @@ colnames(means_who_clim) <- c("clim_region","year", "mean")
 
 #remove 20 from years so that it shows up better in graph
 means_who_clim$year<-gsub("^20","'",means_who_clim$year)
+means_who_clim<-means_who_clim[means_who_clim$clim_region!="Polar",]
 
-#create data set for lables
-labels_climate<-means_who_clim %>%
-  mutate(seq=)
+## OVERALL TREND
+# create means by region/climate group
+overall <- aggregate(long$value, by=list(long$year), 
+                              function(x)mean(x, na.rm=TRUE))
+# rename columns to match
+colnames(overall) <- c("year", "mean")
+overall$year<-gsub("^20","'",overall$year)
+overall$group<-"overall"
 
-unique(means_who_clim$year)
+# LABELING CLIMATE
+#get one label per line (default to last year)
+labels <- means_who_clim %>%
+  group_by(year) %>%
+  filter(year == "'23")
 
-  gsub("^20","'",means_who_clim$year)
+#now manually move
+labels$year[labels$clim_region=="Tropical"]<-"'14"
+labels$mean[labels$clim_region=="Tropical"]<-0.342
+labels$mean[labels$clim_region=="Continental"]<-0.336
+labels$mean[labels$clim_region=="Temperate"]<-0.29
+labels$year[labels$clim_region=="Arid"]<-"'22"
+labels$mean[labels$clim_region=="Arid"]<-0.205
 
-print(means_who_clim$year)
+# LABELING REGIONS
+#get one label per line (default to last year)
+region_labels <- means_who_region %>%
+  group_by(year) %>%
+  filter(year == "'23")
+
+#manually adjusting label positions because super crowded
+print(region_labels$sub.region)
+
+region_labels$year[region_labels$sub.region=="Melanesia"]<-"'21"
+region_labels$mean[region_labels$sub.region=="Melanesia"]<-0.432
+
+region_labels$year[region_labels$sub.region=="Northern America"]<-"'14"
+region_labels$mean[region_labels$sub.region=="Northern America"]<-0.4
+
+region_labels$mean[region_labels$sub.region=="Northern Europe"]<-0.37
+
+region_labels$year[region_labels$sub.region=="Western Europe"]<-"'14"
+region_labels$mean[region_labels$sub.region=="Western Europe"]<-0.37
+
+region_labels$year[region_labels$sub.region=="Eastern Europe"]<-"'18"
+region_labels$mean[region_labels$sub.region=="Eastern Europe"]<-0.365
+
+region_labels$year[region_labels$sub.region=="Australia and New Zealand"]<-"'14"
+region_labels$mean[region_labels$sub.region=="Australia and New Zealand"]<-0.32
+
+region_labels$mean[region_labels$sub.region=="South-eastern Asia"]<-0.315
+
+region_labels$year[region_labels$sub.region=="Southern Asia"]<-"'17"
+region_labels$mean[region_labels$sub.region=="Southern Asia"]<-0.31
+
+region_labels$mean[region_labels$sub.region=="Sub-Saharan Africa"]<-0.286
+
+region_labels$year[region_labels$sub.region=="Southern Europe"]<-"'14"
+region_labels$mean[region_labels$sub.region=="Southern Europe"]<-0.268
+
+region_labels$year[region_labels$sub.region=="Central Asia"]<-"'19"
+region_labels$mean[region_labels$sub.region=="Central Asia"]<-0.275
+region_labels$year[region_labels$sub.region=="Latin America and the Caribbean"]<-"'23"
+region_labels$mean[region_labels$sub.region=="Latin America and the Caribbean"]<-0.23
+region_labels$year[region_labels$sub.region=="Eastern Asia"]<-"'14"
+region_labels$mean[region_labels$sub.region=="Eastern Asia"]<-0.227
+region_labels$mean[region_labels$sub.region=="Northern Africa"]<-0.185
+region_labels$mean[region_labels$sub.region=="Western Asia"]<-0.16
 
 #plot
-a<-ggplot(data=means_who_region, aes(x=year, y=mean, group=sub.region, color=sub.region), size=1)+
-  geom_line() +
+a<-ggplot()+
+  geom_line(data=means_who_region, aes(x=year, y=mean, group=sub.region, color=sub.region), size=.6) +
+  geom_line(data=overall,aes(x=year, y=mean, group=group), color = "black", linetype = "dashed", size = .5)+
   xlab('Year') + ylab('Population-weighted greenest season NDVI')+
+  ggrepel::geom_text_repel(size=3, data = region_labels, aes(x=year, y=mean, label = sub.region, color=sub.region)) +
   scale_y_continuous(limits = c(0.07, 0.47), breaks = seq(0.1, 0.4, by = 0.1))+
-  theme(legend.position = "bottom",
-        legend.direction = "horizontal", legend.key.size = unit(.5,"line"),
-        legend.text = element_text(size = 8))
- 
-b<-ggplot(data=means_who_clim, aes(x=year, y=mean,group=clim_region, color=clim_region), size=1)+
-  geom_line() +
+  theme(legend.position = "none")
+
+b<-ggplot()+
+  geom_line(data=means_who_clim, aes(x=year, y=mean,group=clim_region, color=clim_region), size=.6) +
+  geom_line(data=overall,aes(x=year, y=mean, group=group), color = "black", linetype = "dashed", size = .5)+
   xlab('Year') + ylab('')+
-  #ggrepel::geom_label_repel(data = means_who_clim, aes(label = clim_region)) +
+  ggrepel::geom_text_repel(size=3, data = labels, aes(x=year, y=mean, label = clim_region, color=clim_region)) +
   scale_y_continuous(limits = c(0.07, 0.47), breaks = seq(0.1, 0.4, by = 0.1))+
   scale_color_brewer(palette = "PuOr")+
-  theme(axis.ticks.y = element_blank(), legend.position = "bottom",
-        legend.direction = "horizontal", legend.key.size = unit(.5,"line"),
-        legend.text = element_text(size = 8))
+  theme(axis.ticks.y = element_blank(), legend.position = "none")
 
 #set up the file to save figure
 pdf(file ="graphs/Fig1 update1.pdf")
 
 figure <- ggarrange(a, b,
-                    widths=c(11,11), heights=11,
+                    widths=c(7,7), heights=11,
                     labels = c("A", "B"),
                     ncol = 2, nrow = 1)
 

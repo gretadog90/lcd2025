@@ -90,15 +90,9 @@ for(city in cities)  {
   #run the HIA
   expanded_df$paf<-1-(1/expanded_df$hrs^expanded_df$diff) 
   expanded_df$delta_mortality=expanded_df$bmrs*expanded_df$Population_2020_100m*expanded_df$paf
-
-  #get the mean, lb, and ub from the 1000 simulations
-  data$lower_ci <- quantile(expanded_df$delta_mortality, 0.025)
-  data$upper_ci <- quantile(expanded_df$delta_mortality, 0.975)
-  data$mean<- mean(expanded_df$delta_mortality)
   
   #save city datasets
   saveRDS(expanded_df, file=paste0("tmp/",city,"_allruns.rds"))
-  saveRDS(data, file=paste0("tmp/",city,"_mean.rds"))
   
   #clean excess memory
   gc()
@@ -109,25 +103,22 @@ for(city in cities)  {
 # but by region/climate zone/overall
 ################################################################################
 all<-data.frame()
-city_summary<-data.frame()
 
 #loop through cities
 for(city in cities) {
-  #open data with census and exposure measures
+  
+  #open city simulations
   data<-readRDS(paste0("tmp/", city,"_allruns.rds"))
-  summary<-readRDS(paste0("tmp/", city,"_mean.rds"))
   
-  #save all the data together for graphing/summary stats
+  #append with other cities
   all<-rbind(all, data)
-  city_summary<-rbind(city_summary, summary)
-  
+
   #clean excess memory
   gc()
 }
 
-#save city datasets
+#save combined city simulations
 saveRDS(all, file=paste0("tmp/mc_all.rds"))
-saveRDS(city_summary, file=paste0("tmp/mc_city_summary.rds"))
 
 ################################################################################
 #data mgmt to get overall and regional means 
@@ -202,3 +193,19 @@ simulation_means_clim_std<- simulation_means_clim %>%
     upper_ci_std=quantile(delta_mortality_100, 0.975)
   )
 write.csv(simulation_means_clim_std, "graphs/tableS3.csv")
+
+################################################################################
+# individual city CIs (table S3)
+################################################################################
+simulation_means_cities<- all %>% 
+  group_by(city, country, sub.region, clim_region)  %>% 
+  dplyr::summarize(
+    mean=mean(delta_mortality),
+    lower_ci=quantile(delta_mortality, 0.025),
+    upper_ci=quantile(delta_mortality, 0.975),
+    mean_std=mean(delta_mortality_100),
+    mean_std=mean(delta_mortality_100),
+    lower_ci_std=quantile(delta_mortality_100, 0.025),
+    upper_ci_std=quantile(delta_mortality_100, 0.975)
+  )
+write.csv(simulation_means_cities, "graphs/tableS1.csv")

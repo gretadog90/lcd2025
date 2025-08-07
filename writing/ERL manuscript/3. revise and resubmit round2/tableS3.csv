@@ -1,0 +1,1042 @@
+,city,country,sub.region,clim_region,deaths,lower_ci,upper_ci,"deaths per 100,000",lower_ci_std,upper_ci_std
+1,Aba,Nigeria,Sub-Saharan Africa,Tropical,68,40,96,6.76,4.01,9.60
+2,Abbottabad,Pakistan,Southern Asia,Temperate,57,34,81,8.34,4.95,11.83
+3,Abeokuta,Nigeria,Sub-Saharan Africa,Tropical,-20,-29,-12,-2.95,-4.20,-1.74
+4,Abidjan,Cote d'Ivoire,Sub-Saharan Africa,Tropical,429,255,615,7.87,4.67,11.29
+5,Abu Dhabi,United Arab Emirates,Western Asia,Arid,0,0,0,0.01,0.01,0.02
+6,Abuja,Nigeria,Sub-Saharan Africa,Tropical,45,26,64,3.92,2.30,5.55
+7,Acapulco,Mexico,Latin America and the Caribbean,Tropical,54,32,75,7.67,4.60,10.68
+8,Accra,Ghana,Sub-Saharan Africa,Tropical,168,99,243,3.42,2.01,4.95
+9,Ad Da'ein,Sudan,Northern Africa,Arid,-6,-9,-3,-1.36,-1.99,-0.78
+10,Ad Diwaniyah,Iraq,Western Asia,Arid,10,6,15,1.30,0.76,1.86
+11,Adana,Turkey,Western Asia,Temperate,16,9,22,2.39,1.42,3.42
+12,Addis Ababa,Ethiopia,Sub-Saharan Africa,Temperate,335,200,475,5.93,3.54,8.42
+13,Adelaide,Australia,Australia and New Zealand,Arid,2,1,3,0.21,0.13,0.30
+14,Agadir,Morocco,Northern Africa,Arid,24,14,34,2.32,1.36,3.31
+15,Agartala,India,Southern Asia,Tropical,49,30,69,5.54,3.31,7.78
+16,Agra,India,Southern Asia,Arid,-49,-69,-29,-1.84,-2.59,-1.10
+17,Aguascalientes,Mexico,Latin America and the Caribbean,Arid,35,21,49,4.26,2.55,5.94
+18,Ahmadnagar,India,Southern Asia,Arid,-23,-33,-14,-4.59,-6.45,-2.72
+19,Ahmedabad,India,Southern Asia,Arid,-132,-185,-78,-1.77,-2.49,-1.06
+20,Ahwaz,Iran,Southern Asia,Arid,-8,-11,-5,-0.83,-1.16,-0.49
+21,Ajmer,India,Southern Asia,Arid,-26,-36,-15,-4.27,-5.98,-2.54
+22,Akola,India,Southern Asia,Arid,-43,-61,-26,-6.50,-9.13,-3.88
+23,Akure,Nigeria,Sub-Saharan Africa,Tropical,2,1,3,0.45,0.27,0.64
+24,Al Ain,United Arab Emirates,Western Asia,Arid,3,2,4,0.41,0.23,0.60
+25,Al Ismailiya,Egypt,Northern Africa,Arid,7,4,10,1.15,0.68,1.64
+26,Al Managil,Sudan,Northern Africa,Arid,-2,-3,-1,-1.12,-1.64,-0.65
+27,Al-Fashir,Sudan,Northern Africa,Arid,-7,-10,-4,-1.49,-2.19,-0.86
+28,Al-Minya,Egypt,Northern Africa,Arid,7,4,10,1.19,0.70,1.69
+29,Al-Ubayyid,Sudan,Northern Africa,Arid,-12,-18,-7,-2.23,-3.29,-1.29
+30,Al-Zaqaziq,Egypt,Northern Africa,Arid,14,8,20,1.22,0.72,1.73
+31,Alappuzha,India,Southern Asia,Tropical,112,67,158,11.92,7.11,16.72
+32,Albuquerque,United States,Northern America,Arid,15,9,21,1.96,1.17,2.73
+33,Aleppo,Syrian Arab Republic,Western Asia,Arid,-59,-88,-34,-2.37,-3.51,-1.36
+34,Alexandria,Egypt,Northern Africa,Arid,15,9,21,0.22,0.13,0.31
+35,Algiers,Algeria,Northern Africa,Temperate,61,36,86,1.60,0.96,2.28
+36,Aligarh,India,Southern Asia,Temperate,102,61,143,6.07,3.62,8.53
+37,Almaty,Kazakhstan,Central Asia,Continental,15,9,20,0.69,0.41,0.97
+38,Alwar,India,Southern Asia,Arid,-28,-40,-17,-4.71,-6.63,-2.79
+39,Amaigbo,Nigeria,Sub-Saharan Africa,Tropical,-32,-46,-19,-1.90,-2.70,-1.12
+40,Amarah,Iraq,Western Asia,Arid,10,6,14,1.79,1.04,2.58
+41,Ambala,India,Southern Asia,Temperate,-61,-86,-36,-10.35,-14.60,-6.14
+42,Amman,Jordan,Western Asia,Arid,-27,-39,-16,-0.44,-0.63,-0.25
+43,Amravati,India,Southern Asia,Tropical,-69,-97,-41,-9.18,-12.96,-5.48
+44,Amritsar,India,Southern Asia,Arid,-50,-71,-30,-3.85,-5.41,-2.29
+45,Amsterdam,Netherlands,Western Europe,Temperate,-45,-62,-27,-3.64,-5.08,-2.17
+46,An Nazlah,Egypt,Northern Africa,Arid,27,16,39,3.79,2.23,5.40
+47,Anand,India,Southern Asia,Tropical,22,13,31,3.38,2.02,4.75
+48,Angeles,Philippines,South-eastern Asia,Tropical,26,16,37,2.02,1.20,2.85
+49,Ankara,Turkey,Western Asia,Arid,-35,-50,-21,-1.02,-1.45,-0.61
+50,Anqing,China,Eastern Asia,Temperate,-8,-12,-5,-1.52,-2.18,-0.88
+51,Anshan,China,Eastern Asia,Continental,-92,-132,-54,-6.23,-8.99,-3.63
+52,Antalya,Turkey,Western Asia,Temperate,44,26,63,3.64,2.14,5.20
+53,Antananarivo,Madagascar,Sub-Saharan Africa,Temperate,161,94,231,5.73,3.37,8.24
+54,Antwerp,Belgium,Western Europe,Temperate,-73,-101,-43,-8.78,-12.27,-5.22
+55,Anyang,China,Eastern Asia,Arid,-151,-220,-88,-9.36,-13.59,-5.46
+56,Aracaju,Brazil,Latin America and the Caribbean,Tropical,-9,-12,-5,-1.02,-1.42,-0.61
+57,Ardabil,Iran,Southern Asia,Arid,1,1,1,0.23,0.14,0.32
+58,Arequipa,Peru,Latin America and the Caribbean,Arid,2,1,2,0.18,0.10,0.26
+59,Arusha,Tanzania,Sub-Saharan Africa,Tropical,-15,-22,-9,-2.62,-3.77,-1.53
+60,Asansol,India,Southern Asia,Tropical,-87,-122,-52,-2.80,-3.93,-1.67
+61,Ashgabat,Turkmenistan,Central Asia,Arid,-16,-24,-9,-1.71,-2.49,-0.99
+62,Asmara,Eritrea,Sub-Saharan Africa,Arid,-11,-16,-6,-4.37,-6.52,-2.47
+63,Astrakhan,Russia,Eastern Europe,Arid,-15,-21,-9,-2.69,-3.75,-1.61
+64,Asuncion,Paraguay,Latin America and the Caribbean,Tropical,65,39,94,4.61,2.72,6.66
+65,Asyut,Egypt,Northern Africa,Arid,18,11,26,1.99,1.18,2.82
+66,At Taif,Saudi Arabia,Western Asia,Arid,-5,-7,-3,-0.95,-1.39,-0.56
+67,At Tarimiyah,Iraq,Western Asia,Arid,1,0,1,0.17,0.10,0.25
+68,Athens,Greece,Southern Europe,Temperate,36,22,50,1.11,0.67,1.56
+69,Atlanta,United States,Northern America,Temperate,-91,-127,-54,-5.31,-7.42,-3.17
+70,Auckland,New Zealand,Australia and New Zealand,Temperate,65,39,91,5.33,3.18,7.43
+71,Aurangabad,India,Southern Asia,Arid,-16,-22,-9,-1.05,-1.48,-0.63
+72,Austin,United States,Northern America,Temperate,101,61,141,7.26,4.34,10.12
+73,Azamgarh,India,Southern Asia,Temperate,-14,-20,-9,-3.20,-4.48,-1.90
+74,Bacolod,Philippines,South-eastern Asia,Tropical,43,26,60,7.04,4.21,9.86
+75,Baghdad,Iraq,Western Asia,Arid,96,57,139,1.51,0.90,2.19
+76,Bahraich,India,Southern Asia,Temperate,-11,-15,-6,-2.12,-2.99,-1.26
+77,Bakersfield,United States,Northern America,Arid,5,3,6,0.75,0.45,1.04
+78,Baku,Azerbaijan,Western Asia,Arid,-41,-58,-25,-2.12,-2.98,-1.27
+79,Balikpapan,Indonesia,South-eastern Asia,Tropical,36,21,52,5.73,3.36,8.22
+80,Ballari,India,Southern Asia,Arid,4,2,6,0.71,0.42,1.00
+81,Ballia,India,Southern Asia,Temperate,-33,-47,-20,-6.79,-9.60,-4.05
+82,Balrampur,India,Southern Asia,Temperate,-6,-9,-4,-3.13,-4.43,-1.87
+83,Balti,Moldova,Eastern Europe,Continental,5,3,7,7.54,4.51,10.52
+84,Baltimore,United States,Northern America,Temperate,-59,-83,-35,-4.14,-5.79,-2.47
+85,Bamako,Mali,Sub-Saharan Africa,Tropical,138,81,197,4.41,2.59,6.31
+86,Banda,India,Southern Asia,Temperate,-15,-21,-9,-5.24,-7.40,-3.12
+87,Bandar Lampung,Indonesia,South-eastern Asia,Tropical,44,26,64,3.97,2.33,5.73
+88,Bandar Seri Begawan,Brunei,South-eastern Asia,Tropical,0,0,1,0.92,0.54,1.31
+89,Bandung,Indonesia,South-eastern Asia,Tropical,434,257,628,5.14,3.04,7.43
+90,Bangkok,Thailand,South-eastern Asia,Tropical,1175,683,1692,6.88,4.00,9.92
+91,Bangui,Central African Republic,Sub-Saharan Africa,Tropical,222,129,324,20.57,11.93,30.02
+92,Banha,Egypt,Northern Africa,Arid,12,7,17,1.67,0.99,2.37
+93,Banjarmasin,Indonesia,South-eastern Asia,Tropical,84,50,121,9.04,5.34,12.97
+94,Baoding,China,Eastern Asia,Arid,-91,-131,-54,-8.69,-12.53,-5.13
+95,Baoji,China,Eastern Asia,Temperate,-83,-119,-48,-9.58,-13.76,-5.59
+96,Baotou,China,Eastern Asia,Arid,-78,-112,-46,-3.58,-5.15,-2.10
+97,Barcelona [Spain],Spain,Southern Europe,Temperate,-26,-37,-16,-0.59,-0.82,-0.35
+98,Barcelona [Venezuela],Bolivarian Republic of Venezuela,Latin America and the Caribbean,Arid,-67,-98,-39,-9.92,-14.52,-5.77
+99,Bareilly,India,Southern Asia,Temperate,49,29,69,3.55,2.11,4.98
+100,Barnaul,Russia,Eastern Europe,Continental,43,26,60,8.81,5.28,12.30
+101,Barquisimeto,Bolivarian Republic of Venezuela,Latin America and the Caribbean,Arid,-82,-120,-47,-10.35,-15.08,-5.93
+102,Barranquilla,Colombia,Latin America and the Caribbean,Arid,-31,-43,-19,-1.47,-2.06,-0.88
+103,Basra,Iraq,Western Asia,Arid,41,24,60,2.29,1.35,3.32
+104,Basti,India,Southern Asia,Temperate,-32,-45,-19,-7.73,-10.90,-4.59
+105,Bata,Equatorial Guinea,Sub-Saharan Africa,Tropical,-4,-5,-2,-0.70,-1.05,-0.39
+106,Batam City,Indonesia,South-eastern Asia,Tropical,-35,-51,-21,-3.00,-4.33,-1.76
+107,Bauchi,Nigeria,Sub-Saharan Africa,Tropical,23,14,33,4.12,2.43,5.88
+108,Begusarai,India,Southern Asia,Temperate,103,61,144,10.81,6.46,15.13
+109,Beihai,China,Eastern Asia,Temperate,0,0,0,0.03,0.02,0.05
+110,Beijing,China,Eastern Asia,Continental,-2486,-3568,-1447,-14.28,-20.49,-8.31
+111,Beirut,Lebanon,Western Asia,Temperate,-11,-16,-7,-0.62,-0.89,-0.37
+112,Belagavi,India,Southern Asia,Tropical,68,41,95,8.77,5.24,12.28
+113,Belem,Brazil,Latin America and the Caribbean,Tropical,14,8,19,0.65,0.39,0.91
+114,Belgrade,Serbia,Southern Europe,Temperate,-73,-102,-43,-5.59,-7.82,-3.33
+115,Belize City,Belize,Latin America and the Caribbean,Tropical,1,1,2,1.86,1.11,2.60
+116,Belo Horizonte,Brazil,Latin America and the Caribbean,Tropical,-7,-10,-4,-0.16,-0.23,-0.10
+117,Bender,Moldova,Eastern Europe,Arid,4,2,5,5.50,3.28,7.70
+118,Bengaluru,India,Southern Asia,Tropical,52,31,73,0.41,0.24,0.57
+119,Bengbu,China,Eastern Asia,Temperate,-26,-38,-15,-3.55,-5.12,-2.08
+120,Beni,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,263,154,378,15.95,9.35,22.92
+121,Benin City,Nigeria,Sub-Saharan Africa,Tropical,41,24,58,2.61,1.55,3.72
+122,Benxi,China,Eastern Asia,Continental,-55,-79,-32,-7.28,-10.48,-4.26
+123,Berhampore,India,Southern Asia,Tropical,105,62,147,8.73,5.20,12.25
+124,Berlin,Germany,Western Europe,Continental,17,10,24,0.49,0.30,0.69
+125,Bhadohi,India,Southern Asia,Temperate,-3,-4,-2,-0.89,-1.25,-0.53
+126,Bhavnagar,India,Southern Asia,Arid,-14,-20,-8,-1.99,-2.80,-1.18
+127,Bhind,India,Southern Asia,Temperate,-20,-28,-12,-5.07,-7.13,-3.02
+128,Bhinga,India,Southern Asia,Temperate,0,0,0,-0.19,-0.27,-0.11
+129,Bhopal,India,Southern Asia,Tropical,-111,-156,-66,-4.75,-6.70,-2.84
+130,Bhubaneshwar,India,Southern Asia,Tropical,28,16,39,2.49,1.48,3.50
+131,Bihar Sharif,India,Southern Asia,Temperate,11,6,15,1.95,1.17,2.74
+132,Bikaner,India,Southern Asia,Arid,-13,-18,-8,-1.59,-2.24,-0.95
+133,Bilaspur,India,Southern Asia,Tropical,62,37,87,7.84,4.69,11.00
+134,Bilbao,Spain,Southern Europe,Temperate,6,3,8,0.73,0.44,1.02
+135,Binhai,China,Eastern Asia,Continental,-97,-139,-56,-10.23,-14.76,-5.95
+136,Birmingham,United Kingdom,Northern Europe,Temperate,-93,-130,-56,-3.66,-5.12,-2.19
+137,Bishkek,Kyrgyzstan,Central Asia,Arid,12,7,17,0.98,0.59,1.39
+138,Bissau,Guinea-Bissau,Sub-Saharan Africa,Tropical,53,31,76,9.77,5.75,13.97
+139,Bitola,Macedonia,Southern Europe,Temperate,-2,-3,-1,-2.95,-4.14,-1.76
+140,Blida,Algeria,Northern Africa,Temperate,6,3,8,0.97,0.57,1.38
+141,Bobo-Dioulasso,Burkina Faso,Sub-Saharan Africa,Tropical,54,32,77,6.17,3.63,8.86
+142,Bogota,Colombia,Latin America and the Caribbean,Temperate,-230,-321,-137,-2.31,-3.23,-1.38
+143,Bogura,Bangladesh,Southern Asia,Tropical,73,42,105,5.83,3.40,8.43
+144,Bokaro,India,Southern Asia,Tropical,-80,-113,-47,-9.84,-13.89,-5.85
+145,Bordeaux,France,Western Europe,Temperate,-2,-3,-1,-0.33,-0.47,-0.20
+146,Boston,United States,Northern America,Continental,238,142,332,11.11,6.65,15.48
+147,Bouak,Cote d'Ivoire,Sub-Saharan Africa,Tropical,60,35,87,10.44,6.11,15.05
+148,Bradenton,United States,Northern America,Temperate,9,5,12,1.32,0.79,1.84
+149,Brahmanbaria,Bangladesh,Southern Asia,Tropical,-102,-147,-60,-5.14,-7.43,-3.01
+150,Brahmapur,India,Southern Asia,Tropical,24,14,33,4.22,2.52,5.95
+151,Bratislava,Slovakia,Eastern Europe,Continental,-20,-28,-12,-5.55,-7.75,-3.30
+152,Brazzaville,Republic of the Congo,Sub-Saharan Africa,Tropical,26,15,37,0.94,0.55,1.35
+153,Bridgeport,United States,Northern America,Continental,-14,-19,-8,-2.44,-3.41,-1.46
+154,Bridgetown,Barbados,Latin America and the Caribbean,Tropical,-3,-4,-2,-1.87,-2.74,-1.08
+155,Brisbane,Australia,Australia and New Zealand,Temperate,-12,-17,-7,-1.19,-1.67,-0.71
+156,Bristol,United Kingdom,Northern Europe,Temperate,-6,-9,-4,-0.96,-1.34,-0.57
+157,Brussels,Belgium,Western Europe,Temperate,-137,-191,-82,-9.42,-13.17,-5.61
+158,Bucaramanga,Colombia,Latin America and the Caribbean,Tropical,-10,-14,-6,-0.96,-1.35,-0.57
+159,Bucharest,Romania,Eastern Europe,Continental,21,12,29,1.07,0.64,1.49
+160,Budapest,Hungary,Eastern Europe,Continental,24,14,33,1.35,0.80,1.89
+161,Budaun,India,Southern Asia,Temperate,16,10,22,4.61,2.75,6.48
+162,Buenos Aires,Argentina,Latin America and the Caribbean,Temperate,90,53,125,0.66,0.40,0.93
+163,Buffalo,United States,Northern America,Continental,-7,-10,-4,-1.21,-1.69,-0.72
+164,Bujumbura,Burundi,Sub-Saharan Africa,Tropical,141,84,203,14.28,8.45,20.49
+165,Bukavu,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,45,26,65,5.78,3.38,8.34
+166,Bukit Mertajam,Malaysia,South-eastern Asia,Tropical,14,8,19,2.47,1.48,3.45
+167,Bulandshahr,India,Southern Asia,Temperate,22,13,32,4.29,2.55,6.03
+168,Bulawayo,Zimbabwe,Sub-Saharan Africa,Arid,-2,-3,-1,-0.63,-0.92,-0.37
+169,Bunia,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,35,21,51,8.99,5.25,12.97
+170,Buram,Sudan,Northern Africa,Arid,-26,-39,-15,-6.12,-9.03,-3.55
+171,Bursa,Turkey,Western Asia,Temperate,59,35,84,2.74,1.61,3.91
+172,Busan,Republic of Korea,Eastern Asia,Temperate,39,23,54,1.07,0.64,1.50
+173,Cabinda,Angola,Sub-Saharan Africa,Tropical,32,18,47,3.69,2.12,5.42
+174,Cagayan de Oro,Philippines,South-eastern Asia,Tropical,32,19,45,3.81,2.27,5.35
+175,Cairo,Egypt,Northern Africa,Arid,257,151,367,1.10,0.65,1.57
+176,Calabar,Nigeria,Sub-Saharan Africa,Tropical,-2,-2,-1,-0.27,-0.38,-0.16
+177,Calgary,Canada,Northern America,Continental,65,39,91,5.49,3.28,7.66
+178,Cali,Colombia,Latin America and the Caribbean,Tropical,5,3,7,0.19,0.12,0.27
+179,Campinas,Brazil,Latin America and the Caribbean,Temperate,-30,-42,-18,-2.04,-2.85,-1.22
+180,Campo Grande,Brazil,Latin America and the Caribbean,Tropical,20,12,28,2.40,1.44,3.36
+181,Can Tho,Vietnam,South-eastern Asia,Tropical,72,42,103,7.57,4.46,10.89
+182,Cancun,Mexico,Latin America and the Caribbean,Tropical,15,9,21,2.41,1.44,3.36
+183,Cangzhou,China,Eastern Asia,Continental,-19,-27,-11,-3.06,-4.38,-1.80
+184,Cape Town,South Africa,Sub-Saharan Africa,Temperate,279,166,391,6.88,4.09,9.62
+185,Caracas,Bolivarian Republic of Venezuela,Latin America and the Caribbean,Tropical,-126,-183,-73,-4.76,-6.93,-2.76
+186,Cartagena,Colombia,Latin America and the Caribbean,Tropical,-23,-32,-14,-2.39,-3.34,-1.43
+187,Casablanca,Morocco,Northern Africa,Temperate,54,32,78,1.28,0.75,1.83
+188,Cebu City,Philippines,South-eastern Asia,Tropical,155,92,218,5.48,3.26,7.71
+189,Ceilhndia,Brazil,Latin America and the Caribbean,Tropical,-43,-60,-26,-3.35,-4.67,-2.00
+190,Chandigarh,India,Southern Asia,Temperate,-152,-213,-90,-7.01,-9.84,-4.18
+191,Chang bangdu,Bhutan,Southern Asia,Temperate,0,0,0,0.63,0.37,0.93
+192,Changchun,China,Eastern Asia,Continental,29,17,42,0.83,0.49,1.19
+193,Changde,China,Eastern Asia,Temperate,-41,-59,-24,-6.38,-9.19,-3.76
+194,Changsha,China,Eastern Asia,Temperate,-521,-752,-306,-15.21,-21.92,-8.93
+195,Changshu,China,Eastern Asia,Temperate,-34,-49,-20,-4.19,-6.03,-2.47
+196,Changwon,Republic of Korea,Eastern Asia,Temperate,-6,-9,-4,-0.88,-1.23,-0.53
+197,Changzhi,China,Eastern Asia,Continental,-17,-25,-10,-2.87,-4.11,-1.69
+198,Changzhou,China,Eastern Asia,Temperate,-271,-391,-159,-9.73,-14.06,-5.72
+199,Chapainawabganj,Bangladesh,Southern Asia,Temperate,16,10,24,2.76,1.64,4.01
+200,Chattogram,Bangladesh,Southern Asia,Tropical,2,1,3,0.04,0.03,0.06
+201,Chelyabinsk,Russia,Eastern Europe,Continental,4,2,5,0.37,0.22,0.51
+202,Chengdu,China,Eastern Asia,Temperate,-1186,-1711,-693,-15.55,-22.42,-9.08
+203,Chennai,India,Southern Asia,Tropical,413,247,581,3.85,2.30,5.40
+204,Cheongju-si,Republic of Korea,Eastern Asia,Continental,-5,-8,-3,-0.78,-1.09,-0.47
+205,Chhapra,India,Southern Asia,Temperate,16,9,22,3.38,2.02,4.74
+206,Chicago,United States,Northern America,Continental,268,161,374,3.81,2.28,5.32
+207,Chiclayo,Peru,Latin America and the Caribbean,Arid,6,4,9,1.02,0.60,1.47
+208,Chifeng,China,Eastern Asia,Arid,-25,-36,-15,-4.24,-6.14,-2.49
+209,Chihuahua,Mexico,Latin America and the Caribbean,Arid,17,10,23,2.20,1.32,3.07
+210,Chisinau,Moldova,Eastern Europe,Continental,22,13,31,4.96,2.97,6.93
+211,Chongjin,Democratic People's Republic of Korea,Eastern Asia,Continental,-66,-96,-38,-9.75,-14.22,-5.61
+212,Chongqing,China,Eastern Asia,Temperate,-391,-564,-229,-5.55,-8.02,-3.25
+213,Cilacap,Indonesia,South-eastern Asia,Tropical,47,28,68,8.30,4.89,11.96
+214,Cilegon,Indonesia,South-eastern Asia,Tropical,63,37,90,9.28,5.44,13.38
+215,Cincinnati,United States,Northern America,Continental,33,20,46,4.17,2.49,5.81
+216,Cirebon,Indonesia,South-eastern Asia,Tropical,194,113,280,11.02,6.44,15.91
+217,Ciudad Guayana,Bolivarian Republic of Venezuela,Latin America and the Caribbean,Tropical,-30,-44,-17,-5.74,-8.44,-3.33
+218,Ciudad Jumrez,Mexico,Latin America and the Caribbean,Arid,71,42,99,4.14,2.47,5.78
+219,Ciudad del Este,Paraguay,Latin America and the Caribbean,Temperate,22,13,32,3.88,2.27,5.61
+220,Cixi,China,Eastern Asia,Temperate,95,56,137,4.34,2.56,6.23
+221,Cleveland,United States,Northern America,Continental,-34,-47,-20,-2.84,-3.97,-1.70
+222,Cochabamba,Bolivia,Latin America and the Caribbean,Arid,2,1,3,0.21,0.12,0.30
+223,Cocuta,Colombia,Latin America and the Caribbean,Tropical,-23,-33,-14,-3.40,-4.75,-2.03
+224,Coimbatore,India,Southern Asia,Arid,1,1,2,0.05,0.03,0.08
+225,Cologne,Germany,Western Europe,Temperate,91,54,127,5.45,3.26,7.61
+226,Colombo,Sri Lanka,Southern Asia,Tropical,-49,-80,-24,-1.09,-1.77,-0.54
+227,Columbus,United States,Northern America,Continental,25,15,36,1.93,1.15,2.70
+228,Comilla,Bangladesh,Southern Asia,Tropical,24,14,34,0.40,0.23,0.57
+229,Conakry,Guinea,Sub-Saharan Africa,Tropical,228,134,331,9.08,5.31,13.18
+230,Concepcion,Chile,Latin America and the Caribbean,Temperate,13,8,19,2.28,1.36,3.19
+231,Concord,United States,Northern America,Temperate,32,19,44,4.56,2.73,6.36
+232,Constantine,Algeria,Northern Africa,Temperate,-4,-5,-2,-0.68,-0.96,-0.40
+233,Copenhagen,Denmark,Northern Europe,Continental,-6,-9,-4,-0.48,-0.67,-0.29
+234,Cordoba,Argentina,Latin America and the Caribbean,Temperate,43,26,60,3.07,1.84,4.29
+235,Cotonou,Benin,Sub-Saharan Africa,Tropical,2,1,3,0.12,0.07,0.17
+236,Cuernavaca,Mexico,Latin America and the Caribbean,Tropical,63,38,88,7.59,4.55,10.59
+237,Cuiab,Brazil,Latin America and the Caribbean,Tropical,39,24,55,5.23,3.12,7.29
+238,Culiacln,Mexico,Latin America and the Caribbean,Arid,24,14,33,3.59,2.15,5.02
+239,Curitiba,Brazil,Latin America and the Caribbean,Temperate,71,42,99,3.04,1.82,4.24
+240,Cuttack,India,Southern Asia,Tropical,-8,-12,-5,-1.09,-1.53,-0.65
+241,Da Nang,Vietnam,South-eastern Asia,Tropical,28,16,41,2.67,1.56,3.83
+242,Daegu,Republic of Korea,Eastern Asia,Continental,13,8,18,0.54,0.32,0.75
+243,Daejeon,Republic of Korea,Eastern Asia,Continental,-8,-11,-5,-0.51,-0.72,-0.31
+244,Daganbhuiyan,Bangladesh,Southern Asia,Tropical,11,6,15,1.97,1.16,2.83
+245,Dagupan,Philippines,South-eastern Asia,Tropical,20,12,29,3.40,2.03,4.77
+246,Dakar,Senegal,Sub-Saharan Africa,Arid,21,12,30,0.61,0.36,0.88
+247,Dalian,China,Eastern Asia,Continental,-492,-709,-289,-13.52,-19.47,-7.95
+248,Dallas,United States,Northern America,Temperate,81,48,113,1.40,0.84,1.96
+249,Damascus,Syrian Arab Republic,Western Asia,Arid,-69,-103,-40,-2.03,-3.01,-1.16
+250,Damietta,Egypt,Northern Africa,Arid,19,11,27,2.88,1.70,4.11
+251,Dammam,Saudi Arabia,Western Asia,Arid,-3,-5,-2,-0.19,-0.28,-0.11
+252,Dandong,China,Eastern Asia,Continental,-48,-69,-28,-4.72,-6.80,-2.77
+253,Dar es Salaam,Tanzania,Sub-Saharan Africa,Tropical,-125,-181,-74,-1.91,-2.75,-1.12
+254,Darbhanga,India,Southern Asia,Temperate,34,20,47,4.15,2.48,5.85
+255,Darjeeling,India,Southern Asia,Temperate,-5,-7,-3,-2.12,-2.99,-1.27
+256,Datong,China,Eastern Asia,Arid,-7,-10,-4,-0.46,-0.66,-0.27
+257,Davanagere,India,Southern Asia,Arid,3,2,4,0.49,0.29,0.69
+258,Davao City,Philippines,South-eastern Asia,Tropical,58,35,81,6.05,3.62,8.50
+259,Dazhou,China,Eastern Asia,Temperate,30,18,43,4.87,2.85,7.03
+260,Deesa,India,Southern Asia,Arid,8,5,12,4.75,2.84,6.66
+261,Dehradun,India,Southern Asia,Temperate,43,26,60,4.16,2.49,5.83
+262,Delhi,India,Southern Asia,Arid,-1483,-2085,-887,-4.89,-6.87,-2.92
+263,Denizli,Turkey,Western Asia,Temperate,11,7,16,2.07,1.23,2.96
+264,Denpasar,Indonesia,South-eastern Asia,Tropical,240,141,346,12.55,7.39,18.08
+265,Denver,United States,Northern America,Arid,35,21,49,1.44,0.86,2.01
+266,Deoria,India,Southern Asia,Temperate,-36,-51,-22,-7.51,-10.58,-4.49
+267,Detroit,United States,Northern America,Continental,-66,-92,-39,-1.99,-2.77,-1.19
+268,Dezhou,China,Eastern Asia,Arid,-33,-48,-19,-6.41,-9.25,-3.77
+269,Dhaka,Bangladesh,Southern Asia,Tropical,853,500,1230,3.16,1.85,4.56
+270,Dhanbad,India,Southern Asia,Tropical,-141,-199,-84,-7.32,-10.34,-4.34
+271,Dharwad,India,Southern Asia,Tropical,71,42,99,7.69,4.62,10.80
+272,Dhule,India,Southern Asia,Arid,-6,-9,-4,-1.02,-1.43,-0.61
+273,Dili,Timor-Leste,South-eastern Asia,Tropical,19,11,28,6.00,3.49,8.76
+274,Dimapur,India,Southern Asia,Temperate,-38,-54,-23,-8.15,-11.47,-4.85
+275,Dindigul,India,Southern Asia,Arid,-16,-22,-9,-4.01,-5.65,-2.38
+276,Diyarbakir,Turkey,Western Asia,Temperate,-26,-36,-15,-4.43,-6.34,-2.61
+277,Djibouti,Djibouti,Sub-Saharan Africa,Arid,0,0,0,0.08,0.04,0.12
+278,Dnipro,Ukraine,Eastern Europe,Continental,-91,-131,-53,-9.60,-13.86,-5.55
+279,Doha,Qatar,Western Asia,Arid,2,1,3,0.11,0.06,0.17
+280,Donetsk,Ukraine,Eastern Europe,Continental,-216,-315,-126,-19.76,-28.78,-11.49
+281,Dongying,China,Eastern Asia,Continental,-46,-66,-27,-8.33,-12.04,-4.90
+282,Dortmund,Germany,Western Europe,Temperate,482,289,671,12.77,7.65,17.79
+283,Douala,Cameroon,Sub-Saharan Africa,Tropical,473,275,686,13.69,7.96,19.87
+284,Drachevo,Macedonia,Southern Europe,Arid,5,3,7,9.45,5.65,13.24
+285,Dresden,Germany,Western Europe,Continental,65,39,91,11.27,6.75,15.72
+286,Dubai,United Arab Emirates,Western Asia,Arid,2,1,3,0.05,0.03,0.08
+287,Dublin,Ireland,Northern Europe,Temperate,59,35,82,5.44,3.26,7.59
+288,Duhok,Iraq,Western Asia,Temperate,20,12,29,2.35,1.38,3.40
+289,Durango,Mexico,Latin America and the Caribbean,Arid,22,13,31,4.19,2.51,5.85
+290,Durban,South Africa,Sub-Saharan Africa,Temperate,93,55,129,3.03,1.81,4.23
+291,Durg,India,Southern Asia,Tropical,-4,-6,-2,-0.32,-0.45,-0.19
+292,Dushanbe,Tajikistan,Central Asia,Arid,40,24,57,3.30,1.96,4.69
+293,Dusseldorf,Germany,Western Europe,Temperate,36,21,50,4.20,2.52,5.87
+294,Edmonton,Canada,Northern America,Continental,-5,-8,-3,-0.48,-0.68,-0.29
+295,El Alto,Bolivia,Latin America and the Caribbean,Polar,90,53,130,4.77,2.79,6.91
+296,El Mahalla El Kubra,Egypt,Northern Africa,Arid,21,13,30,2.04,1.21,2.89
+297,Enugu,Nigeria,Sub-Saharan Africa,Tropical,98,58,139,11.23,6.67,15.88
+298,Erbil,Iraq,Western Asia,Temperate,-7,-10,-4,-0.49,-0.71,-0.29
+299,Erode,India,Southern Asia,Arid,-114,-160,-68,-12.90,-18.12,-7.66
+300,Eskisehir,Turkey,Western Asia,Arid,-16,-22,-9,-2.21,-3.12,-1.32
+301,Etah,India,Southern Asia,Arid,8,5,11,2.53,1.52,3.55
+302,Etawah,India,Southern Asia,Temperate,-30,-42,-18,-6.14,-8.64,-3.64
+303,Ettumanoor,India,Southern Asia,Tropical,-10,-13,-6,-0.95,-1.34,-0.56
+304,Evaton,South Africa,Sub-Saharan Africa,Temperate,1,0,1,0.08,0.04,0.10
+305,Faisalabad,Pakistan,Southern Asia,Arid,32,19,46,0.62,0.37,0.89
+306,Faiyum,Egypt,Northern Africa,Arid,36,21,52,2.33,1.38,3.31
+307,Faizabad,India,Southern Asia,Temperate,-78,-110,-47,-8.10,-11.42,-4.82
+308,Fancheng,China,Eastern Asia,Temperate,-38,-54,-22,-3.56,-5.12,-2.08
+309,Farrukhabad,India,Southern Asia,Temperate,-29,-41,-17,-5.32,-7.47,-3.15
+310,Fatehpur,India,Southern Asia,Temperate,-11,-16,-7,-2.35,-3.31,-1.39
+311,Feira de Santana,Brazil,Latin America and the Caribbean,Tropical,1,1,1,0.19,0.11,0.26
+312,Fez,Morocco,Northern Africa,Temperate,44,26,63,3.31,1.94,4.77
+313,Firozabad,India,Southern Asia,Arid,-8,-11,-5,-0.91,-1.28,-0.54
+314,Florianopolis,Brazil,Latin America and the Caribbean,Temperate,20,12,28,3.06,1.83,4.28
+315,Fomboni,Comoros,Sub-Saharan Africa,Tropical,0,0,0,-0.03,-0.05,-0.02
+316,Fortaleza,Brazil,Latin America and the Caribbean,Tropical,72,43,100,2.21,1.32,3.08
+317,Frankfurt am Main,Germany,Western Europe,Temperate,12,7,17,1.05,0.63,1.47
+318,Freetown,Sierra Leone,Sub-Saharan Africa,Tropical,-54,-79,-31,-3.16,-4.68,-1.81
+319,Fresno,United States,Northern America,Arid,38,23,53,5.30,3.17,7.39
+320,Fukuoka,Japan,Eastern Asia,Temperate,8,5,11,0.33,0.20,0.46
+321,Fushun,China,Eastern Asia,Continental,-64,-93,-37,-5.87,-8.46,-3.42
+322,Fuxin,China,Eastern Asia,Continental,-52,-75,-30,-7.74,-11.19,-4.50
+323,Fuyang,China,Eastern Asia,Temperate,-9,-12,-5,-1.03,-1.49,-0.61
+324,Fuzhou,China,Eastern Asia,Temperate,-334,-482,-196,-10.86,-15.66,-6.38
+325,Gaborone,Botswana,Sub-Saharan Africa,Arid,-2,-2,-1,-1.11,-1.58,-0.65
+326,Ganzhou,China,Eastern Asia,Temperate,24,14,35,2.00,1.18,2.89
+327,Garoua,Cameroon,Sub-Saharan Africa,Tropical,46,27,67,7.38,4.26,10.75
+328,Garut,Indonesia,South-eastern Asia,Tropical,123,72,177,8.87,5.23,12.78
+329,Gaya,India,Southern Asia,Temperate,25,15,35,3.43,2.04,4.83
+330,Gaza,Egypt,Northern Africa,Arid,11,6,15,0.60,0.35,0.85
+331,Gaziantep,Turkey,Western Asia,Temperate,0,0,1,0.03,0.02,0.04
+332,Gdansk,Poland,Eastern Europe,Continental,-21,-29,-12,-3.22,-4.50,-1.92
+333,Genoa,Italy,Southern Europe,Temperate,13,8,18,2.36,1.41,3.29
+334,George Town,Malaysia,South-eastern Asia,Tropical,18,11,25,2.42,1.45,3.38
+335,Georgetown,Guyana,Latin America and the Caribbean,Tropical,4,3,6,5.19,3.03,7.68
+336,Ghazipur,India,Southern Asia,Temperate,14,8,19,3.60,2.15,5.05
+337,Girga,Egypt,Northern Africa,Arid,11,6,15,1.21,0.71,1.72
+338,Giridih,India,Southern Asia,Tropical,-6,-9,-4,-1.81,-2.56,-1.08
+339,Glasgow,United Kingdom,Northern Europe,Temperate,-64,-90,-38,-6.57,-9.18,-3.91
+340,Goitnia,Brazil,Latin America and the Caribbean,Tropical,8,5,12,0.39,0.23,0.54
+341,Goma,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,164,95,238,21.42,12.38,31.13
+342,Gonda,India,Southern Asia,Temperate,-59,-83,-35,-14.56,-20.52,-8.70
+343,Gorakhpur,India,Southern Asia,Temperate,-22,-31,-13,-1.37,-1.93,-0.82
+344,Gostivar,Macedonia,Southern Europe,Temperate,4,2,6,6.89,4.11,9.63
+345,Guadalajara,Mexico,Latin America and the Caribbean,Temperate,8,5,11,0.19,0.11,0.26
+346,Guangzhou,China,Eastern Asia,Temperate,173,102,249,0.43,0.25,0.62
+347,Guatemala City,Guatemala,Latin America and the Caribbean,Tropical,121,72,169,4.65,2.78,6.50
+348,Guayaquil,Ecuador,Latin America and the Caribbean,Tropical,117,69,166,3.88,2.29,5.48
+349,Guilin,China,Eastern Asia,Temperate,25,15,36,2.23,1.31,3.21
+350,Guiyang,China,Eastern Asia,Temperate,6,4,9,0.23,0.14,0.33
+351,Gujranwala,Pakistan,Southern Asia,Arid,154,91,220,4.84,2.85,6.89
+352,Gujrat,Pakistan,Southern Asia,Temperate,9,5,12,1.11,0.66,1.59
+353,Guntur,India,Southern Asia,Tropical,28,17,39,3.22,1.92,4.51
+354,Guruvayur,India,Southern Asia,Tropical,112,67,157,6.63,3.96,9.30
+355,Guwahati,India,Southern Asia,Temperate,-52,-73,-31,-4.11,-5.79,-2.45
+356,Gwalior,India,Southern Asia,Temperate,-55,-77,-33,-3.79,-5.32,-2.25
+357,Gwangju,Republic of Korea,Eastern Asia,Temperate,16,9,22,1.09,0.65,1.52
+358,Haikou,China,Eastern Asia,Tropical,-53,-76,-31,-3.72,-5.34,-2.18
+359,Haiphong,Vietnam,South-eastern Asia,Temperate,17,10,25,1.68,0.99,2.42
+360,Hamamatsu,Japan,Eastern Asia,Temperate,16,10,23,3.57,2.14,4.98
+361,Hamburg,Germany,Western Europe,Temperate,28,17,39,1.59,0.95,2.22
+362,Hamedan,Iran,Southern Asia,Arid,1,0,1,0.14,0.08,0.20
+363,Hamhung,Democratic People's Republic of Korea,Eastern Asia,Continental,-45,-66,-26,-5.91,-8.68,-3.46
+364,Handan,China,Eastern Asia,Continental,-151,-220,-88,-8.89,-12.91,-5.18
+365,Handia,India,Southern Asia,Temperate,-10,-14,-6,-7.97,-11.28,-4.73
+366,Hangzhou,China,Eastern Asia,Temperate,-617,-893,-362,-8.75,-12.66,-5.13
+367,Hanoi,Vietnam,South-eastern Asia,Temperate,39,23,57,0.73,0.43,1.06
+368,Hanover,Germany,Western Europe,Temperate,-11,-15,-6,-1.60,-2.24,-0.96
+369,Harare,Zimbabwe,Sub-Saharan Africa,Temperate,29,17,42,2.00,1.17,2.87
+370,Harbin,China,Eastern Asia,Continental,-140,-202,-82,-3.15,-4.54,-1.84
+371,Hardoi,India,Southern Asia,Temperate,-1,-2,-1,-0.29,-0.41,-0.17
+372,Hargeisa,Somalia,Sub-Saharan Africa,Arid,-11,-16,-6,-0.87,-1.28,-0.50
+373,Haridwar,India,Southern Asia,Temperate,12,7,16,1.73,1.03,2.43
+374,Havana,Cuba,Latin America and the Caribbean,Tropical,-63,-88,-38,-3.36,-4.69,-2.00
+375,Hefei,China,Eastern Asia,Temperate,-288,-416,-169,-5.67,-8.17,-3.32
+376,Hegang,China,Eastern Asia,Continental,-49,-71,-29,-9.24,-13.30,-5.40
+377,Helsinki,Finland,Northern Europe,Continental,-30,-42,-18,-3.37,-4.70,-2.01
+378,Hengyang,China,Eastern Asia,Temperate,-109,-157,-64,-11.65,-16.79,-6.85
+379,Herat,Afghanistan,Southern Asia,Arid,42,25,61,3.97,2.35,5.74
+380,Hermosillo,Mexico,Latin America and the Caribbean,Arid,-7,-10,-4,-1.01,-1.41,-0.61
+381,Hindiya,Iraq,Western Asia,Arid,2,1,3,0.58,0.34,0.84
+382,Hiroshima,Japan,Eastern Asia,Temperate,164,98,229,13.71,8.22,19.12
+383,Ho Chi Minh City,Vietnam,South-eastern Asia,Tropical,329,192,475,2.55,1.49,3.69
+384,Hodeidah,Yemen,Western Asia,Arid,-3,-4,-1,-0.37,-0.54,-0.22
+385,Hofuf,Saudi Arabia,Western Asia,Arid,3,1,4,0.29,0.17,0.43
+386,Hohhot,China,Eastern Asia,Arid,-94,-136,-55,-4.70,-6.77,-2.74
+387,Homna,Bangladesh,Southern Asia,Tropical,-22,-33,-13,-4.25,-6.17,-2.48
+388,Homs,Syrian Arab Republic,Western Asia,Temperate,-30,-44,-17,-3.65,-5.41,-2.09
+389,Hong Kong,China,Eastern Asia,Temperate,178,105,256,3.02,1.77,4.34
+390,Honiara,Solomon Islands,Melanesia,Tropical,5,3,7,4.84,2.79,7.12
+391,Honolulu,United States,Northern America,Tropical,14,8,20,2.60,1.55,3.62
+392,Houston,United States,Northern America,Temperate,-7,-9,-4,-0.11,-0.16,-0.07
+393,Hsinchu,China,Eastern Asia,Temperate,-1,-2,-1,-0.14,-0.20,-0.08
+394,Huadu,China,Eastern Asia,Temperate,-32,-47,-19,-4.09,-5.88,-2.40
+395,Huai'an,China,Eastern Asia,Temperate,-98,-141,-57,-7.04,-10.14,-4.09
+396,Huaibei,China,Eastern Asia,Temperate,-63,-90,-37,-7.08,-10.20,-4.12
+397,Huambo,Angola,Sub-Saharan Africa,Temperate,28,16,41,4.89,2.83,7.17
+398,Huangdao,China,Eastern Asia,Tropical,-63,-91,-37,-10.96,-15.79,-6.43
+399,Huangshi,China,Eastern Asia,Temperate,-112,-162,-65,-12.75,-18.41,-7.45
+400,Huiyang,China,Eastern Asia,Temperate,19,11,28,3.35,1.97,4.80
+401,Huizhou,China,Eastern Asia,Temperate,1,0,1,0.06,0.03,0.08
+402,Huludao,China,Eastern Asia,Continental,-50,-72,-29,-9.54,-13.79,-5.61
+403,Hyderabad [India],India,Southern Asia,Arid,-121,-170,-72,-1.34,-1.89,-0.80
+404,Hyderabad [Pakistan],Pakistan,Southern Asia,Arid,-49,-69,-29,-2.02,-2.88,-1.19
+405,Ibadan,Nigeria,Sub-Saharan Africa,Tropical,245,146,349,7.31,4.34,10.40
+406,Ibagu,Colombia,Latin America and the Caribbean,Tropical,1,0,1,0.15,0.09,0.21
+407,Ikorodu,Nigeria,Sub-Saharan Africa,Tropical,65,39,93,8.84,5.25,12.58
+408,Ilorin,Nigeria,Sub-Saharan Africa,Tropical,-15,-21,-9,-1.41,-2.00,-0.83
+409,Imphal,India,Southern Asia,Temperate,26,16,37,3.41,2.03,4.79
+410,Indianapolis,United States,Northern America,Continental,-15,-21,-9,-1.28,-1.79,-0.77
+411,Indore,India,Southern Asia,Tropical,-24,-33,-14,-0.71,-1.00,-0.42
+412,Ipoh,Malaysia,South-eastern Asia,Tropical,-22,-30,-13,-2.79,-3.90,-1.67
+413,Irbid,Jordan,Western Asia,Temperate,-15,-21,-9,-1.88,-2.71,-1.10
+414,Isfahan,Iran,Southern Asia,Arid,-7,-10,-4,-0.42,-0.58,-0.25
+415,Istanbul,Turkey,Western Asia,Temperate,-574,-826,-341,-4.03,-5.79,-2.39
+416,Itahari,Nepal,Southern Asia,Temperate,61,36,89,12.27,7.22,17.73
+417,Izhevsk,Russia,Eastern Europe,Continental,42,25,59,6.85,4.09,9.55
+418,Izmir,Turkey,Western Asia,Temperate,24,14,34,0.92,0.54,1.31
+419,Izmit,Turkey,Western Asia,Temperate,8,4,11,1.13,0.67,1.61
+420,Jabalpur,India,Southern Asia,Tropical,81,48,114,5.44,3.24,7.63
+421,Jaipur,India,Southern Asia,Arid,-143,-201,-85,-3.88,-5.46,-2.30
+422,Jakarta,Indonesia,South-eastern Asia,Tropical,3,2,4,0.01,0.00,0.01
+423,Jalandhar,India,Southern Asia,Arid,-33,-47,-20,-2.89,-4.06,-1.72
+424,Jalgaon,India,Southern Asia,Arid,-28,-39,-17,-3.84,-5.39,-2.28
+425,Jalpaiguri,India,Southern Asia,Temperate,22,13,30,3.58,2.14,5.02
+426,Jambi,Indonesia,South-eastern Asia,Tropical,20,11,28,2.41,1.41,3.47
+427,Jammu,India,Southern Asia,Temperate,-24,-34,-14,-2.18,-3.06,-1.30
+428,Jamnagar,India,Southern Asia,Arid,-34,-49,-20,-5.24,-7.39,-3.10
+429,Jamshedpur,India,Southern Asia,Tropical,-95,-133,-56,-5.04,-7.08,-2.99
+430,Jaunpur,India,Southern Asia,Temperate,-42,-60,-25,-8.06,-11.36,-4.78
+431,Jaynagar Majilpur,India,Southern Asia,Tropical,-16,-23,-10,-3.41,-4.79,-2.04
+432,Jeddah,Saudi Arabia,Western Asia,Arid,-9,-14,-5,-0.22,-0.32,-0.13
+433,Jember,Indonesia,South-eastern Asia,Tropical,125,74,180,10.05,5.90,14.43
+434,Jeonju,Republic of Korea,Eastern Asia,Continental,22,13,31,3.53,2.11,4.92
+435,Jerusalem,Israel,Western Asia,Temperate,-30,-42,-18,-1.58,-2.21,-0.94
+436,Jessore,Bangladesh,Southern Asia,Tropical,40,23,57,6.88,4.04,9.97
+437,Jhansi,India,Southern Asia,Temperate,-46,-65,-28,-7.74,-10.89,-4.63
+438,Jiamusi,China,Eastern Asia,Continental,-62,-89,-36,-8.76,-12.62,-5.11
+439,Jiangyin,China,Eastern Asia,Temperate,-50,-73,-29,-7.74,-11.19,-4.51
+440,Jiaozuo,China,Eastern Asia,Continental,-92,-133,-54,-12.19,-17.63,-7.14
+441,Jiaxing,China,Eastern Asia,Temperate,21,12,29,1.88,1.11,2.69
+442,Jieyang,China,Eastern Asia,Temperate,532,312,760,4.54,2.66,6.49
+443,Jilin,China,Eastern Asia,Continental,-128,-185,-75,-8.47,-12.21,-4.93
+444,Jinan,China,Eastern Asia,Continental,-289,-419,-169,-7.75,-11.25,-4.55
+445,Jingzhou,China,Eastern Asia,Temperate,-51,-73,-30,-7.08,-10.25,-4.14
+446,Jinhua,China,Eastern Asia,Temperate,-43,-62,-25,-4.37,-6.32,-2.56
+447,Jining,China,Eastern Asia,Continental,-66,-95,-39,-8.41,-12.10,-4.92
+448,Jinzhou,China,Eastern Asia,Continental,-58,-83,-34,-6.74,-9.70,-3.97
+449,Jiujiang,China,Eastern Asia,Temperate,-40,-57,-23,-6.66,-9.62,-3.90
+450,Joao Pessoa,Brazil,Latin America and the Caribbean,Tropical,36,21,50,3.69,2.21,5.15
+451,Joao Teves,Cape Verde,Sub-Saharan Africa,Arid,3,2,4,12.14,7.17,17.41
+452,Jodhpur,India,Southern Asia,Arid,3,2,4,0.20,0.12,0.28
+453,Johannesburg,South Africa,Sub-Saharan Africa,Temperate,260,156,363,3.43,2.05,4.78
+454,Jombang,Indonesia,South-eastern Asia,Tropical,72,42,103,10.71,6.27,15.34
+455,Jos,Nigeria,Sub-Saharan Africa,Tropical,95,56,135,12.57,7.46,17.83
+456,Kabul,Afghanistan,Southern Asia,Arid,-34,-49,-20,-0.68,-0.98,-0.40
+457,Kaduna,Nigeria,Sub-Saharan Africa,Tropical,23,14,33,1.55,0.92,2.21
+458,Kaifeng,China,Eastern Asia,Continental,-81,-117,-47,-7.62,-11.03,-4.46
+459,Kalaburagi,India,Southern Asia,Tropical,-12,-16,-7,-1.63,-2.30,-0.97
+460,Kampala,Uganda,Sub-Saharan Africa,Tropical,246,145,354,6.68,3.92,9.61
+461,Kananga,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,71,42,103,5.99,3.52,8.69
+462,Kanazawa,Japan,Eastern Asia,Temperate,-7,-10,-4,-1.26,-1.76,-0.75
+463,Kandahar,Afghanistan,Southern Asia,Arid,6,3,8,0.91,0.54,1.31
+464,Kandy,Sri Lanka,Southern Asia,Tropical,-24,-39,-12,-4.34,-7.06,-2.14
+465,Kannur,India,Southern Asia,Tropical,21,12,29,2.79,1.68,3.91
+466,Kano,Nigeria,Sub-Saharan Africa,Arid,124,73,177,2.83,1.67,4.04
+467,Kanpur,India,Southern Asia,Temperate,-195,-274,-116,-5.16,-7.25,-3.08
+468,Kansas City,United States,Northern America,Continental,25,15,35,2.11,1.26,2.94
+469,Kaohsiung,China,Eastern Asia,Tropical,26,15,37,1.05,0.61,1.51
+470,Karachi,Pakistan,Southern Asia,Arid,-590,-841,-349,-3.20,-4.57,-1.89
+471,Karbala,Iraq,Western Asia,Arid,18,11,26,2.03,1.20,2.94
+472,Kathmandu,Nepal,Southern Asia,Temperate,283,165,407,8.80,5.15,12.66
+473,Katihar,India,Southern Asia,Temperate,19,12,27,5.37,3.22,7.57
+474,Katowice,Poland,Eastern Europe,Continental,-176,-246,-105,-11.48,-16.05,-6.84
+475,Kayseri,Turkey,Western Asia,Arid,-10,-14,-6,-1.16,-1.67,-0.69
+476,Kazan,Russia,Eastern Europe,Continental,-127,-178,-76,-10.84,-15.16,-6.46
+477,Kebkabiya,Sudan,Northern Africa,Arid,-18,-26,-10,-3.90,-5.71,-2.24
+478,Kerman,Iran,Southern Asia,Arid,-3,-5,-2,-0.72,-1.01,-0.43
+479,Kermanshah,Iran,Southern Asia,Temperate,-10,-14,-6,-1.25,-1.75,-0.74
+480,Kharagpur,India,Southern Asia,Tropical,20,12,28,2.65,1.59,3.71
+481,Kharkiv,Ukraine,Eastern Europe,Continental,-18,-26,-10,-1.21,-1.75,-0.70
+482,Khartoum,Sudan,Northern Africa,Arid,-11,-16,-6,-0.20,-0.30,-0.12
+483,Khulna,Bangladesh,Southern Asia,Tropical,82,48,119,7.41,4.32,10.75
+484,Kigali,Rwanda,Sub-Saharan Africa,Tropical,1,0,1,0.06,0.03,0.08
+485,Kingston,Jamaica,Latin America and the Caribbean,Tropical,-70,-104,-40,-7.20,-10.70,-4.08
+486,Kinshasa,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,860,503,1246,8.79,5.14,12.73
+487,Kirkuk,Iraq,Western Asia,Arid,6,3,8,0.53,0.31,0.76
+488,Kisangani,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,73,43,105,10.40,6.11,15.10
+489,Kishoreganj,Bangladesh,Southern Asia,Tropical,-38,-55,-22,-4.86,-7.05,-2.83
+490,Kitakyushu,Japan,Eastern Asia,Temperate,-1,-2,-1,-0.09,-0.12,-0.05
+491,Kitwe,Zambia,Sub-Saharan Africa,Temperate,45,26,67,7.84,4.56,11.66
+492,Klipgat,South Africa,Sub-Saharan Africa,Temperate,0,0,0,0.00,0.00,0.00
+493,Kochi,India,Southern Asia,Tropical,-62,-87,-37,-1.84,-2.59,-1.10
+494,Kolhapur,India,Southern Asia,Tropical,-25,-36,-15,-3.15,-4.43,-1.88
+495,Kolkata,India,Southern Asia,Tropical,-243,-341,-144,-1.06,-1.49,-0.63
+496,Kollam,India,Southern Asia,Tropical,243,145,340,8.65,5.17,12.09
+497,Konya,Turkey,Western Asia,Arid,19,11,26,2.17,1.28,3.09
+498,Kota,India,Southern Asia,Arid,-37,-53,-22,-3.26,-4.59,-1.94
+499,Kota Kinabalu,Malaysia,South-eastern Asia,Tropical,-7,-10,-4,-0.97,-1.35,-0.58
+500,Kozhikode,India,Southern Asia,Tropical,520,312,729,13.15,7.90,18.44
+501,Krakow,Poland,Eastern Europe,Continental,-20,-28,-12,-2.84,-3.97,-1.69
+502,Krasnodar,Russia,Eastern Europe,Temperate,-10,-13,-6,-1.27,-1.77,-0.76
+503,Krasnoyarsk,Russia,Eastern Europe,Continental,0,0,0,-0.03,-0.04,-0.02
+504,Krishnanagar,India,Southern Asia,Tropical,37,22,52,4.37,2.62,6.13
+505,Kryvyi Rih,Ukraine,Eastern Europe,Continental,-95,-138,-55,-16.57,-23.98,-9.63
+506,Kuala Lumpur,Malaysia,South-eastern Asia,Tropical,-35,-50,-21,-0.46,-0.64,-0.27
+507,Kuchai Kot,India,Southern Asia,Temperate,10,6,14,1.65,0.99,2.32
+508,Kumamoto,Japan,Eastern Asia,Temperate,9,6,13,1.38,0.82,1.92
+509,Kumanovo,Macedonia,Southern Europe,Arid,1,1,1,1.31,0.78,1.83
+510,Kumasi,Ghana,Sub-Saharan Africa,Tropical,145,84,209,3.50,2.04,5.04
+511,Kuningan,Indonesia,South-eastern Asia,Tropical,67,40,97,11.20,6.61,16.08
+512,Kunming,China,Eastern Asia,Temperate,-364,-528,-214,-11.32,-16.42,-6.66
+513,Kushinagar,India,Southern Asia,Temperate,-15,-20,-9,-4.33,-6.09,-2.57
+514,Kuwait City,Kuwait,Western Asia,Arid,3,2,4,0.07,0.04,0.10
+515,Kyiv,Ukraine,Eastern Europe,Continental,-36,-51,-21,-1.22,-1.77,-0.71
+516,La Plata,Argentina,Latin America and the Caribbean,Temperate,48,29,68,6.70,4.00,9.35
+517,Lagos,Nigeria,Sub-Saharan Africa,Tropical,160,94,227,1.36,0.80,1.94
+518,Lahore,Pakistan,Southern Asia,Arid,-188,-269,-110,-1.38,-1.97,-0.81
+519,Lakhimpur,India,Southern Asia,Temperate,56,33,78,13.92,8.36,19.49
+520,Lakshmipur,Bangladesh,Southern Asia,Tropical,-25,-36,-15,-2.70,-3.91,-1.59
+521,Lanzhou,China,Eastern Asia,Arid,-100,-143,-59,-3.85,-5.54,-2.28
+522,Las Vegas,United States,Northern America,Arid,75,45,105,3.19,1.91,4.45
+523,Latur,India,Southern Asia,Tropical,-1,-1,0,-0.14,-0.19,-0.08
+524,Leeds,United Kingdom,Northern Europe,Temperate,-18,-25,-11,-1.32,-1.85,-0.79
+525,Leon,Mexico,Latin America and the Caribbean,Arid,88,53,123,6.61,3.96,9.21
+526,Lianyungang,China,Eastern Asia,Continental,-59,-85,-34,-7.19,-10.40,-4.20
+527,Liaocheng,China,Eastern Asia,Continental,-34,-49,-20,-6.43,-9.24,-3.78
+528,Liaoyang,China,Eastern Asia,Continental,-13,-19,-8,-2.09,-2.99,-1.22
+529,Libreville,Gabon,Sub-Saharan Africa,Tropical,50,29,72,7.70,4.47,11.23
+530,Lille,France,Western Europe,Temperate,-1,-2,-1,-0.15,-0.21,-0.09
+531,Lilongwe,Malawi,Sub-Saharan Africa,Temperate,66,39,94,7.94,4.68,11.30
+532,Lima,Peru,Latin America and the Caribbean,Arid,108,63,156,1.13,0.66,1.63
+533,Linfen,China,Eastern Asia,Arid,-59,-85,-35,-7.10,-10.24,-4.22
+534,Linyi,China,Eastern Asia,Continental,-74,-107,-44,-6.04,-8.70,-3.58
+535,Lisbon,Portugal,Southern Europe,Temperate,-30,-41,-18,-1.42,-1.98,-0.84
+536,Liuzhou,China,Eastern Asia,Temperate,-113,-163,-66,-7.97,-11.50,-4.66
+537,Liverpool,United Kingdom,Northern Europe,Temperate,63,38,88,4.78,2.86,6.67
+538,Ljubljana,Slovenia,Southern Europe,Continental,5,3,7,1.79,1.07,2.50
+539,Lodz,Poland,Eastern Europe,Continental,-4,-5,-2,-0.65,-0.91,-0.39
+540,Lom,Togo,Sub-Saharan Africa,Tropical,-12,-18,-7,-0.56,-0.83,-0.32
+541,London,United Kingdom,Northern Europe,Temperate,-118,-165,-70,-1.13,-1.58,-0.68
+542,Londrina,Brazil,Latin America and the Caribbean,Temperate,31,18,43,4.86,2.90,6.78
+543,Long Xuyen,Vietnam,South-eastern Asia,Tropical,10,6,14,2.22,1.30,3.20
+544,Longgang,China,Eastern Asia,Temperate,-2,-3,-1,-0.24,-0.35,-0.14
+545,Los Angeles,United States,Northern America,Temperate,114,68,159,0.77,0.46,1.07
+546,Louisville,United States,Northern America,Temperate,-17,-24,-10,-2.13,-2.98,-1.27
+547,Luanda,Angola,Sub-Saharan Africa,Arid,-112,-164,-65,-1.26,-1.85,-0.74
+548,Lubango,Angola,Sub-Saharan Africa,Temperate,31,18,46,3.75,2.19,5.51
+549,Lubumbashi,Democratic Republic of the Congo,Sub-Saharan Africa,Temperate,56,32,81,2.77,1.61,4.04
+550,Lucknow,India,Southern Asia,Temperate,-70,-98,-42,-1.52,-2.13,-0.91
+551,Ludhiana,India,Southern Asia,Temperate,14,8,20,0.63,0.37,0.88
+552,Luohe,China,Eastern Asia,Temperate,7,4,10,0.68,0.40,0.99
+553,Luoyang,China,Eastern Asia,Temperate,-272,-392,-160,-15.32,-22.07,-8.98
+554,Lusaka,Zambia,Sub-Saharan Africa,Temperate,316,182,463,11.10,6.38,16.27
+555,Luxembourg,Luxembourg,Western Europe,Temperate,4,2,5,2.58,1.54,3.62
+556,Luxor,Egypt,Northern Africa,Arid,50,30,71,2.99,1.78,4.23
+557,Luzhou,China,Eastern Asia,Temperate,30,18,43,6.21,3.65,8.93
+558,Lviv,Ukraine,Eastern Europe,Continental,4,2,6,0.57,0.33,0.82
+559,Lyon,France,Western Europe,Temperate,-7,-10,-4,-0.62,-0.87,-0.37
+560,Ma'anshan,China,Eastern Asia,Temperate,-82,-118,-48,-8.66,-12.43,-5.06
+561,Macei,Brazil,Latin America and the Caribbean,Tropical,50,30,69,4.83,2.88,6.73
+562,Madiun,Indonesia,South-eastern Asia,Tropical,105,61,151,11.46,6.66,16.41
+563,Madrid,Spain,Southern Europe,Arid,-34,-47,-20,-0.58,-0.81,-0.35
+564,Madurai,India,Southern Asia,Tropical,-99,-139,-59,-5.29,-7.47,-3.14
+565,Magelang,Indonesia,South-eastern Asia,Tropical,31,18,45,4.29,2.52,6.17
+566,Mahagi,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,10,6,14,9.94,5.84,14.26
+567,Maiduguri,Nigeria,Sub-Saharan Africa,Arid,31,18,44,2.86,1.69,4.06
+568,Mainpuri,India,Southern Asia,Temperate,-2,-3,-1,-0.69,-0.97,-0.41
+569,Makassar,Indonesia,South-eastern Asia,Tropical,214,126,306,9.58,5.65,13.71
+570,Makhachkala,Russia,Eastern Europe,Arid,43,26,60,6.15,3.68,8.59
+571,Malaga,Spain,Southern Europe,Temperate,-20,-27,-12,-2.39,-3.34,-1.43
+572,Malappuram,India,Southern Asia,Tropical,59,35,83,7.67,4.60,10.76
+573,Male,Maldives,Southern Asia,Tropical,-2,-2,-1,-0.79,-1.12,-0.46
+574,Malegaon,India,Southern Asia,Arid,13,8,19,2.27,1.35,3.19
+575,Managua,Nicaragua,Latin America and the Caribbean,Tropical,19,11,27,1.45,0.86,2.03
+576,Manama,Bahrain,Western Asia,Arid,-2,-2,-1,-0.12,-0.17,-0.07
+577,Manaus,Brazil,Latin America and the Caribbean,Tropical,41,24,57,1.83,1.09,2.56
+578,Manchester,United Kingdom,Northern Europe,Temperate,94,56,131,4.11,2.45,5.73
+579,Mandalay,Myanmar,South-eastern Asia,Tropical,167,97,242,8.88,5.16,12.89
+580,Mangaluru,India,Southern Asia,Tropical,30,18,42,3.07,1.82,4.30
+581,Mansoura,Egypt,Northern Africa,Arid,12,7,17,0.87,0.51,1.23
+582,Maoming,China,Eastern Asia,Temperate,70,42,101,10.33,6.13,14.79
+583,Maputo,Mozambique,Sub-Saharan Africa,Tropical,152,89,220,5.45,3.19,7.90
+584,Mar del Plata,Argentina,Latin America and the Caribbean,Temperate,28,17,39,4.51,2.70,6.29
+585,Maracaibo,Bolivarian Republic of Venezuela,Latin America and the Caribbean,Arid,-120,-175,-70,-5.98,-8.69,-3.46
+586,Maracay,Bolivarian Republic of Venezuela,Latin America and the Caribbean,Tropical,-90,-132,-52,-10.37,-15.11,-5.95
+587,Mardan,Pakistan,Southern Asia,Arid,81,48,115,7.18,4.25,10.27
+588,Maroua,Cameroon,Sub-Saharan Africa,Arid,-32,-46,-19,-6.83,-9.86,-3.99
+589,Marrakesh,Morocco,Northern Africa,Arid,17,10,25,1.74,1.03,2.50
+590,Marseille,France,Western Europe,Arid,11,6,15,1.14,0.68,1.59
+591,Maseru,Lesotho,Sub-Saharan Africa,Temperate,-20,-29,-12,-9.03,-13.04,-5.30
+592,Mashhad,Iran,Southern Asia,Arid,-28,-39,-17,-0.90,-1.25,-0.54
+593,Massawa,Eritrea,Sub-Saharan Africa,Arid,-4,-6,-2,-1.45,-2.16,-0.83
+594,Mataram,Indonesia,South-eastern Asia,Tropical,224,132,322,21.81,12.83,31.25
+595,Maturin,Bolivarian Republic of Venezuela,Latin America and the Caribbean,Tropical,-47,-68,-27,-10.03,-14.63,-5.81
+596,Mau,India,Southern Asia,Temperate,-6,-8,-3,-1.33,-1.86,-0.79
+597,Mbuji-Mayi,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,187,110,271,5.76,3.38,8.34
+598,Mecca,Saudi Arabia,Western Asia,Arid,-6,-8,-3,-0.34,-0.49,-0.20
+599,Medan,Indonesia,South-eastern Asia,Tropical,212,124,306,4.87,2.85,7.03
+600,MedellAn,Colombia,Latin America and the Caribbean,Tropical,-76,-106,-45,-2.31,-3.23,-1.38
+601,Medina,Saudi Arabia,Western Asia,Arid,-1,-1,0,-0.06,-0.09,-0.04
+602,Meerut,India,Southern Asia,Temperate,-92,-130,-55,-4.36,-6.14,-2.60
+603,Meknes,Morocco,Northern Africa,Temperate,17,10,24,2.39,1.41,3.43
+604,Melbourne,Australia,Australia and New Zealand,Temperate,-15,-21,-9,-0.40,-0.56,-0.24
+605,Mendoza,Argentina,Latin America and the Caribbean,Arid,38,23,53,3.86,2.30,5.38
+606,Merida,Mexico,Latin America and the Caribbean,Tropical,-7,-10,-4,-0.86,-1.20,-0.51
+607,Mersin,Turkey,Western Asia,Temperate,15,9,22,1.95,1.15,2.78
+608,Mexicali,Mexico,Latin America and the Caribbean,Arid,5,3,7,0.63,0.38,0.88
+609,Mexico City,Mexico,Latin America and the Caribbean,Temperate,794,474,1106,4.52,2.70,6.30
+610,Miami,United States,Northern America,Tropical,424,254,591,7.29,4.36,10.16
+611,Mianyang,China,Eastern Asia,Temperate,-12,-18,-7,-1.85,-2.67,-1.09
+612,Milan,Italy,Southern Europe,Temperate,8,5,11,0.26,0.16,0.36
+613,Milwaukee,United States,Northern America,Continental,63,38,88,5.52,3.30,7.70
+614,Minneapolis,United States,Northern America,Continental,-8,-11,-5,-0.41,-0.58,-0.25
+615,Minsk,Belarus,Eastern Europe,Continental,51,30,72,2.46,1.47,3.47
+616,Mirzapur,India,Southern Asia,Temperate,16,9,22,2.61,1.55,3.66
+617,Mogadishu,Somalia,Sub-Saharan Africa,Arid,249,145,362,7.31,4.24,10.62
+618,Mojokerto,Indonesia,South-eastern Asia,Tropical,80,47,116,11.87,6.96,17.17
+619,Mokolo,Cameroon,Sub-Saharan Africa,Tropical,-10,-14,-6,-6.69,-9.70,-3.92
+620,Mombasa,Kenya,Sub-Saharan Africa,Tropical,84,50,119,6.69,3.96,9.47
+621,Monaco,Monaco,Western Europe,Temperate,1,1,2,2.44,1.44,3.50
+622,Monrovia,Liberia,Sub-Saharan Africa,Tropical,140,80,207,8.41,4.81,12.38
+623,Monterrey,Mexico,Latin America and the Caribbean,Arid,149,89,207,3.87,2.31,5.40
+624,Montevideo,Uruguay,Latin America and the Caribbean,Temperate,60,36,84,4.77,2.85,6.65
+625,Montreal,Canada,Northern America,Continental,252,151,351,7.94,4.74,11.05
+626,Moradabad,India,Southern Asia,Temperate,-13,-18,-8,-0.87,-1.22,-0.52
+627,Morelia,Mexico,Latin America and the Caribbean,Temperate,25,15,35,4.08,2.44,5.69
+628,Moriyama,Japan,Eastern Asia,Temperate,29,17,41,4.83,2.88,6.73
+629,Moscow,Russia,Eastern Europe,Continental,-2321,-3247,-1382,-15.56,-21.76,-9.26
+630,Mosul,Iraq,Western Asia,Temperate,22,13,31,1.48,0.87,2.13
+631,Mudanjiang,China,Eastern Asia,Continental,-75,-108,-44,-9.75,-14.08,-5.69
+632,Multan,Pakistan,Southern Asia,Arid,-1,-1,0,-0.03,-0.04,-0.02
+633,Mumbai,India,Southern Asia,Tropical,175,105,246,0.76,0.46,1.07
+634,Munich,Germany,Western Europe,Continental,-156,-218,-93,-8.86,-12.38,-5.29
+635,Muzaffarnagar,India,Southern Asia,Temperate,32,19,45,3.78,2.25,5.31
+636,Muzaffarpur,India,Southern Asia,Temperate,51,31,72,4.13,2.46,5.81
+637,Mwanza,Tanzania,Sub-Saharan Africa,Tropical,71,42,102,9.65,5.66,13.89
+638,My Tho,Vietnam,South-eastern Asia,Tropical,29,17,42,6.80,3.93,9.81
+639,Mymensingh,Bangladesh,Southern Asia,Tropical,3,2,5,0.46,0.27,0.66
+640,Mysuru,India,Southern Asia,Arid,-49,-69,-29,-3.91,-5.49,-2.33
+641,N'Djamena,Chad,Sub-Saharan Africa,Arid,-55,-80,-32,-3.35,-4.90,-1.94
+642,Nagoya,Japan,Eastern Asia,Temperate,-418,-584,-249,-5.16,-7.21,-3.08
+643,Nagpur,India,Southern Asia,Tropical,213,127,299,6.72,4.02,9.43
+644,Naha,Japan,Eastern Asia,Temperate,4,2,6,0.40,0.24,0.56
+645,Nairobi,Kenya,Sub-Saharan Africa,Temperate,308,183,436,6.09,3.61,8.62
+646,Najaf,Iraq,Western Asia,Arid,14,8,21,1.36,0.80,1.97
+647,Namangan,Uzbekistan,Central Asia,Arid,24,14,34,3.10,1.84,4.41
+648,Nampula,Mozambique,Sub-Saharan Africa,Tropical,3,2,4,0.53,0.31,0.76
+649,Nanchang,China,Eastern Asia,Temperate,-120,-173,-71,-3.66,-5.27,-2.16
+650,Nanchong,China,Eastern Asia,Temperate,-35,-50,-20,-3.97,-5.72,-2.30
+651,Nanded-Waghala,India,Southern Asia,Tropical,7,4,10,1.03,0.61,1.45
+652,Nanjing,China,Eastern Asia,Temperate,-571,-826,-333,-9.12,-13.21,-5.33
+653,Nanning,China,Eastern Asia,Temperate,-110,-158,-64,-3.41,-4.90,-2.00
+654,Nanpara,India,Southern Asia,Temperate,2,1,3,2.88,1.72,4.04
+655,Nantong,China,Eastern Asia,Temperate,-135,-194,-79,-8.03,-11.52,-4.71
+656,Nanyang,China,Eastern Asia,Temperate,-98,-142,-57,-12.04,-17.35,-7.02
+657,Naples,Italy,Southern Europe,Temperate,95,57,133,2.96,1.77,4.14
+658,Nashik,India,Southern Asia,Tropical,18,11,25,0.96,0.57,1.34
+659,Nasiriyah,Iraq,Western Asia,Arid,15,9,22,2.11,1.24,3.04
+660,Nassau,Bahamas,Latin America and the Caribbean,Tropical,-15,-22,-9,-5.83,-8.47,-3.41
+661,Natal,Brazil,Latin America and the Caribbean,Tropical,-10,-14,-6,-1.44,-2.01,-0.86
+662,Neeleshwaram,India,Southern Asia,Tropical,9,6,13,2.15,1.28,3.03
+663,Nellore,India,Southern Asia,Tropical,8,5,12,1.26,0.75,1.77
+664,New Orleans,United States,Northern America,Temperate,-3,-4,-2,-0.35,-0.49,-0.21
+665,New Taipei,China,Eastern Asia,Temperate,-128,-184,-75,-1.36,-1.97,-0.80
+666,New York,United States,Northern America,Continental,167,100,233,1.01,0.60,1.41
+667,Newcastle upon Tyne,United Kingdom,Northern Europe,Temperate,52,31,72,6.68,4.00,9.31
+668,Niamey,Niger,Sub-Saharan Africa,Arid,19,11,28,2.00,1.15,2.95
+669,Nice,France,Western Europe,Temperate,14,8,19,1.97,1.18,2.75
+670,Nicosia,Cyprus,Western Asia,Arid,-12,-17,-7,-4.22,-5.98,-2.51
+671,Ningbo,China,Eastern Asia,Temperate,-76,-110,-45,-2.57,-3.70,-1.50
+672,Nizhny Novgorod,Russia,Eastern Europe,Continental,18,11,25,1.43,0.85,2.00
+673,Noakhali,Bangladesh,Southern Asia,Tropical,-35,-50,-20,-1.89,-2.73,-1.11
+674,Nottingham,United Kingdom,Northern Europe,Temperate,-36,-50,-21,-5.74,-8.03,-3.43
+675,Nouakchott,Mauritania,Sub-Saharan Africa,Arid,9,5,13,0.76,0.44,1.10
+676,Novo Hamburgo,Brazil,Latin America and the Caribbean,Temperate,25,15,35,4.54,2.72,6.32
+677,Novosibirsk,Russia,Eastern Europe,Continental,82,49,115,5.91,3.54,8.25
+678,Nuevo Laredo,Mexico,Latin America and the Caribbean,Arid,30,18,42,5.03,3.00,7.01
+679,Nur-Sultan,Kazakhstan,Central Asia,Arid,-34,-48,-20,-3.50,-4.90,-2.09
+680,Nuremberg,Germany,Western Europe,Continental,-37,-52,-22,-5.66,-7.91,-3.38
+681,Nyala,Sudan,Northern Africa,Arid,-16,-24,-9,-2.54,-3.74,-1.45
+682,Oaxaca,Mexico,Latin America and the Caribbean,Arid,30,18,42,6.17,3.70,8.59
+683,Oboama Nguru,Nigeria,Sub-Saharan Africa,Tropical,-17,-24,-10,-2.48,-3.52,-1.47
+684,Obra,India,Southern Asia,Temperate,-3,-4,-2,-1.02,-1.44,-0.61
+685,Odesa,Ukraine,Eastern Europe,Arid,-3,-4,-2,-0.23,-0.34,-0.14
+686,Okayama,Japan,Eastern Asia,Temperate,68,41,95,7.53,4.49,10.51
+687,Okene,Nigeria,Sub-Saharan Africa,Tropical,-51,-72,-30,-5.60,-8.01,-3.31
+688,Oklahoma City,United States,Northern America,Temperate,40,24,55,5.78,3.46,8.06
+689,Omaha,United States,Northern America,Continental,54,33,76,8.77,5.25,12.23
+690,Omsk,Russia,Eastern Europe,Continental,-244,-342,-145,-24.43,-34.21,-14.53
+691,Onitsha,Nigeria,Sub-Saharan Africa,Tropical,527,312,749,12.78,7.57,18.16
+692,Oran,Algeria,Northern Africa,Temperate,3,2,4,0.24,0.14,0.34
+693,Orlando,United States,Northern America,Temperate,76,45,105,5.21,3.11,7.26
+694,Osaka,Japan,Eastern Asia,Temperate,155,92,216,1.01,0.60,1.41
+695,Oslo,Norway,Northern Europe,Continental,0,0,0,0.02,0.01,0.02
+696,Ottawa,Canada,Northern America,Continental,7,4,10,0.93,0.55,1.30
+697,Ouagadougou,Burkina Faso,Sub-Saharan Africa,Arid,25,15,36,1.02,0.60,1.46
+698,Oujda,Morocco,Northern Africa,Arid,-5,-7,-3,-0.85,-1.22,-0.50
+699,Oyo,Nigeria,Sub-Saharan Africa,Tropical,62,37,88,10.43,6.15,14.77
+700,Padang,Indonesia,South-eastern Asia,Tropical,61,36,88,5.60,3.28,8.02
+701,Palembang,Indonesia,South-eastern Asia,Tropical,75,44,107,3.47,2.03,4.98
+702,Palermo,Italy,Southern Europe,Temperate,-17,-24,-10,-2.39,-3.34,-1.43
+703,Panama City,Panama,Latin America and the Caribbean,Tropical,-8,-12,-5,-0.64,-0.90,-0.38
+704,Panipat,India,Southern Asia,Arid,-42,-60,-25,-6.05,-8.53,-3.60
+705,Panjin,China,Eastern Asia,Continental,-10,-15,-6,-1.82,-2.64,-1.07
+706,Paramaribo,Suriname,Latin America and the Caribbean,Tropical,1,0,1,0.30,0.18,0.42
+707,Paris,France,Western Europe,Temperate,-587,-820,-350,-6.03,-8.42,-3.60
+708,Pati,Indonesia,South-eastern Asia,Tropical,185,109,266,10.77,6.35,15.52
+709,Patiala,India,Southern Asia,Temperate,-79,-111,-47,-11.64,-16.39,-6.91
+710,Patna,India,Southern Asia,Temperate,83,49,116,2.87,1.71,4.02
+711,Pekalongan,Indonesia,South-eastern Asia,Tropical,212,124,305,15.44,9.05,22.18
+712,Pekanbaru,Indonesia,South-eastern Asia,Tropical,11,7,16,1.13,0.66,1.63
+713,Pereira,Colombia,Latin America and the Caribbean,Tropical,7,4,10,1.18,0.70,1.65
+714,Perth,Australia,Australia and New Zealand,Temperate,24,15,34,1.93,1.16,2.70
+715,Peshawar,Pakistan,Southern Asia,Arid,146,86,208,5.10,3.00,7.27
+716,Philadelphia,United States,Northern America,Temperate,275,165,383,8.34,5.00,11.63
+717,Phnom Penh,Cambodia,South-eastern Asia,Tropical,135,78,199,6.85,3.98,10.10
+718,Phoenix,United States,Northern America,Arid,197,118,275,4.79,2.86,6.68
+719,Pilibhit,India,Southern Asia,Temperate,12,7,16,3.44,2.06,4.84
+720,Pingdingshan,China,Eastern Asia,Temperate,-99,-143,-58,-12.66,-18.20,-7.36
+721,Pingxiang,China,Eastern Asia,Temperate,-2,-3,-1,-0.30,-0.43,-0.18
+722,Pittsburgh,United States,Northern America,Continental,-12,-17,-7,-1.74,-2.43,-1.04
+723,Podgorica,Montenegro,Southern Europe,Temperate,3,2,4,2.19,1.30,3.06
+724,Pointe-Noire,Republic of the Congo,Sub-Saharan Africa,Tropical,-13,-20,-8,-3.79,-5.48,-2.19
+725,Pontianak,Indonesia,South-eastern Asia,Tropical,14,8,20,1.68,0.99,2.43
+726,Port Elizabeth,South Africa,Sub-Saharan Africa,Arid,19,11,26,2.45,1.46,3.41
+727,Port Harcourt,Nigeria,Sub-Saharan Africa,Tropical,40,24,57,2.84,1.69,4.06
+728,Port Louis,Mauritius,Sub-Saharan Africa,Tropical,-6,-9,-4,-1.14,-1.60,-0.68
+729,Port Moresby,Papua New Guinea,Melanesia,Tropical,-13,-19,-8,-3.83,-5.55,-2.24
+730,Port Said,Egypt,Northern Africa,Arid,-6,-9,-4,-0.75,-1.07,-0.45
+731,Port Sudan,Sudan,Northern Africa,Arid,-1,-1,0,-0.22,-0.33,-0.13
+732,Port of Spain,Trinidad and Tobago,Latin America and the Caribbean,Tropical,12,7,17,3.08,1.78,4.51
+733,Port-au-Prince,Haiti,Latin America and the Caribbean,Tropical,-111,-164,-63,-5.97,-8.82,-3.38
+734,Portland,United States,Northern America,Temperate,67,40,94,3.70,2.22,5.17
+735,Porto,Portugal,Southern Europe,Temperate,0,0,0,-0.02,-0.03,-0.01
+736,Porto Alegre,Brazil,Latin America and the Caribbean,Tropical,53,32,74,2.96,1.77,4.13
+737,Porto-Novo,Benin,Sub-Saharan Africa,Temperate,-1,-1,0,-0.10,-0.14,-0.06
+738,Poznan,Poland,Eastern Europe,Continental,-48,-68,-29,-8.98,-12.54,-5.36
+739,Prague,Czech Republic,Eastern Europe,Continental,-82,-115,-49,-6.66,-9.31,-3.97
+740,Pratapgarh,India,Southern Asia,Temperate,-7,-10,-4,-2.17,-3.05,-1.30
+741,Prayagraj,India,Southern Asia,Temperate,-70,-99,-42,-3.19,-4.50,-1.90
+742,Pretoria,South Africa,Sub-Saharan Africa,Temperate,37,22,52,2.21,1.32,3.07
+743,Prilep,Macedonia,Southern Europe,Arid,-1,-2,-1,-2.43,-3.42,-1.45
+744,Providence,United States,Northern America,Continental,88,53,122,14.48,8.68,20.18
+745,Puducherry,India,Southern Asia,Tropical,-7,-9,-4,-0.67,-0.94,-0.40
+746,Puebla,Mexico,Latin America and the Caribbean,Temperate,157,94,219,7.98,4.78,11.12
+747,Pukou,China,Eastern Asia,Temperate,-66,-95,-39,-13.75,-19.83,-8.04
+748,Pune,India,Southern Asia,Tropical,-224,-314,-133,-3.34,-4.69,-1.98
+749,Purwokerto,Indonesia,South-eastern Asia,Tropical,163,95,234,11.77,6.87,16.88
+750,Putian,China,Eastern Asia,Temperate,-13,-19,-8,-0.74,-1.06,-0.43
+751,Puyang,China,Eastern Asia,Continental,-21,-31,-12,-2.82,-4.07,-1.65
+752,Pyongyang,Democratic People's Republic of Korea,Eastern Asia,Continental,-516,-751,-300,-18.16,-26.42,-10.54
+753,Qarshi,Uzbekistan,Central Asia,Arid,12,7,17,2.46,1.46,3.50
+754,Qingdao,China,Eastern Asia,Continental,-413,-596,-243,-11.24,-16.22,-6.61
+755,Qingyuan,China,Eastern Asia,Temperate,-6,-8,-3,-0.90,-1.29,-0.53
+756,Qinhuangdao,China,Eastern Asia,Continental,-76,-110,-45,-9.95,-14.34,-5.81
+757,Qiqihar,China,Eastern Asia,Continental,-55,-79,-32,-6.00,-8.65,-3.52
+758,Qom,Iran,Southern Asia,Arid,-13,-18,-8,-1.67,-2.33,-0.99
+759,Quanzhou,China,Eastern Asia,Temperate,47,28,67,1.15,0.68,1.65
+760,Quebec,Canada,Northern America,Continental,-9,-13,-6,-1.54,-2.16,-0.92
+761,Querrtaro,Mexico,Latin America and the Caribbean,Arid,20,12,28,2.32,1.38,3.23
+762,Quetta,Pakistan,Southern Asia,Arid,15,9,22,1.93,1.14,2.75
+763,Quezon City,Philippines,South-eastern Asia,Tropical,-879,-1241,-524,-3.75,-5.29,-2.23
+764,Quito,Ecuador,Latin America and the Caribbean,Temperate,179,106,255,7.56,4.48,10.78
+765,Rabat,Morocco,Northern Africa,Temperate,10,6,15,0.51,0.30,0.74
+766,Rae Bareli,India,Southern Asia,Temperate,-36,-51,-22,-8.24,-11.60,-4.92
+767,Raiganj,India,Southern Asia,Temperate,-10,-14,-6,-2.77,-3.91,-1.64
+768,Raipur,India,Southern Asia,Tropical,-10,-15,-6,-0.72,-1.01,-0.43
+769,Rajamahendravaram,India,Southern Asia,Tropical,3,2,4,0.46,0.27,0.64
+770,Rajkot,India,Southern Asia,Arid,-34,-48,-20,-2.25,-3.16,-1.34
+771,Rajshahi,Bangladesh,Southern Asia,Tropical,58,34,84,7.11,4.16,10.30
+772,Rampur,India,Southern Asia,Temperate,11,7,15,2.11,1.26,2.97
+773,Ranchi,India,Southern Asia,Temperate,136,81,191,8.60,5.13,12.06
+774,Rangpur,Bangladesh,Southern Asia,Temperate,69,40,100,7.11,4.15,10.28
+775,Rasht,Iran,Southern Asia,Temperate,0,0,0,0.00,0.00,0.00
+776,Rawalpindi,Pakistan,Southern Asia,Temperate,33,19,47,0.82,0.48,1.17
+777,Recife,Brazil,Latin America and the Caribbean,Tropical,134,80,187,3.62,2.16,5.05
+778,Reykjavik,Iceland,Northern Europe,Continental,11,7,16,5.73,3.43,8.04
+779,Reynosa,Mexico,Latin America and the Caribbean,Arid,14,8,19,2.28,1.36,3.19
+780,Ribeirao Preto,Brazil,Latin America and the Caribbean,Tropical,-2,-2,-1,-0.26,-0.37,-0.16
+781,Riga,Latvia,Northern Europe,Continental,-21,-29,-12,-3.72,-5.23,-2.22
+782,Rio Piedras,Puerto Rico,Latin America and the Caribbean,Tropical,36,22,51,4.35,2.60,6.07
+783,Rio de Janeiro,Brazil,Latin America and the Caribbean,Tropical,-65,-91,-39,-0.65,-0.90,-0.39
+784,Riyadh,Saudi Arabia,Western Asia,Arid,12,7,18,0.17,0.10,0.24
+785,Rizhao,China,Eastern Asia,Continental,-76,-111,-44,-13.95,-20.24,-8.13
+786,Rome,Italy,Southern Europe,Temperate,8,5,11,0.33,0.20,0.46
+787,Rosario,Argentina,Latin America and the Caribbean,Temperate,22,13,31,1.77,1.06,2.46
+788,Rostov-on-Don,Russia,Eastern Europe,Continental,-40,-56,-24,-3.63,-5.06,-2.16
+789,Rotterdam,Netherlands,Western Europe,Temperate,-133,-185,-79,-6.53,-9.12,-3.89
+790,Rourkela,India,Southern Asia,Tropical,28,17,39,3.82,2.28,5.37
+791,Rybnitsa,Moldova,Eastern Europe,Continental,1,1,1,1.73,1.04,2.43
+792,Sacramento,United States,Northern America,Temperate,78,47,109,4.62,2.76,6.45
+793,Sagar,India,Southern Asia,Tropical,-18,-26,-11,-3.18,-4.47,-1.88
+794,Saharanpur,India,Southern Asia,Temperate,-19,-27,-12,-1.62,-2.27,-0.96
+795,Saint Petersburg,Russia,Eastern Europe,Continental,-939,-1315,-560,-19.94,-27.91,-11.88
+796,Salem,India,Southern Asia,Tropical,-3,-4,-2,-0.23,-0.32,-0.13
+797,Salt Lake City,United States,Northern America,Arid,68,41,95,6.28,3.75,8.76
+798,Salta,Argentina,Latin America and the Caribbean,Temperate,12,7,17,2.41,1.44,3.36
+799,Saltillo,Mexico,Latin America and the Caribbean,Arid,25,15,35,3.47,2.07,4.85
+800,Salvador,Brazil,Latin America and the Caribbean,Tropical,116,69,162,3.64,2.17,5.08
+801,Samara,Russia,Eastern Europe,Continental,0,0,0,0.01,0.01,0.01
+802,Samarinda,Indonesia,South-eastern Asia,Tropical,15,9,22,1.39,0.82,2.01
+803,Samarkand,Uzbekistan,Central Asia,Arid,36,21,51,4.46,2.65,6.31
+804,Sambhal,India,Southern Asia,Temperate,35,21,49,8.17,4.89,11.49
+805,Samsun,Turkey,Western Asia,Temperate,-15,-21,-9,-2.50,-3.58,-1.47
+806,San Antonio,United States,Northern America,Temperate,266,159,370,14.82,8.88,20.65
+807,San Jose [Costa Rica],Costa Rica,Latin America and the Caribbean,Temperate,53,32,74,2.52,1.51,3.53
+808,San Jose [USA],United States,Northern America,Temperate,148,88,207,3.12,1.87,4.36
+809,San Luis Potosi,Mexico,Latin America and the Caribbean,Arid,46,27,64,4.63,2.77,6.46
+810,San Miguel de Tucumhn,Argentina,Latin America and the Caribbean,Temperate,23,14,32,2.47,1.47,3.45
+811,San Pedro Sula,Honduras,Latin America and the Caribbean,Tropical,82,49,117,6.67,3.96,9.53
+812,San Salvador,El Salvador,Latin America and the Caribbean,Tropical,88,52,124,5.17,3.07,7.32
+813,Sana'a,Yemen,Western Asia,Arid,-142,-206,-82,-4.42,-6.42,-2.56
+814,Sandila,India,Southern Asia,Temperate,-1,-1,-1,-0.70,-0.98,-0.41
+815,Sangli,India,Southern Asia,Arid,23,14,32,3.12,1.86,4.38
+816,Sansarpur,India,Southern Asia,Temperate,10,6,14,5.20,3.10,7.29
+817,Santa Cruz de la Sierra,Bolivia,Latin America and the Caribbean,Tropical,89,52,128,4.92,2.90,7.11
+818,Santiago,Chile,Latin America and the Caribbean,Temperate,383,229,533,6.03,3.61,8.40
+819,Santiago de los Caballeros,Dominican Republic,Latin America and the Caribbean,Tropical,36,21,51,4.92,2.93,7.00
+820,Santo Domingo,Dominican Republic,Latin America and the Caribbean,Tropical,150,89,213,3.54,2.09,5.02
+821,Santos,Brazil,Latin America and the Caribbean,Tropical,-38,-53,-22,-3.63,-5.07,-2.17
+822,Sao Goncalo,Brazil,Latin America and the Caribbean,Tropical,-63,-88,-38,-3.73,-5.22,-2.22
+823,Sao Jose dos Campos,Brazil,Latin America and the Caribbean,Tropical,-17,-23,-10,-2.12,-2.95,-1.26
+824,Sao Luis,Brazil,Latin America and the Caribbean,Tropical,-2,-3,-1,-0.20,-0.28,-0.12
+825,Sao Paulo,Brazil,Latin America and the Caribbean,Temperate,-61,-85,-36,-0.32,-0.44,-0.19
+826,Sao Tome,Sao Tome and Principe,Sub-Saharan Africa,Tropical,4,2,6,3.84,2.26,5.48
+827,Sapporo,Japan,Eastern Asia,Continental,-2,-2,-1,-0.08,-0.11,-0.05
+828,Sarajevo,Bosnia and Herzegovina,Southern Europe,Continental,-6,-8,-3,-1.99,-2.79,-1.19
+829,Saratov,Russia,Eastern Europe,Continental,-36,-50,-21,-4.44,-6.21,-2.65
+830,Sargodha,Pakistan,Southern Asia,Arid,21,12,29,1.99,1.16,2.84
+831,Satna,India,Southern Asia,Temperate,-29,-41,-17,-6.07,-8.54,-3.61
+832,Seattle,United States,Northern America,Temperate,-48,-67,-29,-1.65,-2.30,-0.98
+833,Seeb,Oman,Western Asia,Arid,1,0,1,0.16,0.09,0.23
+834,Semarang,Indonesia,South-eastern Asia,Tropical,356,210,510,10.33,6.09,14.81
+835,Sendai,Japan,Eastern Asia,Temperate,-125,-175,-74,-9.58,-13.40,-5.70
+836,Seoul,Republic of Korea,Eastern Asia,Continental,60,36,84,0.27,0.16,0.38
+837,Serrekunda,Gambia,Sub-Saharan Africa,Tropical,90,53,129,9.29,5.44,13.36
+838,Seville,Spain,Southern Europe,Temperate,-16,-23,-10,-1.78,-2.49,-1.06
+839,Sfax,Tunisia,Northern Africa,Arid,5,3,7,0.82,0.46,1.24
+840,Sha Tin,China,Eastern Asia,Temperate,46,27,66,3.55,2.10,5.13
+841,Shahabad,India,Southern Asia,Temperate,1,1,2,0.95,0.57,1.34
+842,Shahjahanpur,India,Southern Asia,Temperate,9,5,13,1.41,0.84,1.98
+843,Shanghai,China,Eastern Asia,Temperate,-1847,-2647,-1088,-6.59,-9.44,-3.88
+844,Shangqiu,China,Eastern Asia,Continental,37,22,54,5.71,3.36,8.24
+845,Shaoyang,China,Eastern Asia,Temperate,-14,-20,-8,-2.49,-3.60,-1.46
+846,Sheffield,United Kingdom,Northern Europe,Temperate,-67,-94,-40,-9.28,-12.99,-5.53
+847,Shenyang,China,Eastern Asia,Continental,-130,-188,-77,-2.22,-3.20,-1.30
+848,Shijiazhuang,China,Eastern Asia,Arid,-430,-620,-250,-12.85,-18.54,-7.49
+849,Shiraz,Iran,Southern Asia,Arid,-7,-10,-4,-0.80,-1.13,-0.48
+850,Shiyan,China,Eastern Asia,Temperate,-170,-245,-99,-21.14,-30.44,-12.33
+851,Shizong Qu,China,Eastern Asia,Continental,-17,-24,-10,-2.79,-4.02,-1.62
+852,Shizuoka,Japan,Eastern Asia,Temperate,-8,-11,-5,-2.02,-2.82,-1.21
+853,Shymkent,Kazakhstan,Central Asia,Continental,0,0,0,0.01,0.01,0.02
+854,Sialkot,Pakistan,Southern Asia,Temperate,78,46,111,3.40,1.99,4.85
+855,Sikar,India,Southern Asia,Arid,-18,-25,-11,-5.36,-7.52,-3.19
+856,Silchar,India,Southern Asia,Tropical,25,15,35,4.74,2.84,6.65
+857,Siliguri,India,Southern Asia,Temperate,9,5,13,1.63,0.97,2.29
+858,Sincan,Turkey,Western Asia,Arid,-2,-3,-1,-0.13,-0.19,-0.08
+859,Singapore,Singapore,South-eastern Asia,Tropical,-112,-157,-67,-1.53,-2.14,-0.91
+860,Sirajganj,Bangladesh,Southern Asia,Temperate,50,29,72,2.71,1.57,3.92
+861,Sitamarhi,India,Southern Asia,Temperate,17,10,24,3.63,2.17,5.09
+862,Sitapur,India,Southern Asia,Temperate,20,12,28,5.40,3.23,7.59
+863,Skopje,Macedonia,Southern Europe,Arid,31,18,43,6.97,4.17,9.76
+864,Sofia,Bulgaria,Eastern Europe,Continental,68,41,95,6.26,3.74,8.73
+865,Sohag,Egypt,Northern Africa,Arid,12,7,18,1.19,0.70,1.70
+866,Sokoto,Nigeria,Sub-Saharan Africa,Arid,-47,-67,-28,-6.04,-8.59,-3.58
+867,Solapur,India,Southern Asia,Arid,-48,-67,-28,-4.43,-6.23,-2.64
+868,Sorocaba,Brazil,Latin America and the Caribbean,Temperate,-10,-14,-6,-1.48,-2.06,-0.88
+869,Srinagar,India,Southern Asia,Temperate,44,27,62,3.52,2.11,4.93
+870,St. Louis,United States,Northern America,Continental,15,9,21,1.28,0.76,1.79
+871,Stockholm,Sweden,Northern Europe,Continental,-100,-140,-60,-6.68,-9.33,-3.98
+872,Stuttgart,Germany,Western Europe,Temperate,6,4,8,0.55,0.33,0.77
+873,Sulaymaniyah,Iraq,Western Asia,Temperate,3,2,5,0.42,0.25,0.61
+874,Sultanpur,India,Southern Asia,Temperate,-45,-63,-26,-10.53,-14.78,-6.25
+875,Sumenep,Indonesia,South-eastern Asia,Tropical,15,9,22,7.71,4.54,11.15
+876,Surabaya,Indonesia,South-eastern Asia,Tropical,733,427,1049,8.60,5.01,12.31
+877,Surat,India,Southern Asia,Tropical,-194,-273,-115,-2.99,-4.22,-1.78
+878,Suva,Fiji,Melanesia,Tropical,31,18,45,13.97,8.03,20.81
+879,Suzhou,China,Eastern Asia,Temperate,-585,-839,-344,-5.48,-7.86,-3.22
+880,Swat City,Pakistan,Southern Asia,Temperate,55,33,79,6.20,3.68,8.86
+881,Sydney,Australia,Australia and New Zealand,Temperate,-167,-234,-100,-4.07,-5.69,-2.43
+882,Sylhet,Bangladesh,Southern Asia,Tropical,51,30,74,3.84,2.21,5.55
+883,Ta'izz,Yemen,Western Asia,Arid,-20,-29,-11,-2.08,-3.03,-1.21
+884,Tabriz,Iran,Southern Asia,Arid,3,2,5,0.24,0.14,0.34
+885,Tahoua,Niger,Sub-Saharan Africa,Arid,-6,-9,-3,-2.16,-3.17,-1.26
+886,Tai'an,China,Eastern Asia,Continental,-38,-56,-22,-5.31,-7.70,-3.10
+887,Taichung,China,Eastern Asia,Temperate,7,4,10,0.30,0.18,0.44
+888,Tainan,China,Eastern Asia,Tropical,48,28,69,4.39,2.57,6.31
+889,Taiyuan,China,Eastern Asia,Arid,-380,-549,-222,-9.57,-13.84,-5.59
+890,Taizhou,China,Eastern Asia,Temperate,49,29,70,3.69,2.18,5.30
+891,Takasaki,Japan,Eastern Asia,Temperate,-22,-30,-13,-1.82,-2.55,-1.09
+892,Takoradi,Ghana,Sub-Saharan Africa,Tropical,63,37,91,6.33,3.71,9.13
+893,Tallinn,Estonia,Northern Europe,Continental,-3,-4,-2,-0.66,-0.93,-0.40
+894,Tamluk,India,Southern Asia,Tropical,28,17,39,1.85,1.10,2.59
+895,Tampa,United States,Northern America,Temperate,59,36,83,2.71,1.62,3.79
+896,Tampico,Mexico,Latin America and the Caribbean,Tropical,48,29,66,7.88,4.71,10.98
+897,Tangail,Bangladesh,Southern Asia,Tropical,81,48,118,8.45,4.96,12.26
+898,Tangier,Morocco,Northern Africa,Temperate,-55,-78,-32,-4.56,-6.55,-2.68
+899,Tangshan,China,Eastern Asia,Continental,-39,-56,-23,-1.74,-2.50,-1.03
+900,Tanta,Egypt,Northern Africa,Arid,20,12,29,2.18,1.29,3.09
+901,Tashkent,Uzbekistan,Central Asia,Temperate,164,98,232,4.63,2.76,6.57
+902,Tasikmalaya,Indonesia,South-eastern Asia,Tropical,171,101,247,6.43,3.81,9.27
+903,Tbilisi,Georgia,Western Asia,Temperate,33,20,46,3.41,2.03,4.77
+904,Tegal,Indonesia,South-eastern Asia,Tropical,270,160,389,12.65,7.48,18.22
+905,Tegucigalpa,Honduras,Latin America and the Caribbean,Tropical,57,34,81,3.81,2.25,5.45
+906,Tehran,Iran,Southern Asia,Arid,-151,-212,-90,-1.20,-1.67,-0.71
+907,Tel Aviv,Israel,Western Asia,Temperate,-9,-12,-5,-0.31,-0.43,-0.18
+908,Teresina,Brazil,Latin America and the Caribbean,Tropical,12,7,17,1.33,0.79,1.85
+909,Tetovo,Macedonia,Southern Europe,Continental,2,1,3,2.99,1.79,4.19
+910,Thalassery,India,Southern Asia,Tropical,51,30,72,4.75,2.83,6.67
+911,Thanagaon,India,Southern Asia,Temperate,10,6,14,9.32,5.58,13.12
+912,Thessaloniki,Greece,Southern Europe,Arid,0,0,0,-0.03,-0.05,-0.02
+913,Thiruvananthapuram,India,Southern Asia,Tropical,236,141,332,8.28,4.95,11.63
+914,Thrissur,India,Southern Asia,Tropical,79,47,110,6.81,4.07,9.58
+915,Tianjia an,China,Eastern Asia,Temperate,-59,-85,-35,-5.24,-7.55,-3.07
+916,Tianjin,China,Eastern Asia,Continental,-598,-861,-348,-8.27,-11.92,-4.82
+917,Tijuana,United States,Northern America,Arid,2,1,3,0.05,0.03,0.08
+918,Tirana,Albania,Southern Europe,Temperate,-9,-13,-5,-1.07,-1.52,-0.63
+919,Tiraspol,Moldova,Eastern Europe,Continental,6,4,9,6.19,3.69,8.65
+920,Tiruchirappalli,India,Southern Asia,Tropical,-86,-120,-51,-6.57,-9.24,-3.91
+921,Tirupati,India,Southern Asia,Tropical,-1,-2,-1,-0.24,-0.33,-0.14
+922,Tiruppur,India,Southern Asia,Arid,5,3,8,0.46,0.28,0.65
+923,Tokyo,Japan,Eastern Asia,Temperate,370,221,517,1.10,0.66,1.54
+924,Toluca,Mexico,Latin America and the Caribbean,Temperate,101,60,141,6.92,4.13,9.64
+925,Tolyatti,Russia,Eastern Europe,Continental,5,3,7,0.92,0.55,1.28
+926,Tomsk,Russia,Eastern Europe,Continental,8,5,11,1.34,0.80,1.86
+927,Tongliao,China,Eastern Asia,Arid,-51,-74,-30,-9.72,-14.03,-5.70
+928,Toronto,Canada,Northern America,Continental,195,116,272,3.15,1.88,4.39
+929,Torreon,Mexico,Latin America and the Caribbean,Arid,42,25,59,3.50,2.09,4.88
+930,Touba,Senegal,Sub-Saharan Africa,Arid,23,13,33,2.62,1.53,3.78
+931,Toulouse,France,Western Europe,Temperate,-12,-17,-7,-1.80,-2.51,-1.07
+932,Tripoli,Libya,Northern Africa,Arid,56,32,82,4.86,2.79,7.07
+933,Trujillo,Peru,Latin America and the Caribbean,Arid,20,12,28,2.17,1.27,3.12
+934,Tshikapa,Democratic Republic of the Congo,Sub-Saharan Africa,Tropical,36,21,53,4.03,2.33,5.83
+935,Tucson,United States,Northern America,Arid,13,8,19,2.07,1.24,2.89
+936,Tulsipur,India,Southern Asia,Temperate,6,3,8,7.01,4.20,9.82
+937,Tulungagung,Indonesia,South-eastern Asia,Tropical,70,42,101,10.62,6.27,15.24
+938,Tunis,Tunisia,Northern Africa,Temperate,27,15,40,1.10,0.61,1.68
+939,Turin,Italy,Southern Europe,Temperate,43,26,60,3.47,2.07,4.84
+940,Tuxtla Gutierrez,Mexico,Latin America and the Caribbean,Tropical,13,8,18,2.36,1.41,3.29
+941,Tyumen,Russia,Eastern Europe,Continental,27,16,38,4.86,2.91,6.78
+942,Uberlandia,Brazil,Latin America and the Caribbean,Tropical,-3,-4,-2,-0.41,-0.58,-0.25
+943,Uchkagaon,India,Southern Asia,Temperate,-11,-16,-7,-2.77,-3.91,-1.65
+944,Udaipur,India,Southern Asia,Arid,-24,-34,-15,-3.24,-4.56,-1.92
+945,Ufa,Russia,Eastern Europe,Continental,40,24,56,4.27,2.55,5.95
+946,Ujjain,India,Southern Asia,Tropical,-8,-11,-4,-1.33,-1.87,-0.79
+947,Ulaanbaatar,Mongolia,Eastern Asia,Arid,-93,-131,-55,-7.30,-10.29,-4.31
+948,Ulsan,Republic of Korea,Eastern Asia,Temperate,4,3,6,0.48,0.29,0.67
+949,Unnao,India,Southern Asia,Temperate,-15,-21,-9,-3.52,-4.95,-2.09
+950,Urmia,Iran,Southern Asia,Arid,3,2,4,0.38,0.23,0.53
+951,Urumqi,China,Eastern Asia,Arid,-74,-107,-43,-2.03,-2.91,-1.18
+952,Uyo,Nigeria,Sub-Saharan Africa,Tropical,19,11,27,3.21,1.90,4.57
+953,Vadodara,India,Southern Asia,Tropical,91,54,127,4.01,2.39,5.64
+954,Valencia [Spain],Spain,Southern Europe,Tropical,-51,-71,-31,-3.40,-4.75,-2.03
+955,Valencia [Venezuela],Bolivarian Republic of Venezuela,Latin America and the Caribbean,Tropical,-154,-225,-90,-10.39,-15.17,-6.08
+956,Valletta,Malta,Southern Europe,Temperate,3,2,4,0.87,0.52,1.23
+957,Vancouver,Canada,Northern America,Temperate,-51,-71,-30,-2.41,-3.37,-1.44
+958,Varanasi,India,Southern Asia,Temperate,19,11,26,0.48,0.29,0.68
+959,Vasai-Virar,India,Southern Asia,Tropical,-37,-52,-22,-2.46,-3.48,-1.47
+960,Vellore,India,Southern Asia,Tropical,12,7,17,1.55,0.92,2.17
+961,Veracruz,Mexico,Latin America and the Caribbean,Tropical,-5,-8,-3,-0.83,-1.16,-0.49
+962,Vienna,Austria,Western Europe,Continental,-73,-102,-44,-3.59,-5.01,-2.14
+963,Vientiane,Laos,South-eastern Asia,Tropical,16,9,24,6.68,3.86,9.86
+964,Vijayapura,India,Southern Asia,Arid,-9,-12,-5,-2.09,-2.92,-1.24
+965,Vijayawada,India,Southern Asia,Tropical,73,43,102,5.42,3.22,7.61
+966,Vila Velha,Brazil,Latin America and the Caribbean,Tropical,-45,-63,-27,-3.72,-5.19,-2.22
+967,Villahermosa,Mexico,Latin America and the Caribbean,Tropical,1,0,1,0.16,0.10,0.22
+968,Vilnius,Lithuania,Northern Europe,Continental,-21,-30,-13,-6.09,-8.50,-3.64
+969,Vina del Mar,Chile,Latin America and the Caribbean,Temperate,76,45,105,8.40,5.04,11.71
+970,Virginia Beach,United States,Northern America,Temperate,12,7,16,1.38,0.82,1.92
+971,Visakhapatnam,India,Southern Asia,Tropical,147,88,206,9.09,5.44,12.76
+972,Vladivostok,Russia,Eastern Europe,Continental,77,46,108,13.45,8.05,18.73
+973,Volgograd,Russia,Eastern Europe,Arid,-89,-125,-53,-11.27,-15.75,-6.73
+974,Voronezh,Russia,Eastern Europe,Continental,-30,-42,-18,-3.24,-4.52,-1.93
+975,Wad Madan,Sudan,Northern Africa,Arid,-15,-23,-9,-3.63,-5.41,-2.09
+976,Wah Cantonment,Pakistan,Southern Asia,Temperate,21,12,29,3.83,2.26,5.45
+977,Waidhan,India,Southern Asia,Temperate,32,19,45,10.48,6.27,14.73
+978,Warangal,India,Southern Asia,Tropical,38,23,53,4.63,2.76,6.50
+979,Warri,Nigeria,Sub-Saharan Africa,Tropical,-42,-59,-25,-3.92,-5.59,-2.32
+980,Warsaw,Poland,Eastern Europe,Continental,-221,-309,-132,-11.73,-16.43,-6.99
+981,Washington D.C.,United States,Northern America,Temperate,-8,-11,-5,-0.21,-0.30,-0.13
+982,Weifang,China,Eastern Asia,Continental,-87,-125,-51,-7.88,-11.34,-4.64
+983,Weihai,China,Eastern Asia,Continental,-25,-36,-15,-4.21,-6.09,-2.47
+984,Wenzhou,China,Eastern Asia,Temperate,25,14,35,0.55,0.32,0.79
+985,Windhoek,Namibia,Sub-Saharan Africa,Arid,21,12,31,5.96,3.43,8.69
+986,Winnipeg,Canada,Northern America,Continental,73,43,101,10.04,6.00,14.00
+987,Wroclaw,Poland,Eastern Europe,Continental,-80,-112,-48,-14.24,-19.91,-8.47
+988,Wuhan,China,Eastern Asia,Temperate,-963,-1395,-563,-12.44,-18.02,-7.28
+989,Wuhu,China,Eastern Asia,Temperate,-211,-303,-122,-11.31,-16.28,-6.57
+990,Wuppertal,Germany,Western Europe,Temperate,90,54,125,13.74,8.21,19.14
+991,Xalapa,Mexico,Latin America and the Caribbean,Temperate,19,12,27,3.71,2.22,5.17
+992,Xi'an,China,Eastern Asia,Arid,-392,-564,-229,-7.36,-10.60,-4.29
+993,Xiamen,China,Eastern Asia,Temperate,-73,-106,-43,-2.37,-3.42,-1.40
+994,Xiangtan,China,Eastern Asia,Temperate,-114,-165,-67,-12.67,-18.29,-7.43
+995,Xianyang,China,Eastern Asia,Arid,-31,-45,-18,-5.64,-8.11,-3.29
+996,Xiaogan,China,Eastern Asia,Temperate,-39,-56,-23,-5.43,-7.81,-3.20
+997,Xingtai,China,Eastern Asia,Continental,-39,-56,-23,-5.03,-7.29,-2.96
+998,Xining,China,Eastern Asia,Arid,-76,-110,-45,-5.86,-8.44,-3.44
+999,Xinxiang,China,Eastern Asia,Continental,-113,-164,-67,-13.00,-18.87,-7.67
+1000,Xuchang,China,Eastern Asia,Temperate,-67,-97,-39,-6.90,-9.97,-4.04
+1001,Xuzhou,China,Eastern Asia,Continental,-134,-192,-78,-8.80,-12.65,-5.16
+1002,Yamunanagar,India,Southern Asia,Temperate,-5,-7,-3,-0.74,-1.04,-0.44
+1003,Yancheng,China,Eastern Asia,Temperate,-39,-56,-23,-3.84,-5.51,-2.23
+1004,Yangon,Myanmar,South-eastern Asia,Tropical,324,187,469,5.69,3.28,8.24
+1005,Yangzhou,China,Eastern Asia,Temperate,-85,-123,-50,-10.76,-15.54,-6.30
+1006,Yantai,China,Eastern Asia,Continental,-90,-130,-53,-6.69,-9.65,-3.92
+1007,Yaounde,Cameroon,Sub-Saharan Africa,Tropical,855,501,1240,19.59,11.48,28.43
+1008,Yaroslavl,Russia,Eastern Europe,Continental,-7,-9,-4,-1.15,-1.60,-0.68
+1009,Yazd,Iran,Southern Asia,Arid,-2,-3,-1,-0.44,-0.62,-0.26
+1010,Yekaterinburg,Russia,Eastern Europe,Continental,21,12,29,1.76,1.05,2.46
+1011,Yerevan,Armenia,Western Asia,Arid,58,35,81,5.66,3.37,7.90
+1012,Yibin,China,Eastern Asia,Temperate,9,6,14,1.72,1.01,2.46
+1013,Yichang,China,Eastern Asia,Temperate,-93,-135,-55,-6.91,-10.03,-4.06
+1014,Yinchuan,China,Eastern Asia,Arid,-121,-175,-71,-6.96,-10.02,-4.06
+1015,Yiwu,China,Eastern Asia,Temperate,-2,-3,-1,-0.17,-0.24,-0.10
+1016,Yiyang,China,Eastern Asia,Temperate,-6,-8,-3,-0.88,-1.27,-0.52
+1017,Yogyakarta,Indonesia,South-eastern Asia,Tropical,536,311,772,10.64,6.18,15.34
+1018,Yueqing,China,Eastern Asia,Temperate,56,33,81,4.63,2.72,6.66
+1019,Yueyang,China,Eastern Asia,Temperate,-32,-47,-19,-4.18,-6.02,-2.43
+1020,Yulin,China,Eastern Asia,Temperate,6,4,9,1.15,0.68,1.66
+1021,Zagreb,Croatia,Southern Europe,Temperate,9,6,13,1.32,0.78,1.84
+1022,Zahedan,Iran,Southern Asia,Arid,-2,-3,-1,-0.37,-0.51,-0.22
+1023,Zanzibar City,Tanzania,Sub-Saharan Africa,Tropical,27,16,40,3.44,2.02,4.95
+1024,Zaporizhzhia,Ukraine,Eastern Europe,Continental,-166,-243,-96,-22.15,-32.32,-12.81
+1025,Zaragoza,Spain,Southern Europe,Arid,-29,-40,-17,-4.41,-6.16,-2.63
+1026,Zaria,Nigeria,Sub-Saharan Africa,Tropical,15,9,21,2.33,1.38,3.30
+1027,Zhangjiagang,China,Eastern Asia,Temperate,-80,-115,-47,-7.44,-10.66,-4.37
+1028,Zhangjiakou,China,Eastern Asia,Arid,-61,-88,-36,-10.44,-15.05,-6.12
+1029,Zhangzhou,China,Eastern Asia,Temperate,0,0,0,-0.03,-0.05,-0.02
+1030,Zhanjiang,China,Eastern Asia,Temperate,-78,-113,-46,-7.34,-10.56,-4.32
+1031,Zhaoqing,China,Eastern Asia,Temperate,23,14,34,3.49,2.04,5.01
+1032,Zhengzhou,China,Eastern Asia,Temperate,-936,-1351,-544,-19.50,-28.15,-11.33
+1033,Zhenjiang,China,Eastern Asia,Temperate,-114,-164,-67,-14.78,-21.26,-8.62
+1034,Zhongshan,China,Eastern Asia,Temperate,23,13,33,1.87,1.09,2.69
+1035,Zhuhai,China,Eastern Asia,Temperate,56,33,81,2.63,1.54,3.81
+1036,Zhuzhou,China,Eastern Asia,Temperate,-102,-147,-60,-10.46,-15.13,-6.12
+1037,Zibo,China,Eastern Asia,Continental,-179,-258,-104,-10.43,-15.06,-6.08
+1038,Zigong,China,Eastern Asia,Temperate,-21,-31,-13,-4.54,-6.55,-2.65
+1039,Zinder,Niger,Sub-Saharan Africa,Arid,-20,-29,-11,-3.24,-4.78,-1.88
+1040,Zunyi,China,Eastern Asia,Temperate,-61,-88,-36,-6.01,-8.66,-3.54
+1041,Zurich,Switzerland,Western Europe,Temperate,-13,-18,-8,-1.69,-2.36,-1.01
