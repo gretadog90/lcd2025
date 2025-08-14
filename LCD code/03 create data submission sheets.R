@@ -55,7 +55,10 @@ global$greennessIndicator <- cut(global$PopWeightPeakNDVI,
                    breaks=c(-Inf, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, Inf), 
                    labels=c('Exceptionally Low','Very Low', 'Low', 
                             'Moderate','High', 'Very High', 'Exceptionally High'))
-                           
+
+#add blue space
+global$BlueArea<-global$GreenBlueArea-global$GreenArea
+
 ###### export data for GLOBAL tab ######
 write.csv(global, 'global.csv')
 
