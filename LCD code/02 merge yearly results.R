@@ -39,7 +39,8 @@ lcd2025 <- data2015 %>%
   inner_join(data2021) %>%
   inner_join(data2022) %>%
   inner_join(data2023) %>%
-  inner_join(data2024)
+  inner_join(data2024) %>%
+  inner_join(data2025)
 
 #merge to capitals data set
 #"Sio TomA (should be Sao Tome) not in these external datasets. addressed below
@@ -93,23 +94,14 @@ city_count<-unique(lcd2025$city) #1042
 
 write.csv(lcd2025, "lcd2025.csv")
 
-summary(lcd2025$PopWeight_Peak_NDVI_2015)
 summary(lcd2025$PopWeight_Peak_NDVI_2015_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2016)
 summary(lcd2025$PopWeight_Peak_NDVI_2016_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2017)
 summary(lcd2025$PopWeight_Peak_NDVI_2017_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2018)
 summary(lcd2025$PopWeight_Peak_NDVI_2018_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2019)
 summary(lcd2025$PopWeight_Peak_NDVI_2019_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2020)
 summary(lcd2025$PopWeight_Peak_NDVI_2020_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2021)
 summary(lcd2025$PopWeight_Peak_NDVI_2021_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2022)
 summary(lcd2025$PopWeight_Peak_NDVI_2022_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2023)
 summary(lcd2025$PopWeight_Peak_NDVI_2023_100m)
-summary(lcd2025$PopWeight_Peak_NDVI_2024)
 summary(lcd2025$PopWeight_Peak_NDVI_2024_100m)
+summary(lcd2025$PopWeight_Peak_NDVI_2025_100m)
