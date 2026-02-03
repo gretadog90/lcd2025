@@ -13,7 +13,7 @@ library(dplyr)
 
 #set working directory
 setwd('~/Documents/data/Lancet 2025/2024')
-output_dir="/Users/gretam/Documents/data/Lancet 2025/output/"
+output_dir="~/Documents/data/Lancet 2025/output/"
 
 ####import####
 #get list of all files ending in .csv in wd
