@@ -13,11 +13,10 @@ library(dplyr)
 ####import####
 #import all the yearly data files
 #set working directory
-setwd('~/Documents/data/Lancet 2025/LCD report')
-import_dir='~/Documents/data/Lancet 2025/output/'
+setwd('~/Documents/data/Lancet 2025/output')
 
 #import the merged dataset
-lcd2025<-read.csv(paste0(import_dir, "lcd2025.csv"))
+lcd2025<-read.csv("lcd2025.csv")
 
 #remove one city (Kapoeta), for which shapefile is incorrect and there is no pop
 lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
@@ -62,7 +61,7 @@ global$BlueArea<-global$GreenBlueArea-global$GreenArea
 ###### export data for GLOBAL tab ######
 write.csv(global, 'global.csv')
 
-lc_region <- aggregate(global, by=global$lc_group, 
+lc_region <- aggregate(global, by=list(global$lc_group), 
                            function(x)mean(x, na.rm=TRUE))
 
 # summarize to lc_region level
