@@ -13,7 +13,7 @@ library(plyr)
 library(ggplot2)
 library(ggmap)
 library(maps)
-library(ggpubr)
+#library(ggpubr)
 library(egg)
 library(data.table)
 library(stringr)
@@ -25,11 +25,10 @@ library(gtable)
 setwd('~/Documents/data/Lancet 2025/')
 
 #merged exposure data
-setwd('~/Documents/data/Lancet 2025/LCD report')
-import_dir='~/Documents/data/Lancet 2025/output/'
+setwd('~/Documents/data/Lancet 2025/output')
 
 #import the merged dataset
-lcd2025<-read.csv(paste0(import_dir, "lcd2025.csv"))
+lcd2025<-read.csv("lcd2025.csv")
 lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 
 #subset to needed vars
@@ -38,7 +37,8 @@ subset<-lcd2025[,c("city", "lc_group", "hdi_level", "clim_region",  "who_region"
                    "PopWeight_Peak_NDVI_2017_100m", "PopWeight_Peak_NDVI_2018_100m",
                    "PopWeight_Peak_NDVI_2019_100m", "PopWeight_Peak_NDVI_2020_100m", 
                    "PopWeight_Peak_NDVI_2021_100m", "PopWeight_Peak_NDVI_2022_100m", 
-                   "PopWeight_Peak_NDVI_2023_100m", "PopWeight_Peak_NDVI_2024_100m")]  
+                   "PopWeight_Peak_NDVI_2023_100m", "PopWeight_Peak_NDVI_2024_100m",
+                   "PopWeight_Peak_NDVI_2025_100m")]  
 
 #reshape long so that each row represents a city/year combo               
 long <- melt(setDT(subset), 

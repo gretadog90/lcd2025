@@ -22,11 +22,10 @@ library(ggforce)
 setwd('~/Documents/data/Lancet 2025/')
 
 #merged exposure data
-setwd('~/Documents/data/Lancet 2025/LCD report')
-import_dir='~/Documents/data/Lancet 2025/output/'
+setwd('~/Documents/data/Lancet 2025/output/')
 
 #import the merged dataset
-lcd2025<-read.csv(paste0(import_dir, "lcd2025.csv"))
+lcd2025<-read.csv("lcd2025.csv")
 lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 
 tapply(lcd2025$GreenBlue_Area_2020, lcd2025$hdi_level, summary)

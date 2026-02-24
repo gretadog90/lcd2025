@@ -12,23 +12,20 @@ library(dplyr)
 library(ggplot2)
 library(ggmap)
 library(maps)
-library(ggpubr)
 library(egg)
 
 ####import####
-setwd('~/Documents/data/Lancet 2025/LCD report')
-import_dir='~/Documents/data/Lancet 2025/output/'
+setwd('~/Documents/data/Lancet 2025/output/')
 
 #import the merged dataset
-lcd2025<-read.csv(paste0(import_dir, "lcd2025.csv"))
+lcd2025<-read.csv("lcd2025.csv")
 lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 
 #create a 2015-2020 baseline avg
 lcd2025$baseline<-rowMeans(lcd2025[,c('PopWeight_Peak_NDVI_2015_100m', 'PopWeight_Peak_NDVI_2016_100m',
-                                      'PopWeight_Peak_NDVI_2017_100m', 'PopWeight_Peak_NDVI_2018_100m',
-                                      'PopWeight_Peak_NDVI_2019_100m', 'PopWeight_Peak_NDVI_2020_100m')])
+                                      'PopWeight_Peak_NDVI_2017_100m')])
 #get pct_diff baseline v. 2024
-lcd2025$pct_diff<-((lcd2025$PopWeight_Peak_NDVI_2024_100m-lcd2025$baseline)/lcd2025$baseline)*100
+lcd2025$pct_diff<-((lcd2025$PopWeight_Peak_NDVI_2025_100m-lcd2025$baseline)/lcd2025$baseline)*100
 
 summary(lcd2025$pct_diff)
 tapply(lcd2025$pct_diff, lcd2025$lc_group, summary)
@@ -49,7 +46,7 @@ ggplot(lcd2025, aes(x=lc_group, y=pct_diff)) +
                               "Northern America"="thistle2", "Oceania"="darkseagreen2", 
                               "SIDS"="orchid1", "South and Central America"="palegreen3"), name = "LCD region")+
   xlab("")+ 
-  ylab("Percent change in NDVI 2015-2020 v. 2024")+
+  ylab("Percent change in NDVI 2015-2017 v. 2025")+
   scale_y_continuous(breaks=c(-50, -25,-10,0, 10, 25, 50),
                      labels=c("-50%", "-25%", "-10%", "0", "+10%", "+25%", "+50%"))+
   coord_flip()+

@@ -9,6 +9,7 @@ rm(list = ls())
 library(tidyr)
 library(tidyverse)
 library(dplyr)
+library(readxl)
 
 ####import####
 #import all the yearly data files
@@ -25,7 +26,7 @@ for (i in 1:length(file_list)) assign(str_remove(file_list[i],".csv"),
 
 #import all the outside data sources to be merged (WHO regions, HDI, etc.)
 capitals<-read.csv(paste0(import_dir, "Urban Green Spaces Capitals.csv"))
-country_lcd<-read.csv(paste0(import_dir,"country_names_groupings.csv"))
+country_lcd<-read_excel(paste0(import_dir,"2026 Guidance_Country Names and Groupings.xlsx"), range = "A2:E222")
 clim_region<-read.csv(paste0(import_dir, "clim_reg_cities.csv"))
 who_region<-read.csv(paste0(import_dir, "who_regions.csv"))
 
@@ -49,12 +50,32 @@ lcd2025$city[!lcd2025$city %in% capitals$UC_NM_LST]
 lcd2025<-merge(lcd2025, capitals[,c("UC_NM_LST", "Capital_city", "Latitude", "Longitude")], 
                by.x="city",by.y="UC_NM_LST", all.x = TRUE)
 
-#merge to country_lcd data set
-#there are three countries that don't match due to accents, editing here
+#merge to country_lcd data set (this updated in 2026, renaming vars so code will match)
+country_lcd <- country_lcd %>%
+  dplyr::rename(Country_edit=`Country Name to use`,
+         lc_group=`LC Grouping`,
+         who_region=`WHO Region`,
+         hdi_level=`HDI Group 2025`)
+
+#there are three countries that don't match due to accents + name changes in 2025, editing here
 lcd2025$country[!lcd2025$country %in% country_lcd$Country_edit]
 lcd2025$country[lcd2025$XC_ISO_LST=="CIV"]<-"Cote d'Ivoire"
 lcd2025$country[lcd2025$country=="Taiwan"]<-"China"
 lcd2025$country[lcd2025$XC_ISO_LST=="STP"]<-"Sao Tome and Principe"
+lcd2025$country[lcd2025$country=="United States"]<-"United States of America"
+lcd2025$country[lcd2025$XC_ISO_LST=="COD"]<-"Democratic Republic of the Congo"
+lcd2025$country[lcd2025$XC_ISO_LST=="RUS"]<-"Russian Federation"
+lcd2025$country[lcd2025$XC_ISO_LST=="IRN"]<-"Islamic Republic of Iran"
+lcd2025$country[lcd2025$XC_ISO_LST=="CZE"]<-"Czechia"
+lcd2025$country[lcd2025$XC_ISO_LST=="MDA"]<-"Republic of Moldova"
+lcd2025$country[lcd2025$XC_ISO_LST=="MKD"]<-"North Macedonia"
+lcd2025$country[lcd2025$XC_ISO_LST=="TUR"]<-"Türkiye"
+lcd2025$country[lcd2025$XC_ISO_LST=="TZA"]<-"United Republic of Tanzania"
+lcd2025$country[lcd2025$country=="Laos"]<-"Lao People's Democratic Republic"
+lcd2025$country[lcd2025$XC_ISO_LST=="CPV"]<-"Cabo Verde"
+lcd2025$country[lcd2025$XC_ISO_LST=="COG"]<-"Congo"
+lcd2025$country[lcd2025$XC_ISO_LST=="GNB"]<-"Guinea Bissau"
+lcd2025$country[lcd2025$XC_ISO_LST=="BRN"]<-"Brunei Darussalam"
 
 #now merge
 lcd2025<-merge(lcd2025, country_lcd[,c("Country_edit", "ISO3", "lc_group", "who_region", "hdi_level")], 
