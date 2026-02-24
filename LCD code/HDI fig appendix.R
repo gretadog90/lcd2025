@@ -83,7 +83,7 @@ graph_data$hdi_level <- factor(graph_data$hdi_level,
                               ordered = TRUE,
                               levels = c("Low", "Medium", "High", "Very High", "No Data"))
                  
-pdf(file ="HDI level.pdf", height=4, width=9)
+pdf(file ="output/HDI level.pdf", height=4, width=9)
 
 #plot
 ggplot(graph_data) + 

@@ -67,7 +67,7 @@ ggplot(lcd2025, aes(x=hdi_level, y=pct_diff)) +
   scale_color_manual(values=c("Very High"="purple4","High"="deepskyblue4","Medium"="mediumseagreen",
                               "Low"="gold"), name = "HDI level")+
   xlab("")+ 
-  ylab("Percent change in NDVI 2015-2020 v. 2024")+
+  ylab("Percent change in NDVI 2015-2017 v. 2025")+
   scale_y_continuous(breaks=c(-50, -25,-10,0, 10, 25, 50),
                      labels=c("-50%", "-25%", "-10%", "0", "+10%", "+25%", "+50%"))+
   coord_flip()+
