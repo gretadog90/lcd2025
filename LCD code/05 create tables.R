@@ -23,12 +23,14 @@ lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 
 #remove 1km data
 names(lcd2025)
-data_100m<-select(lcd2025, c("Latitude", "Longitude", "ISO3", "city", "country", 
-                             "lc_group", "who_region", "hdi_level", "clim_region",
-                             "sub.region", ends_with("_100m"), 
-                             #starts_with("Avg_NDVI_"), starts_with("Peak_NDVI_"),
-                             "Green_Area_2015", "GreenBlue_Area_2015",
-                             "Green_Area_2020", "GreenBlue_Area_2020"))
+data_100m<-lcd2025 %>%
+  rename(Peak_NDVI_2025_100m=Peak_NDVI_2025,
+         Avg_NDVI_2025_100m=Avg_NDVI_2025) %>%
+  select(c("Latitude", "Longitude", "ISO3", "city", "country", 
+           "lc_group", "who_region", "hdi_level", "clim_region",
+           "sub.region", ends_with("_100m"),
+           "Green_Area_2015", "GreenBlue_Area_2015",
+           "Green_Area_2020", "GreenBlue_Area_2020"))
 names(data_100m) <- sub("_100m", "", names(data_100m))
 
 #table 1. pop-weighted peak ndvi by year by LC region + global line
@@ -56,19 +58,19 @@ pw_peak<- pw_peak %>%
 #export
 write.csv(pw_peak, 'table1.csv')
 
-#subset to 2024 for the following tables
+#subset to 2025 for the following tables
 current_year<-select(data_100m, c("lc_group", "who_region", "hdi_level", "clim_region",
-                                                    ends_with("2024")))
+                                                    ends_with("2025")))
 
 #table 2. avg ndvi, peak ndvi, pop-weighted avg + peak ndvi by HDI
 #collapse to hdi
 hdi<- current_year %>%
   group_by(hdi_level) %>%
   summarize(
-    peak_ndvi=mean(Peak_NDVI_2024),
-    avg_ndvi=mean(Avg_NDVI_2024),
-    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2024),
-    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2024)
+    peak_ndvi=mean(Peak_NDVI_2025),
+    avg_ndvi=mean(Avg_NDVI_2025),
+    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2025),
+    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2025)
   )
 
 #export
@@ -79,10 +81,10 @@ write.csv(hdi, 'table2.csv')
 clim_region<- current_year %>%
   group_by(clim_region) %>%
   summarize(
-    peak_ndvi=mean(Peak_NDVI_2024),
-    avg_ndvi=mean(Avg_NDVI_2024),
-    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2024),
-    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2024)
+    peak_ndvi=mean(Peak_NDVI_2025),
+    avg_ndvi=mean(Avg_NDVI_2025),
+    popw_peak_ndvi=mean(PopWeight_Peak_NDVI_2025),
+    popw_avg_ndvi=mean(PopWeight_Avg_NDVI_2025)
   )
 
 #export

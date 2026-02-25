@@ -102,7 +102,7 @@ ggplot(graph_data) +
 
 dev.off()
 
-pdf(file ="output/lc grouping appendix", height=4, width=9)
+pdf(file ="output/lc grouping appendix.pdf", height=4, width=9)
 
 #plot
 ggplot(graph_data) + 
