@@ -23,7 +23,7 @@ setwd('~/Documents/data/Lancet 2025/')
 #import data
 country_lcd<-read_excel("groupings/2026 Guidance_Country Names and Groupings.xlsx", 
                         range = "A2:E222")
-data<- map_data('world')[map_data('world')$region != "Antarctica",]
+data<- map_data('world')
 
 #remove extra info from names in lcd file for better matching
 country_lcd$region<-str_remove(country_lcd$`Country Name to use`, "\\s*\\([^\\)]+\\)")
@@ -71,7 +71,7 @@ country_lcd <- country_lcd %>%
                 hdi_level=`HDI Group 2025`)
 
 #merge on hdi_level
-graph_data<- merge(data, country_lcd, by.x="region", by.y="country")
+graph_data<- merge(data, country_lcd, by.x="region", by.y="country", all.x=TRUE)
 
 table(graph_data$hdi_level)
 
@@ -87,7 +87,7 @@ pdf(file ="output/HDI level.pdf", height=4, width=9)
 
 #plot
 ggplot(graph_data) + 
-  geom_map(dat=data, map=data, 
+  geom_map(dat=graph_data, map=graph_data, 
            aes(map_id=region), fill="white", color="black") + 
   geom_map(map=data, 
            aes(map_id=region, fill=hdi_level), color="black") + 
@@ -95,6 +95,25 @@ ggplot(graph_data) +
   labs(fill="Human Development Index")+
   theme_classic()+
   scale_fill_manual(values = c("#341539", "dodgerblue3", "mediumseagreen", "yellow2", "grey"))+
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
+        legend.text = element_text(size = 10), 
+        legend.title = element_text(size = 12),  axis.line=element_blank())
+
+dev.off()
+
+pdf(file ="output/lc grouping appendix", height=4, width=9)
+
+#plot
+ggplot(graph_data) + 
+  geom_map(dat=graph_data, map=graph_data, 
+           aes(map_id=region), fill="white", color="black") + 
+  geom_map(map=data, 
+           aes(map_id=region, fill=`LC Grouping`), color="black") + 
+  expand_limits(x = data$long, y = data$lat) +
+  labs(fill="Countdown Region")+
+  theme_classic()+
+  scale_fill_manual(values = c("lightyellow", "#DCA1A1", "#90D5FF", "#84B067","#DAB1DA",  "#F0FFF0", "#E3256B"))+
   theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
         axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
         legend.text = element_text(size = 10), 

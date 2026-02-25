@@ -35,9 +35,8 @@ tapply(lcd2025$pct_diff, lcd2025$hdi_level, summary)
 pdf(file = "pct diff by lc region.pdf", width=8, height=5)
 
 #change order of lcd group (otherwise shows up reverse alphabetical)
-lcd2025$lc_group <- factor(lcd2025$lc_group, levels = c("South and Central America", 
-                                                        "SIDS", "Oceania","Northern America",
-                                                        "Europe","Asia", "Africa"))
+lcd2025$lc_group <- factor(lcd2025$lc_group, levels = c("SIDS", "Oceania","Northern America",
+                                                        "Latin America", "Europe","Asia", "Africa"))
 
 ggplot(lcd2025, aes(x=lc_group, y=pct_diff)) + 
   geom_boxplot(outlier.shape = NA)+
@@ -54,8 +53,9 @@ ggplot(lcd2025, aes(x=lc_group, y=pct_diff)) +
 
 dev.off()
 
-#make hdi into a factor var with a more sensibel order
-lcd2025<- lcd2025[-which(lcd2025$hdi_level=='N/A'),]
+#make hdi into a factor var with a more sensible order
+lcd2025<- lcd2025 %>%
+  filter(hdi_level!='N/A')
 lcd2025$hdi_level <- factor(lcd2025$hdi_level, levels = c("Low", "Medium", "High", "Very High"))
 
 #set up the file to save figure
