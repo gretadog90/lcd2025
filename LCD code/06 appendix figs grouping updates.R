@@ -68,7 +68,9 @@ print(no_match)
 #rename to easier vars
 country_lcd <- country_lcd %>%
   dplyr::rename(country=`Country Name to use`,
-                hdi_level=`HDI Group 2025`)
+                hdi_level=`HDI Group 2025`,
+                lc_grouping=`LC Grouping`,
+                who_region=`WHO Region`)
 
 #merge on hdi_level
 graph_data<- merge(data, country_lcd, by.x="region", by.y="country", all.x=TRUE)
@@ -83,7 +85,7 @@ graph_data$hdi_level <- factor(graph_data$hdi_level,
                               ordered = TRUE,
                               levels = c("Low", "Medium", "High", "Very High", "No Data"))
                  
-pdf(file ="output/HDI level.pdf", height=4, width=9)
+pdf(file ="output/HDI level appendix.pdf", height=4, width=9)
 
 #plot
 ggplot(graph_data) + 
@@ -109,7 +111,7 @@ ggplot(graph_data) +
   geom_map(dat=graph_data, map=graph_data, 
            aes(map_id=region), fill="white", color="black") + 
   geom_map(map=data, 
-           aes(map_id=region, fill=`LC Grouping`), color="black") + 
+           aes(map_id=region, fill=lc_grouping), color="black") + 
   expand_limits(x = data$long, y = data$lat) +
   labs(fill="Countdown Region")+
   theme_classic()+
@@ -120,3 +122,26 @@ ggplot(graph_data) +
         legend.title = element_text(size = 12),  axis.line=element_blank())
 
 dev.off()
+
+
+graph_data$who_region[graph_data$who_region=="N/A"] <- NA
+
+pdf(file ="output/who region appendix.pdf", height=4, width=9)
+
+#plot
+ggplot(graph_data) + 
+  geom_map(dat=graph_data, map=graph_data, 
+           aes(map_id=region), fill="white", color="black") + 
+  geom_map(map=data, 
+           aes(map_id=region, fill=who_region), color="black") + 
+  expand_limits(x = data$long, y = data$lat) +
+  labs(fill="WHO Region")+
+  theme_classic()+
+  scale_fill_manual(values = c("lightcoral", "#8FD9FB", "orange", "plum","lawngreen", "aquamarine"))+
+  theme(axis.title.x = element_blank(), axis.title.y = element_blank(), axis.ticks.y = element_blank(), 
+        axis.ticks.x = element_blank(), axis.text.x =element_blank(),axis.text.y =element_blank(),
+        legend.text = element_text(size = 10), 
+        legend.title = element_text(size = 12),  axis.line=element_blank())
+
+dev.off()
+

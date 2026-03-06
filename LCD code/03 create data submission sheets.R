@@ -23,16 +23,17 @@ lcd2025<- lcd2025[-which(lcd2025$city=='Kapoeta'),]
 
 #remove 1km data
 names(lcd2025)
-data_100m<-select(lcd2025, c("Latitude", "Longitude", "ISO3", "city", "country", 
-                             "lc_group", "who_region", "hdi_level", "clim_region",
-                             "sub.region", ends_with("_100m"), 
-                             starts_with("Avg_NDVI_"), starts_with("Peak_NDVI_"),
-                             "Green_Area_2015", "GreenBlue_Area_2015",
-                             "Green_Area_2020", "GreenBlue_Area_2020"))
+data_100m<-lcd2025 %>%
+  rename(Peak_NDVI_2025_100m=Peak_NDVI_2025,
+         Avg_NDVI_2025_100m=Avg_NDVI_2025) %>%
+  select(c("Latitude", "Longitude", "ISO3", "city", "country", 
+           "lc_group", "who_region", "hdi_level", "clim_region",
+           "sub.region", ends_with("_100m"), starts_with("Peak_NDVI"),
+           starts_with("Avg_NDVI"),
+           "Green_Area_2015", "GreenBlue_Area_2015",
+           "Green_Area_2020", "GreenBlue_Area_2020"))
 names(data_100m) <- sub("_100m", "", names(data_100m))
-
-#get rid of indicator variable because R can't reshape both numeric & cat
-data_100m<- data_100m %>% select(-contains("indicator"))
+names(data_100m)
 
 #remove all underscores but last (so that we can seperate off year)
 data_100m<- data_100m %>% setNames(gsub("(_[^_]*)$|_", "\\1", names(.)))
@@ -51,8 +52,8 @@ global <- long %>%
 
 # create greenness indicator
 global$greennessIndicator <- cut(global$PopWeightPeakNDVI, 
-                   breaks=c(-Inf, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, Inf), 
-                   labels=c('Exceptionally Low','Very Low', 'Low', 
+                   breaks=c(-Inf, 0.2, 0.3, 0.4, 0.5, 0.6, Inf), 
+                   labels=c('Very Low', 'Low', 
                             'Moderate','High', 'Very High', 'Exceptionally High'))
 
 #add blue space
@@ -119,7 +120,7 @@ write.csv(country, 'country.csv')
 
 # export pop for weighting var tab
 #there's only pop data for 2015 and 2020
-pop<- global[which(global$year==c("2015", "2020")),]
+pop<- global[which(global$year %in% c("2015", "2020", "2025")),]
 
 weighting_var<- pop %>%
   group_by(city, country, year) %>%
